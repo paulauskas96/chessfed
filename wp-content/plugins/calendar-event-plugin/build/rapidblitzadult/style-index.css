@@ -1,0 +1,214 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/rapidblitzadult/style.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-stdadult {
+  background-color: transparent;
+  color: #fff;
+  padding: 2px;
+}
+
+.spinner {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+table thead tr.table-heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+table tbody tr.table-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.winner-row {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.winner-row .team-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.winner-row .team-wrapper .team-name-wrapper {
+  display: flex;
+  gap: 10px;
+}
+.winner-row .team-wrapper .team-name-wrapper .team-title {
+  margin: 0;
+}
+.winner-row .team-wrapper .team-member-list {
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+}
+.winner-row span {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-wrapper.filter-btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .button-wrapper.filter-btn {
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+}
+.table-btn {
+  padding: 8px;
+  background-color: transparent;
+  color: #15803d;
+  border: none;
+  border-radius: 50px;
+  border: 1px solid #15803d;
+  cursor: pointer;
+}
+
+.table-btn:hover {
+  background-color: #15803d;
+  color: #fefefe;
+}
+
+.rapid-btn-wrapper,
+.blitz-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.age-btn-wrapper.boy {
+  display: none;
+  -moz-column-gap: 3px;
+       column-gap: 3px;
+}
+
+.age-btn-wrapper.girl {
+  display: flex;
+  -moz-column-gap: 3px;
+       column-gap: 3px;
+}
+
+.active {
+  background-color: #15803d;
+  color: #fefefe;
+}
+
+.youth-btn-wrapper {
+  display: flex;
+  grid-row: 2;
+  grid-column: 4/5;
+  justify-content: space-around;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.youth-btn-wrapper .table-btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+thead {
+  background-color: #15803d;
+  color: #fefefe;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 4px 0px;
+  border-radius: 10px 10px 0 0;
+}
+@media screen and (max-width: 600px) {
+  thead {
+    font-size: 16px;
+  }
+  thead .table-heading {
+    grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
+  }
+}
+@media screen and (max-width: 450px) {
+  thead .table-heading {
+    grid-template-columns: 35px minmax(50px, 100px) minmax(50px, 100px) minmax(50px, 100px);
+  }
+}
+
+.table-heading {
+  width: 100%;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  display: grid;
+  grid-template-columns: 75px 150px 1fr 150px;
+  justify-items: center;
+}
+
+.rating-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-body {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #e7f2eb;
+}
+
+.table-info {
+  display: grid;
+  grid-template-columns: 75px 150px 1fr 150px;
+  justify-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  border-bottom: 4px solid #15803d !important;
+}
+.table-info td {
+  color: #333f51;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  padding: 8px;
+}
+@media screen and (max-width: 600px) {
+  .table-info {
+    grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
+  }
+  .table-info td {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .table-info {
+    grid-template-columns: 35px minmax(50px, 100px) minmax(50px, 100px) minmax(50px, 100px);
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

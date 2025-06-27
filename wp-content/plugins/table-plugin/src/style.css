@@ -1,0 +1,193 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-table-plugin {
+  background-color: #21759b;
+  color: #fff;
+  padding: 2px;
+}
+
+.table-select {
+  display: none;
+  cursor: pointer;
+  color: #fefefe;
+  background-color: #15803d;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .table-select {
+    display: block;
+  }
+}
+
+.button-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 600px) {
+  .button-wrapper {
+    display: none; /* Hide buttons */
+  }
+}
+
+.table-btn {
+  padding: 8px;
+  background-color: transparent;
+  color: green;
+  border: none;
+  border-radius: 50px;
+  border: 1px solid green;
+  cursor: pointer;
+}
+
+.table-btn:hover {
+  background-color: green;
+  color: #fefefe;
+}
+
+.active {
+  background-color: green;
+  color: #fefefe;
+}
+
+.youth-btn-wrapper {
+  display: flex;
+  grid-row: 2;
+  grid-column: 4/5;
+  justify-content: space-around;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.youth-btn-wrapper .table-btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+thead {
+  background-color: #15803d;
+  color: #fefefe;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 4px 0px;
+  border-radius: 10px 10px 0 0;
+}
+@media screen and (max-width: 600px) {
+  thead {
+    font-size: 16px;
+  }
+  thead .table-heading {
+    grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
+  }
+}
+@media screen and (max-width: 450px) {
+  thead .table-heading {
+    grid-template-columns: 35px minmax(50px, 100px) minmax(50px, 100px) minmax(50px, 100px);
+  }
+}
+
+.table-heading {
+  width: 100%;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  display: grid;
+  grid-template-columns: 75px 150px 1fr 150px;
+  justify-items: center;
+}
+
+.rating-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-body {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #e7f2eb;
+}
+
+.table-info {
+  display: grid;
+  grid-template-columns: 75px 150px 1fr 150px;
+  justify-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  border-bottom: 4px solid #15803d !important;
+}
+.table-info td {
+  color: #333f51;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  padding: 8px;
+}
+@media screen and (max-width: 600px) {
+  .table-info {
+    grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
+  }
+  .table-info td {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .table-info {
+    grid-template-columns: 35px minmax(50px, 100px) minmax(50px, 100px) minmax(50px, 100px);
+  }
+}
+
+.playerName {
+  justify-self: start;
+}
+
+.playerTitle,
+.playerNr,
+.playerRating {
+  text-align: center;
+}
+
+aside .table-title {
+  margin: 0;
+  text-align: center;
+  background-color: #15803d;
+  border-radius: 10px 10px 0 0;
+  padding: 4px 0;
+  color: #fff;
+  font-size: var(--wp--preset--font-size--bs-r) !important;
+  font-family: poppins;
+  font-weight: 600;
+  font-style: italic;
+}
+aside thead {
+  background-color: #e7f2eb;
+  color: #333f51;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 32px;
+  border-radius: 0;
+}
+aside thead .table-heading {
+  grid-template-columns: 40px 1fr 100px;
+}
+aside tbody .table-info {
+  grid-template-columns: 25px 30px 1fr 50px;
+}
+aside tbody .table-info td {
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */

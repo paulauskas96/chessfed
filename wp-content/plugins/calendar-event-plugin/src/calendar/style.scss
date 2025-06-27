@@ -1,0 +1,25 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-calendar {
+	background-color: #21759b;
+	color: #fff;
+	padding: 2px;
+}
+
+.fc-event.fc-daygrid-event.fc-daygrid-block-event.fc-h-event {
+	cursor: pointer;
+}
+
+.fc-col-header-cell-cushion {
+	color: #fefefe;
+	text-transform: capitalize;
+}
+#calendar .fc-header-toolbar.fc-toolbar {
+	margin-bottom: 1em;
+	text-transform: capitalize;
+}

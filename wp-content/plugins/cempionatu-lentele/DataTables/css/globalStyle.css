@@ -1,0 +1,55 @@
+#myTable tr td,
+#myTable tr td {
+	border-bottom: 4px solid #15803d;
+  }
+
+  #myTable tr.odd.parent td,
+  #myTable tr.even.parent td {
+	border-bottom: none;
+  }
+
+.winners-list {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.first-item,
+.extra-text {
+	font-weight: bold;
+}
+
+.extra-text {
+	margin: 15px 0;
+}
+
+.button-wrapper.filter-btn {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 15px;
+	margin-bottom: 15px;
+}
+
+@media screen and (max-width: 800px) {
+	.button-wrapper.filter-btn {
+		grid-template-columns: 1fr;
+		row-gap: 15px;
+	}
+}
+
+.table-btn[data-gender="Boys"],
+.table-btn[data-gender="Girls"],
+.table-btn[data-time-control="Rapid"],
+.table-btn[data-time-control="Blitz"] {
+	max-width: 307px;
+}
+
+.age-btn-wrapper.boy {
+	display: none;
+	column-gap: 3px;
+	flex-wrap: wrap;
+}
+.age-btn-wrapper.girl {
+	display: flex;
+	column-gap: 3px;
+	flex-wrap: wrap;
+}

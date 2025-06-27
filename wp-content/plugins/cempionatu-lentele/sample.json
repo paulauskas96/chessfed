@@ -1,0 +1,397 @@
+[
+    {
+        "year": 2022,
+        "tournaments": [
+            {
+                "name": "LŠL 20",
+                "config": {
+                    "time_control": "Std",
+                    "format": "Team",
+                    "rank": "All",
+                    "open": false,
+                    "age_group": null,
+                    "gender": "Open"
+                },
+                "date_start": null,
+                "date_end": null,
+                "results_link": "\"http://chess-results.com/tnr616034.aspx?lan=30&art=0&rd=7&turdet=YES\"",
+                "games_link": "\"https://view.livechesscloud.com/#89702b24-cdc9-4e4c-8c33-74fce9281718\"",
+                "team_winners": [
+                    {
+                        "place": 1,
+                        "name": "Consulting",
+                        "city": "Vilnius",
+                        "members": [
+                            "GM Tomas Laurušas",
+                            "GM Paulius Pultinevičius",
+                            "FM Rokas Klabis",
+                            "IM Vaidas Sakalauskas",
+                            "FM Tautvydas Vedrickas",
+                            "Vaidas Šetkauskas",
+                            "Augustas Vaškevičius"
+                        ]
+                    },
+                    {
+                        "place": 2,
+                        "name": "ŠBK Kaunas",
+                        "city": null,
+                        "members": [
+                            "FM Karolis Jukšta",
+                            "Pijus Stremavičius",
+                            "IM Vytautas Vaznonis",
+                            "Šarūnas Germanavičius",
+                            "Pijus Greičius",
+                            "Aistis Butvilas",
+                            "WIM Salomėja Zaksaitė",
+                            "Timur Baliasnyj",
+                            "Benas Mickus"
+                        ]
+                    },
+                    {
+                        "place": 3,
+                        "name": "Margiris-1",
+                        "city": "Kaunas",
+                        "members": [
+                            "GM Šarūnas Šulskis",
+                            "GM Ilmars Starostits",
+                            "Stasys Steponavičius",
+                            "FM Tomas Tvarijonas",
+                            "Aras Jonas Lazaravičius",
+                            "Tomas Tamošiūnas",
+                            "Tautvydas Šiugždinis",
+                            "Titas Bosikis"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Youth Rapid 20 U18",
+                "config": {
+                    "time_control": "Rapid",
+                    "format": "Individual",
+                    "rank": "All",
+                    "open": false,
+                    "age_group": 18,
+                    "gender": "Excl"
+                },
+                "date_start": "05-21",
+                "date_end": "05-22",
+                "results_link": "\"http://chess-results.com/tnr638608.aspx?lan=30&art=1&rd=9&turdet=YES\"",
+                "games_link": null,
+                "winners": [
+                    {
+                        "place": 1,
+                        "name": "Matas Indriūnas",
+                        "city": "Vilnius",
+                        "points": null,
+                        "rating": 2050
+                    },
+                    {
+                        "place": 2,
+                        "name": "Pijus Greičius",
+                        "city": "Kaunas",
+                        "points": null,
+                        "rating": 1938
+                    },
+                    {
+                        "place": 3,
+                        "name": "Dangis Bagdanskis",
+                        "city": "Šiauliai",
+                        "points": null,
+                        "rating": 1922
+                    }
+                ],
+                "female_winners": [
+                    {
+                        "place": 1,
+                        "name": "Jorė Balčiūnaitė",
+                        "city": "Gargždai",
+                        "points": null,
+                        "rating": 1290
+                    },
+                    {
+                        "place": 2,
+                        "name": "Ieva Grikšaitė",
+                        "city": "Šiauliai",
+                        "points": null,
+                        "rating": 1561
+                    },
+                    {
+                        "place": 3,
+                        "name": "Simona Perminaitė",
+                        "city": "Kaunas",
+                        "points": null,
+                        "rating": 1424
+                    }
+                ]
+            },
+            {
+                "name": "Youth Rapid 2022 U16",
+                "config": {
+                    "time_control": "Rapid",
+                    "format": "Individual",
+                    "rank": "All",
+                    "open": false,
+                    "age_group": 16,
+                    "gender": "Excl"
+                },
+                "date_start": "05-21",
+                "date_end": "05-22",
+                "results_link": "\"http://chess-results.com/tnr638605.aspx?lan=30&art=1&rd=9&turdet=YES\"",
+                "games_link": null,
+                "winners": [
+                    {
+                        "place": 1,
+                        "name": "Matas Povilaitis",
+                        "city": "Šiauliai",
+                        "points": null,
+                        "rating": 1916
+                    },
+                    {
+                        "place": 2,
+                        "name": "Erikas Mecelica",
+                        "city": "Kaunas",
+                        "points": null,
+                        "rating": 1980
+                    },
+                    {
+                        "place": 3,
+                        "name": "Motiejus Dudnikas",
+                        "city": "Šiauliai",
+                        "points": null,
+                        "rating": 1600
+                    }
+                ],
+                "female_winners": [
+                    {
+                        "place": 1,
+                        "name": "Eglė Grikšaitė",
+                        "city": "Šiauliai",
+                        "points": null,
+                        "rating": 1531
+                    },
+                    {
+                        "place": 2,
+                        "name": "Adrijana Morkūnaitė",
+                        "city": "Kėdainiai",
+                        "points": null,
+                        "rating": 1338
+                    },
+                    {
+                        "place": 3,
+                        "name": "Rusnė Andrašūnaitė",
+                        "city": "Šiauliai",
+                        "points": null,
+                        "rating": 1410
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "year": 2021,
+        "tournaments": [
+            {
+                "name": "LŠL 2021",
+                "config": {
+                    "time_control": "Std",
+                    "format": "Team",
+                    "rank": "All",
+                    "open": false,
+                    "age_group": null,
+                    "gender": "Open"
+                },
+                "date_start": null,
+                "date_end": null,
+                "results_link": "\"http://chess-results.com/tnr616034.aspx?lan=30&art=0&rd=7&turdet=YES\"",
+                "games_link": "\"https://view.livechesscloud.com/#89702b24-cdc9-4e4c-8c33-74fce9281718\"",
+                "team_winners": [
+                    {
+                        "place": 1,
+                        "name": "MRU-ROSK Consulting",
+                        "city": "Vilnius",
+                        "members": [
+                            "GM Tomas Laurušas",
+                            "GM Paulius Pultinevičius",
+                            "FM Rokas Klabis",
+                            "IM Vaidas Sakalauskas",
+                            "FM Tautvydas Vedrickas",
+                            "Vaidas Šetkauskas",
+                            "Augustas Vaškevičius"
+                        ]
+                    },
+                    {
+                        "place": 2,
+                        "name": "ŠBK Kaunas",
+                        "city": null,
+                        "members": [
+                            "FM Karolis Jukšta",
+                            "Pijus Stremavičius",
+                            "IM Vytautas Vaznonis",
+                            "Šarūnas Germanavičius",
+                            "Pijus Greičius",
+                            "Aistis Butvilas",
+                            "WIM Salomėja Zaksaitė",
+                            "Timur Baliasnyj",
+                            "Benas Mickus"
+                        ]
+                    },
+                    {
+                        "place": 3,
+                        "name": "Margiris-1",
+                        "city": "Kaunas",
+                        "members": [
+                            "GM Šarūnas Šulskis",
+                            "GM Ilmars Starostits",
+                            "Stasys Steponavičius",
+                            "FM Tomas Tvarijonas",
+                            "Aras Jonas Lazaravičius",
+                            "Tomas Tamošiūnas",
+                            "Tautvydas Šiugždinis",
+                            "Titas Bosikis"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Youth Rapid 2021 U18",
+                "config": {
+                    "time_control": "Rapid",
+                    "format": "Individual",
+                    "rank": "All",
+                    "open": false,
+                    "age_group": 18,
+                    "gender": "Excl"
+                },
+                "date_start": "05-21",
+                "date_end": "05-22",
+                "results_link": "\"http://chess-results.com/tnr638608.aspx?lan=30&art=1&rd=9&turdet=YES\"",
+                "games_link": null,
+                "winners": [
+                    {
+                        "place": 1,
+                        "name": "Matas Indriūnas",
+                        "city": "Vilnius",
+                        "points": null,
+                        "rating": 2050
+                    },
+                    {
+                        "place": 2,
+                        "name": "Pijus Greičius",
+                        "city": "Kaunas",
+                        "points": null,
+                        "rating": 1938
+                    },
+                    {
+                        "place": 3,
+                        "name": "Dangis Bagdanskis",
+                        "city": "Šiauliai",
+                        "points": null,
+                        "rating": 1922
+                    }
+                ],
+                "female_winners": [
+                    {
+                        "place": 1,
+                        "name": "Jorė Balčiūnaitė",
+                        "city": "Gargždai",
+                        "points": null,
+                        "rating": 1290
+                    },
+                    {
+                        "place": 2,
+                        "name": "Ieva Grikšaitė",
+                        "city": "Šiauliai",
+                        "points": null,
+                        "rating": 1561
+                    },
+                    {
+                        "place": 3,
+                        "name": "Simona Perminaitė",
+                        "city": "Kaunas",
+                        "points": null,
+                        "rating": 1424
+                    }
+                ]
+            },
+            {
+                "name": "Open Rapid 2021",
+                "config": {
+                    "time_control": "Rapid",
+                    "format": "Individual",
+                    "rank": "All",
+                    "open": true,
+                    "age_group": null,
+                    "gender": "Open"
+                },
+                "date_start": "07-04",
+                "date_end": "07-05",
+                "results_link": "\"http://chess-results.com/tnr529592.aspx?lan=1&art=1&rd=11&turdet=YES&flag=30\"",
+                "games_link": null,
+                "winners": [
+                    {
+                        "place": 1,
+                        "name": "IM Tomas Laurušas",
+                        "country": null,
+                        "points": null,
+                        "rating": 2586
+                    },
+                    {
+                        "place": 2,
+                        "name": "GM Bartlomiej Heberla",
+                        "country": "Lenkija",
+                        "points": null,
+                        "rating": 2527
+                    },
+                    {
+                        "place": 3,
+                        "name": "GM Daniel Fridman",
+                        "country": "Vokietija",
+                        "points": null,
+                        "rating": 2610
+                    }
+                ],
+                "ltu_winners": [
+                    {
+                        "place": 1,
+                        "name": "IM Tomas Laurušas",
+                        "points": null,
+                        "rating": 2586
+                    },
+                    {
+                        "place": 2,
+                        "name": "GM Šarūnas Šulskis",
+                        "points": null,
+                        "rating": 2540
+                    },
+                    {
+                        "place": 3,
+                        "name": "FM Dmitrijus Chocenka",
+                        "points": null,
+                        "rating": 2309
+                    }
+                ],
+                "female_winners": [
+                    {
+                        "place": 1,
+                        "name": "Gabija Šimkūnaitė",
+                        "points": null,
+                        "rating": 1881
+                    },
+                    {
+                        "place": 2,
+                        "name": "WIM Salomėja Zaksaitė",
+                        "points": null,
+                        "rating": 2160
+                    },
+                    {
+                        "place": 3,
+                        "name": "WFM Vesta Kasputė",
+                        "points": null,
+                        "rating": 1982
+                    }
+                ]
+            }
+        ]
+    }
+]

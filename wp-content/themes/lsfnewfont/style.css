@@ -1,0 +1,875 @@
+/*
+Theme Name: lsf new font
+Theme URI: 
+Author: 
+Author URI: 
+Description: pakeiciau fonta patikrinti
+Requires at least: 6.0
+Tested up to: 6.4.1
+Requires PHP: 5.7
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: lsfnewfont
+Tags: full-site-editing
+*/
+
+#RightSide {
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 901px) {
+  #RightSide {
+    display: none;
+  }
+}
+
+.table-btn {
+  font-size: 16px;
+  font-family: poppins;
+}
+
+.has-text-color.has-custom-tekstas-2-color.wp-block-post-excerpt.has-bs-r-font-size {
+  word-break: break-word;
+}
+
+p:empty {
+  display: none;
+}
+a:empty {
+  display: none;
+}
+/* "sulauzo" zodis, kad graziai tilptu kai ekranas mazeja  */
+.content {
+  word-break: break-word;
+}
+
+/* cempinatu lenteles */
+table thead tr.table-heading.team {
+  display: grid;
+  grid-template-columns: 100px 130px 1fr 1fr;
+}
+table tbody tr.table-info.team {
+  display: grid;
+  grid-template-columns: 100px 130px 1fr 1fr;
+}
+
+table tbody tr.table-info-women.team {
+  display: grid;
+  grid-template-columns: 100px 130px 1fr 1fr;
+}
+
+/* cia nuimti grid columns tiems puslapiams kurie turi left ir right side */
+@media (max-width: 900px) {
+  .md-cbb-grid-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+#HeroBox #LeftSide #ListStyle ul {
+  list-style-type: initial;
+  padding: revert;
+}
+
+.underline a:hover {
+  text-decoration: underline;
+}
+
+a:hover .underline {
+  text-decoration: underline;
+  color: #15803d;
+}
+
+.event-wrapper .excerpt a:hover {
+  text-decoration: underline;
+}
+.single-post .content a:hover {
+  text-decoration: underline;
+}
+
+.custom-hover article:hover .wp-block-post-featured-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(21, 128, 61, 0.5);
+  transition: background 0.3s ease-in-out;
+  border-radius: 10px 10px 0 0;
+  pointer-events: none;
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.wp-block-post-navigation-link__arrow-previous.is-arrow-chevron {
+  color: #15803d;
+}
+
+.wp-block-post-navigation-link__arrow-next.is-arrow-chevron {
+  color: #15803d;
+}
+
+.nav-previous.alignleft {
+  display: flex;
+  column-gap: 10px;
+  justify-self: start;
+  padding: 8px 16px;
+  background-color: #fefefe;
+  border: 2px solid #15803d;
+  border-radius: 30px;
+}
+.nav-next.alignright {
+  display: flex;
+  column-gap: 10px;
+  justify-self: end;
+  padding: 8px 16px;
+  background-color: #fefefe;
+  border: 2px solid #15803d;
+  border-radius: 30px;
+  grid-column: 2;
+}
+
+.nav-previous.alignleft:hover a,
+.nav-next.alignright:hover a {
+  color: #fefefe;
+}
+
+.nav-next.alignright:hover,
+.nav-previous.alignleft:hover {
+  background-color: #15802d;
+}
+.nav-next.alignright:hover,
+.nav-previous.alignleft:hover {
+  background-color: #15802d;
+}
+.nav-next.alignright:hover .is-arrow-chevron,
+.nav-previous.alignleft:hover .is-arrow-chevron {
+  color: #fefefe;
+}
+
+/* global button */
+.button-right-arrow:hover a {
+  background-color: #15803d;
+  color: #fefefe;
+}
+.button-right-arrow:hover svg {
+  fill: #fefefe;
+}
+.button-right-arrow svg {
+  fill: #15803d;
+}
+
+.button-right-arrow-white:hover a {
+  background-color: #fefefe !important;
+  color: #15802d !important;
+}
+.button-right-arrow-white:hover svg {
+  fill: #15802d;
+}
+.button-right-arrow-white svg {
+  fill: #fefefe;
+}
+
+@media screen and (max-width: 550px) {
+  /* header mygtukas ir desine puse */
+  .green-btn .wp-block-button__link.wp-element-button {
+    padding-top: 4px;
+    padding-right: 1px;
+    padding-bottom: 4px;
+    padding-left: 1px;
+  }
+  .wp-block-group.is-nowrap.is-layout-flex.wp-container-core-group-layout-1.wp-block-group-is-layout-flex {
+    gap: 10px;
+  }
+}
+
+.green-btn .wp-block-button__link.wp-element-button {
+  background-color: #15803d;
+  color: #fefefe;
+}
+.green-btn .wp-block-button__link.wp-element-button:hover {
+  background-color: #fefefe;
+  color: #15803d;
+}
+
+.read-more-wrapper .read-more.read-more-green {
+  display: inline-flex;
+}
+
+.read-more-green {
+  background-color: #15803d;
+  color: #fefefe;
+  border: 2px solid #15803d;
+}
+.read-more-green:hover {
+  background-color: #fefefe;
+  color: #15803d;
+}
+
+@media screen and (max-width: 750px) {
+  .button-right-arrow a {
+    padding: 4px 10px !important;
+  }
+  /* cia yra div artimiausios varyzbos pavadinimo ir mygtuko. homepage */
+  .wp-block-group.is-content-justification-left.is-layout-flex.wp-container-26.wp-block-group-is-layout-flex {
+    gap: 0;
+  }
+}
+
+.borderRadius10 {
+  border-radius: 10px 10px 0 0;
+}
+
+/* aside global */
+
+.asideTitle {
+  border-radius: 10px 10px 0 0;
+}
+
+.buttonWrapper {
+  background-color: #15803d;
+  padding: 16px;
+  border-radius: 0 0 10px 10px;
+}
+
+.buttonWrapper .wp-block-button__link.wp-element-button {
+  justify-content: center;
+  column-gap: 6px;
+}
+
+/* vienos naujienos pagination */
+
+.paginationButton {
+  padding: 8px 16px;
+  border: 2px solid #15803d;
+  border-radius: 36px;
+}
+.paginationButton:hover {
+  color: #fff !important;
+  background-color: #15803d;
+}
+.paginationButton:hover a {
+  color: #fff;
+}
+.paginationButton:hover .is-arrow-chevron {
+  color: #fff;
+}
+.paginationButton:empty {
+  display: none;
+}
+
+/* main page naujienos  */
+
+.box-shadow.overlay {
+  border-radius: 10px 10px 0 0;
+}
+
+/* cia sutaisyti height visu vienoda */
+.wp-block-post-template.is-layout-flow li article,
+.wp-block-post-template.is-layout-flow li article > div {
+  display: grid;
+  height: 100%;
+}
+
+.wp-block-post-template.is-layout-flow li article > div a.read-more-green {
+  margin-top: auto;
+}
+
+/* naujienu pagination */
+
+.wp-block-query-pagination-is-layout-flex {
+  margin-top: 40px;
+}
+
+.wp-block-query-pagination > .wp-block-query-pagination-numbers {
+  margin: 0;
+}
+
+.wp-block-query-pagination > .wp-block-query-pagination-next {
+  margin: 0;
+}
+
+.wp-block-query-pagination > .wp-block-query-pagination-previous {
+  margin: 0;
+}
+
+@media screen and (max-width: 500px) {
+  section {
+    padding: 0 15px;
+  }
+}
+
+/* search bar */
+
+.search-bar-header {
+  display: none;
+}
+.is-search-submit {
+  cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  .search-bar-header {
+    display: block;
+  }
+  #MainHeader .is-search-form.is-form-style.is-form-style-3.is-form-id-1514.is-ajax-search {
+    display: none;
+  }
+}
+
+/* hero box stilius */
+
+.hero-box {
+  padding: 50px 42px;
+}
+
+@media screen and (max-width: 750px) {
+  #Hero .hero-box {
+    padding: 30px;
+  }
+  #Hero .hero-box-title {
+    line-height: inherit;
+  }
+}
+@media screen and (max-width: 450px) {
+  #Hero .hero-box {
+    padding: 25px 15px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  #Hero .grid-item-left {
+    margin-right: 20px;
+  }
+}
+
+.hero-box-title {
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -1.2px;
+}
+
+.wp-block-button__link.wp-element-button {
+  display: flex;
+  align-items: center;
+}
+
+.box-shadow.wp-block-post-featured-image.wp-duotone-unset-13 {
+  border-radius: 10px;
+}
+
+.box-shadow {
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.13);
+}
+
+/* varzybu zemelapio stilius */
+
+.varzybu-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+#MapCompetition .varzybu-list {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.turnyro-card {
+  border-radius: 10px;
+  border: 2px solid #e7f2eb;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.13);
+  padding: 24px 21px;
+}
+
+.custom-pagination {
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-wrapper {
+ width: 100%;
+ margin: 0 auto; /* Center the wrapper */
+	margin-top: 15px;
+}
+
+.custom-pagination {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 1em 0;
+ list-style: none;
+}
+
+.custom-pagination .page-numbers {
+ padding: 0.5em 1em;
+ margin: 0 0.5em;
+ border-radius: 5px;
+ text-decoration: none;
+}
+
+@media screen and (max-width: 750px) {
+  .varzybu-list,
+  .online-turnyrai-list,
+	.post-list {
+    display: grid;
+    grid-template-columns: none;
+    gap: 20px;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    overflow-x: auto;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+		padding-bottom:10px;
+padding-left: 5px;
+  }
+  #Naujienos
+    .wp-block-post-template.is-layout-flow.wp-block-post-template-is-layout-flow {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(230px, 1fr);
+    overflow-x: auto;
+  }
+  .turnyro-card,
+	.post-card {
+    min-width: 70vw;
+    scroll-snap-align: center;
+  }
+
+  #Competitions .varzybu-list {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-auto-flow: unset;
+  }
+
+  #Competitions .varzybu-list .turnyro-card {
+    min-width: unset;
+  }
+}
+
+.turnyro-title {
+  color: #333f51;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  margin: 0;
+}
+
+.turnyro-data,
+.turnyro-vieta,
+.turnyro-tipas {
+  color: #556987;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 24px;
+  display: grid;
+  grid-template-columns: 24px auto;
+  column-gap: 8px;
+  align-items: center;
+}
+
+.turnyro-data::before {
+  content: "";
+  background-image: url("/wp-content/uploads/calendar-event-fill.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+
+.turnyro-tipas.zaibo::before {
+  content: "";
+  background-image: url("/wp-content/uploads/zaibas.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+.turnyro-tipas.standartiniai::before {
+  content: "";
+  background-image: url("/wp-content/uploads/sachmatu-bokstas.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+.turnyro-tipas.greitieji::before {
+  content: "";
+  background-image: url("/wp-content/uploads/laikmatis-greitieji.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+
+.turnyro-vieta::before {
+  content: "";
+  background-image: url("/wp-content/uploads/map-pin-fill.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+/*naujienu queyr loop homepage  */
+.post-list {
+  display: grid;
+  grid-auto-columns:minmax(230px, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+
+.post-info-wrapper .post-date {
+	text-align: left;
+	margin-bottom: 0px;
+	font-size: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.25), 16px);
+  font-style: normal;
+  font-weight: 500;
+  color: #556987;
+}
+ .post-thumbnail {
+    position: relative;
+	width: 100%;
+  height: 100%;
+ }
+
+ .post-card a.post-img:hover::after {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(21, 128, 61, 0.6); /* #15803d with 60% opacity */
+     opacity: 1;
+     transition: opacity 0.3s ease;
+	 border-radius: 10px 10px 0 0;
+ }
+a.post-img:hover::after {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(21, 128, 61, 0.6); /* #15803d with 60% opacity */
+     opacity: 1;
+     transition: opacity 0.3s ease;
+	 border-radius: 10px 10px 0 0;
+ }
+.post-img {
+  position: relative;
+}
+
+/* .post-img {
+  aspect-ratio: 16/9;
+} */
+.post-thumbnail {
+  border-radius: 10px 10px 0 0;
+}
+
+.post-card a.post-img {
+  border-radius: 10px 10px 0 0;
+	position: relative;
+}
+
+.post-card a img {
+  aspect-ratio: 16/9;
+	border-radius: 10px 10px 0 0;
+}
+.post-card {
+  display: flex;
+  flex-direction: column;
+height: 100%;
+	border-radius: 10px 10px 10px 10px;
+}
+.post-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+	padding: 20px 20px 25px;
+	flex-grow: 1;
+}
+.post-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.post-title a {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #333F51;
+}
+.post-title a:hover {
+	color:#15803d;
+} 
+.read-more-wrapper {
+  margin-top: 6px;
+}
+
+.read-more.read-more-green svg {
+	fill: #fefefe;
+}
+.read-more.read-more-green:hover svg {
+	fill: #15803d
+}
+
+.read-more.read-more-green {
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.turnyro-info,
+.post-info {
+  list-style-type: none;
+  padding: 0;
+  row-gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.turnyro-info-wrapper {
+  display: grid;
+  row-gap: 12px;
+}
+
+.turnyro-info-wrapper p {
+  display: none;
+}
+.turnyro-info-wrapper ul {
+  margin: 0;
+}
+
+.blue {
+  color: #1377d4;
+}
+
+.red {
+  color: #ec0000;
+}
+
+/* aside varzybu stilius */
+
+#MapCompetition #map {
+  width: 100%;
+  border-radius: 0px;
+  height: 200px !important;
+}
+
+#MapCompetition .varzybu-list {
+  gap: 0;
+  border: 2px solid #e7f2eb;
+  border-bottom: 0;
+  border-top: 2px solid #15803d;
+}
+#MapCompetition .turnyro-card {
+  padding: 11px 20px;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 2px solid #15803d;
+  box-shadow: none;
+}
+#MapCompetition .turnyro-info-wrapper {
+  row-gap: 6px;
+}
+#MapCompetition .turnyro-title {
+  font-size: 18px;
+}
+#MapCompetition .turnyro-info {
+  row-gap: 4px;
+}
+#MapCompetition .turnyro-data,
+#MapCompetition .turnyro-vieta,
+#MapCompetition .turnyro-tipas {
+  font-size: 14px;
+}
+
+#MapCompetition .turnyro-card:last-child {
+  border-bottom: 2px solid #e7f2eb;
+}
+
+/* online turnyro stilius */
+
+.online-turnyrai-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.online-turnyrai-list .turnyro-card {
+  background-color: #15803d;
+  border: none;
+}
+
+.online-turnyrai-list .turnyro-card .turnyro-info-wrapper .turnyro-title {
+  color: #fff;
+}
+.online-turnyrai-list .turnyro-card .turnyro-info-wrapper .turnyro-info li {
+  color: #fff;
+}
+
+.online-turnyrai-list .turnyro-data::before {
+  content: "";
+  background-image: url("/wp-content/uploads/calendar-event-fill.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  filter: grayscale(100%) brightness(0) invert(1);
+}
+
+.online-turnyrai-list .turnyro-tipas.zaibo::before {
+  content: "";
+  background-image: url("/wp-content/uploads/zaibas.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  filter: grayscale(100%) brightness(0) invert(1);
+}
+.online-turnyrai-list .turnyro-tipas.standartiniai::before {
+  content: "";
+  background-image: url("/wp-content/uploads/sachmatu-bokstas.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  filter: grayscale(100%) brightness(0) invert(1);
+}
+.online-turnyrai-list .turnyro-tipas.greitieji::before {
+  content: "";
+  background-image: url("/wp-content/uploads/laikmatis-greitieji.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  filter: grayscale(100%) brightness(0) invert(1);
+}
+
+.online-turnyrai-list .turnyro-vieta::before {
+  content: "";
+  background-image: url("/wp-content/uploads/map-pin-fill.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  filter: grayscale(100%) brightness(0) invert(1);
+}
+
+/* tarybos table */
+
+#tarybys-table thead {
+  border-bottom: none;
+}
+
+.tarybos-table tbody tr {
+  border-bottom: 4px solid green;
+  background-color: transparent !important;
+}
+
+.tarybos-table table {
+  border: 2px solid #e7f2eb;
+}
+
+/* greitai, ivyko, vyksta */
+
+.events-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.event-wrapper {
+  padding: 30px;
+  border: 2px solid #e7f2eb;
+  border-radius: 10px;
+}
+
+.event-title {
+  color: #333f51;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.72px;
+}
+
+.event-title-wrapper p {
+  display: none;
+}
+.event-title-wrapper h2 {
+  margin: 0;
+}
+
+.event-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.event-title-wrapper::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  border-radius: 10px;
+  background-color: #c5c6c7;
+}
+
+.post-date {
+  text-align: right;
+  color: #8896ab;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.excerpt {
+  color: #556987;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.kb-splide .splide__list {
+  height: auto;
+}
+
+.kb-splide .splide__arrow {
+  background: #15803d;
+}
+
+.kb-splide .splide__arrow:focus,
+.kb-splide .splide__arrow:hover {
+  background: #15803d;
+}
+/* footer stilius */
+
+.footer-list {
+  display: grid;
+  row-gap: 15px;
+}
+
+.footer-list-item {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+.footer-list-item a:hover {
+  text-decoration: underline;
+}
+
+.footer-list-item.copyright {
+  margin-top: 30px;
+  padding-left: 5px;
+}

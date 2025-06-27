@@ -1,0 +1,1711 @@
+[
+	{
+		"year": 2022,
+		"tournaments": [
+			{
+				"name": "LŠL 2022",
+				"config": {
+					"time_control": "Std",
+					"format": "Team",
+					"rank": "All",
+					"open": false,
+					"age_group": null,
+					"gender": null
+				},
+				"date_start": null,
+				"date_end": null,
+				"location": "Kaunas",
+				"results_link": "\"http://chess-results.com/tnr616034.aspx?lan=30&art=0&rd=7&turdet=YES\"",
+				"games_link": "\"https://view.livechesscloud.com/#89702b24-cdc9-4e4c-8c33-74fce9281718\"",
+				"team_winners": [
+					{
+						"place": 1,
+						"name": "MRU-ROSK Consulting",
+						"city": "Vilnius",
+						"members": [
+							"GM Tomas Laurušas",
+							"GM Paulius Pultinevičius",
+							"FM Rokas Klabis",
+							"IM Vaidas Sakalauskas",
+							"FM Tautvydas Vedrickas"
+						]
+					},
+					{
+						"place": 2,
+						"name": "ŠBK Kaunas",
+						"city": null,
+						"members": [
+							"FM Karolis Jukšta",
+							"Pijus Stremavičius",
+							"IM Vytautas Vaznonis",
+							"Šarūnas Germanavičius",
+							"Pijus Greičius",
+							"Aistis Butvilas"
+						]
+					},
+					{
+						"place": 3,
+						"name": "Margiris-1",
+						"city": "Kaunas",
+						"members": [
+							"GM Šarūnas Šulskis",
+							"GM Ilmars Starostits",
+							"Stasys Steponavičius",
+							"FM Tomas Tvarijonas",
+							"Aras Jonas Lazaravičius",
+							"Tomas Tamošiūnas"
+						]
+					}
+				]
+			},
+			{
+				"name": "LŠL 2022 - Women",
+				"config": {
+					"time_control": "Std",
+					"format": "Team",
+					"rank": "All",
+					"open": false,
+					"age_group": null,
+					"gender": "Women"
+				},
+				"date_start": null,
+				"date_end": null,
+
+				"results_link": "\"http://chess-results.com/tnr616034.aspx?lan=30&art=0&rd=7&turdet=YES\"",
+				"games_link": "\"https://view.livechesscloud.com/#89702b24-cdc9-4e4c-8c33-74fce9281718\"",
+				"download_link": "\"https://view.livechesscloud.com/#89702b24-cdc9-4e4c-8c33-74fce9281718\"",
+				"female_team_winners": [
+					{
+						"place": 1,
+						"name": "Women's Team 1",
+						"city": "Vilnius",
+						"members": [
+							"WGM Agnė Čižikaitė",
+							"WGM Deimantė Daulytė",
+							"IM Viktorija Čmilytė-Nielsen",
+							"WIM Dagne Ciuksyte",
+							"WIM Salomėja Zaksaitė"
+						]
+					},
+					{
+						"place": 2,
+						"name": "Women's Team 2",
+						"city": null,
+						"members": [
+							"IM Deimantė Cornette",
+							"WFM Greta Pileckaitė",
+							"WFM Gabrielė Makauskaitė",
+							"WFM Vesta Kasputė",
+							"WIM Laura Example"
+						]
+					},
+					{
+						"place": 3,
+						"name": "Women's Team 3",
+						"city": "Kaunas",
+						"members": [
+							"IM Viktorija Ni",
+							"WIM Jovita Černiauskaitė",
+							"FM Dovilė Butkutė",
+							"WFM Ieva Grikšaitė",
+							"CM Eva Example"
+						]
+					}
+				]
+			},
+			{
+				"name": "LŠL 2022 - Rapid",
+				"config": {
+					"time_control": "Rapid",
+					"format": "Team",
+					"rank": "All",
+					"open": false,
+					"age_group": null,
+					"gender": "Open"
+				},
+				"location": "Vilnius",
+				"date_start": "10-21",
+				"date_end": null,
+				"results_link": "\"http://chess-results.com/tnr616034.aspx?lan=30&art=0&rd=7&turdet=YES\"",
+				"games_link": "\"https://view.livechesscloud.com/#89702b24-cdc9-4e4c-8c33-74fce9281718\"",
+				"team_winners": [
+					{
+						"place": 1,
+						"name": "Mixed Team 1",
+						"city": "Vilnius",
+						"members": [
+							"GM Tomas Laurušas",
+							"GM Paulius Pultinevičius",
+							"WIM Salomėja Zaksaitė",
+							"IM Eva Example"
+						]
+					},
+					{
+						"place": 2,
+						"name": "Mixed Team 2",
+						"city": null,
+						"members": [
+							"FM Karolis Jukšta",
+							"Pijus Stremavičius",
+							"WIM Anna Example",
+							"Timur Baliasnyj",
+							"Benas Mickus"
+						]
+					},
+					{
+						"place": 3,
+						"name": "Mixed Team 3",
+						"city": "Kaunas",
+						"members": [
+							"GM Šarūnas Šulskis",
+							"GM Ilmars Starostits",
+							"Tautvydas Šiugždinis",
+							"Titas Bosikis",
+							"WIM Laura Example"
+						]
+					}
+				]
+			},
+			{
+				"name": "LŠL 2022 - Rapid",
+				"config": {
+					"time_control": "Std",
+					"format": "Team",
+					"rank": "All",
+					"open": false,
+					"age_group": null,
+					"gender": "Open"
+				},
+				"date_start": null,
+				"date_end": null,
+				"results_link": "\"http://chess-results.com/tnr616034.aspx?lan=30&art=0&rd=7&turdet=YES\"",
+				"games_link": "\"https://view.livechesscloud.com/#89702b24-cdc9-4e4c-8c33-74fce9281718\"",
+				"team_winners": [
+					{
+						"place": 1,
+						"name": "Mixed Team 1",
+						"city": "Vilnius",
+						"members": [
+							"GM Tomas Laurušas",
+							"GM Paulius Pultinevičius",
+							"WIM Salomėja Zaksaitė",
+							"IM Eva Example"
+						]
+					},
+					{
+						"place": 2,
+						"name": "Mixed Team 2",
+						"city": null,
+						"members": [
+							"FM Karolis Jukšta",
+							"Pijus Stremavičius",
+							"WIM Anna Example",
+							"Timur Baliasnyj",
+							"Benas Mickus"
+						]
+					},
+					{
+						"place": 3,
+						"name": "Mixed Team 3",
+						"city": "Kaunas",
+						"members": [
+							"GM Šarūnas Šulskis",
+							"GM Ilmars Starostits",
+							"Tautvydas Šiugždinis",
+							"Titas Bosikis",
+							"WIM Laura Example"
+						]
+					}
+				]
+			},
+			{
+				"name": "Youth Rapid 2022 U18",
+				"config": {
+					"time_control": "Rapid",
+					"format": "Individual",
+					"rank": "All",
+					"open": false,
+					"age_group": 18,
+					"gender": "Excl"
+				},
+				"date_start": "05-21",
+				"date_end": "05-22",
+				"location": "Kaunas",
+				"results_link": "\"http://chess-results.com/tnr638608.aspx?lan=30&art=1&rd=9&turdet=YES\"",
+				"games_link": null,
+				"winners": [
+					{
+						"place": 1,
+						"name": "Matas Indriūnas",
+						"city": "Vilnius",
+						"points": null,
+						"rating": 2050
+					},
+					{
+						"place": 2,
+						"name": "Pijus Greičius",
+						"city": "Kaunas",
+						"points": null,
+						"rating": 1938
+					},
+					{
+						"place": 3,
+						"name": "Dangis Bagdanskis",
+						"city": "Šiauliai",
+						"points": null,
+						"rating": 1922
+					}
+				],
+				"female_winners": [
+					{
+						"place": 1,
+						"name": "Jorė Balčiūnaitė naujas",
+						"city": "Gargždai",
+						"points": null,
+						"rating": 1290
+					},
+					{
+						"place": 2,
+						"name": "Ieva Grikšaitė",
+						"city": "Šiauliai",
+						"points": null,
+						"rating": 1561
+					},
+					{
+						"place": 3,
+						"name": "Simona Perminaitė",
+						"city": "Kaunas",
+						"points": null,
+						"rating": 1424
+					}
+				]
+			},
+			{
+				"name": "Youth Rapid 2022 U16",
+				"config": {
+					"time_control": "Rapid",
+					"format": "Individual",
+					"rank": "All",
+					"open": false,
+					"age_group": 16,
+					"gender": "Excl"
+				},
+				"date_start": "05-21",
+				"date_end": "05-22",
+				"results_link": "http://chess-results.com/tnr638605.aspx?lan=30&art=1&rd=9&turdet=YES",
+				"games_link": null,
+				"download_link": null,
+				"winners": [
+					{
+						"place": 1,
+						"name": "Matas Povilaitis 16",
+						"city": "Šiauliai",
+						"points": null,
+						"rating": 1916
+					},
+					{
+						"place": 2,
+						"name": "Erikas Mecelica",
+						"city": "Kaunas",
+						"points": null,
+						"rating": 1980
+					},
+					{
+						"place": 3,
+						"name": "Motiejus Dudnikas",
+						"city": "Šiauliai",
+						"points": null,
+						"rating": 1600
+					}
+				],
+				"female_winners": [
+					{
+						"place": 1,
+						"name": "Eglė Grikšaitė",
+						"city": "Šiauliai",
+						"points": null,
+						"rating": 1531
+					},
+					{
+						"place": 2,
+						"name": "Adrijana Morkūnaitė",
+						"city": "Kėdainiai",
+						"points": null,
+						"rating": 1338
+					},
+					{
+						"place": 3,
+						"name": "Rusnė Andrašūnaitė",
+						"city": "Šiauliai",
+						"points": null,
+						"rating": 1410
+					}
+				]
+			},
+			{
+				"name": "Youth Rapid 2022 U14",
+				"config": {
+					"time_control": "Blitz",
+					"format": "Individual",
+					"rank": "All",
+					"open": false,
+					"age_group": 14,
+					"gender": "Excl"
+				},
+				"date_start": "06-10",
+				"date_end": "06-11",
+				"results_link": "http://chess-results.com/tnr123456.aspx?lan=30&art=1&rd=9&turdet=YES",
+				"games_link": null,
+				"download_link": null,
+				"winners": [
+					{
+						"place": 1,
+						"name": "Player 1",
+						"city": "City 1",
+						"points": null,
+						"rating": 1800
+					},
+					{
+						"place": 2,
+						"name": "Player 2",
+						"city": "City 2",
+						"points": null,
+						"rating": 1750
+					},
+					{
+						"place": 3,
+						"name": "Player 3",
+						"city": "City 3",
+						"points": null,
+						"rating": 1700
+					}
+				],
+				"female_winners": [
+					{
+						"place": 1,
+						"name": "Female Player 4",
+						"city": "City 4",
+						"points": null,
+						"rating": 1600
+					},
+					{
+						"place": 2,
+						"name": "Female Player 5",
+						"city": "City 5",
+						"points": null,
+						"rating": 1550
+					},
+					{
+						"place": 3,
+						"name": "Female Player 6",
+						"city": "City 6",
+						"points": null,
+						"rating": 1500
+					}
+				]
+			},
+			{
+				"name": "Youth Rapid 2022 U12",
+				"config": {
+					"time_control": "Std",
+					"format": "Individual",
+					"rank": "All",
+					"open": false,
+					"age_group": 12,
+					"gender": "Excl"
+				},
+				"date_start": "07-15",
+				"date_end": "07-16",
+				"results_link": "http://chess-results.com/tnr789012.aspx?lan=30&art=1&rd=9&turdet=YES",
+				"games_link": null,
+				"download_link": null,
+				"winners": [
+					{
+						"place": 1,
+						"name": "Player 7",
+						"city": "City 7",
+						"points": null,
+						"rating": 1500
+					},
+					{
+						"place": 2,
+						"name": "Player 8",
+						"city": "City 8",
+						"points": null,
+						"rating": 1450
+					},
+					{
+						"place": 3,
+						"name": "Player 9",
+						"city": "City 9",
+						"points": null,
+						"rating": 1400
+					}
+				],
+				"female_winners": [
+					{
+						"place": 1,
+						"name": "Female Player 10",
+						"city": "City 10",
+						"points": null,
+						"rating": 1300
+					},
+					{
+						"place": 2,
+						"name": "Female Player 11",
+						"city": "City 11",
+						"points": null,
+						"rating": 1250
+					},
+					{
+						"place": 3,
+						"name": "Female Player 12",
+						"city": "City 12",
+						"points": null,
+						"rating": 1200
+					}
+				]
+			},
+			{
+				"name": "Youth Rapid 2022 U10",
+				"config": {
+					"time_control": "Blitz",
+					"format": "Individual",
+					"rank": "All",
+					"open": false,
+					"age_group": 10,
+					"gender": "Excl"
+				},
+				"date_start": "08-20",
+				"date_end": "08-21",
+				"results_link": "http://chess-results.com/tnr345678.aspx?lan=30&art=1&rd=9&turdet=YES",
+				"games_link": null,
+				"download_link": null,
+				"winners": [
+					{
+						"place": 1,
+						"name": "Player 13",
+						"city": "City 13",
+						"points": null,
+						"rating": 1400
+					},
+					{
+						"place": 2,
+						"name": "Player 14",
+						"city": "City 14",
+						"points": null,
+						"rating": 1350
+					},
+					{
+						"place": 3,
+						"name": "Player 15",
+						"city": "City 15",
+						"points": null,
+						"rating": 1300
+					}
+				],
+				"female_winners": [
+					{
+						"place": 1,
+						"name": "Female Player 16",
+						"city": "City 16",
+						"points": null,
+						"rating": 1200
+					},
+					{
+						"place": 2,
+						"name": "Female Player 17",
+						"city": "City 17",
+						"points": null,
+						"rating": 1150
+					},
+					{
+						"place": 3,
+						"name": "Female Player 18",
+						"city": "City 18",
+						"points": null,
+						"rating": 1100
+					}
+				]
+			},
+			{
+				"name": "Youth Rapid 2022 U8",
+				"config": {
+					"time_control": "Std",
+					"format": "Individual",
+					"rank": "All",
+					"open": false,
+					"age_group": 8,
+					"gender": "Excl"
+				},
+				"date_start": "09-25",
+				"date_end": "09-26",
+				"results_link": "http://chess-results.com/tnr901234.aspx?lan=30&art=1&rd=9&turdet=YES",
+				"games_link": null,
+				"download_link": null,
+				"winners": [
+					{
+						"place": 1,
+						"name": "Player 19",
+						"city": "City 19",
+						"points": null,
+						"rating": 1300
+					},
+					{
+						"place": 2,
+						"name": "Player 20",
+						"city": "City 20",
+						"points": null,
+						"rating": 1250
+					},
+					{
+						"place": 3,
+						"name": "Player 21",
+						"city": "City 21",
+						"points": null,
+						"rating": 1200
+					}
+				],
+				"female_winners": [
+					{
+						"place": 1,
+						"name": "Female Player 22",
+						"city": "City 22",
+						"points": null,
+						"rating": 1100
+					},
+					{
+						"place": 2,
+						"name": "Female Player 23",
+						"city": "City 23",
+						"points": null,
+						"rating": 1050
+					},
+					{
+						"place": 3,
+						"name": "Female Player 24",
+						"city": "City 24",
+						"points": null,
+						"rating": 1000
+					}
+				]
+			},
+			{
+				"name": "LŠL 2022 - Rapid u18",
+				"config": {
+					"time_control": "Rapid",
+					"format": "Team",
+					"rank": "All",
+					"open": false,
+					"age_group": 18,
+					"gender": null
+				},
+				"date_start": "08-20",
+				"date_end": "08-21",
+				"results_link": "http://chess-results.com/tnr345678.aspx?lan=30&art=1&rd=9&turdet=YES",
+				"games_link": null,
+				"download_link": null,
+				"location": "Klaipeda",
+				"team_winners": [
+					{
+						"place": 1,
+						"name": "Team Alpha",
+						"city": "Vilnius",
+						"members": [
+							"John Doe",
+							"Alex Johnson",
+							"Robert Smith",
+							"David Brown"
+						]
+					},
+					{
+						"place": 2,
+						"name": "Team Beta",
+						"city": "Vilnius",
+						"members": [
+							"John Doe",
+							"Alex Johnson",
+							"Alexander Thomas",
+							"Ethan Anderson"
+						]
+					},
+					{
+						"place": 3,
+						"name": "Team Gamma",
+						"city": "Vilnius",
+						"members": [
+							"Daniel Wilson",
+							"Joseph Taylor",
+							"Benjamin Garcia",
+							"Samuel Martinez"
+						]
+					}
+				],
+				"female_team_winners": [
+					{
+						"place": 1,
+						"name": "Team Rose",
+						"city": "Kaunas",
+						"members": [
+							"Emily White",
+							"Sophia Davis",
+							"Emma Wilson",
+							"Olivia Garcia"
+						]
+					},
+					{
+						"place": 2,
+						"name": "Team Tulip",
+						"city": "Kaunas",
+						"members": [
+							"Isabella Brown",
+							"Sophia Taylor",
+							"Mia Robinson",
+							"Charlotte Clark"
+						]
+					},
+					{
+						"place": 3,
+						"name": "Team Rose2",
+						"city": "Kaunas",
+						"members": [
+							"Emily White",
+							"Sophia Davis",
+							"Mia Robinson",
+							"Charlotte Clark"
+						]
+					}
+				]
+			},
+			{
+				"name": "LŠL 2022 - Rapid u14",
+				"config": {
+					"time_control": "Rapid",
+					"format": "Team",
+					"rank": "All",
+					"open": false,
+					"age_group": 14,
+					"gender": null
+				},
+				"results_link": "\"http://chess-results.com/tnr616034.aspx?lan=30&art=0&rd=7&turdet=YES\"",
+				"games_link": "\"https://view.livechesscloud.com/#89702b24-cdc9-4e4c-8c33-74fce9281718\"",
+				"team_winners": [
+					{
+						"place": 1,
+						"name": "Boys' Team A",
+						"city": "Vilnius",
+						"members": [
+							"Lucas Adams",
+							"Oliver Turner",
+							"Leo Richardson",
+							"Max Foster",
+							"Ethan Grayson"
+						]
+					},
+					{
+						"place": 2,
+						"name": "Boys' Team B",
+						"city": "Kaunas",
+						"members": [
+							"Owen Parker",
+							"Caleb Brooks",
+							"Hunter Bell",
+							"Gabriel Hughes",
+							"Isaac Evans"
+						]
+					},
+					{
+						"place": 3,
+						"name": "Boys' Team C",
+						"city": "Kaunas",
+						"members": [
+							"Owen Parker",
+							"Caleb Brooks",
+							"Hunter Bell",
+							"Gabriel Hughes",
+							"Isaac Evans"
+						]
+					}
+				],
+				"female_team_winners": [
+					{
+						"place": 1,
+						"name": "Girls' Team X",
+						"city": "Vilnius",
+						"members": [
+							"Sophia Collins",
+							"Ava Phillips",
+							"Mia Reed",
+							"Emily Perry",
+							"Ella Foster"
+						]
+					},
+					{
+						"place": 2,
+						"name": "Girls' Team Y",
+						"city": "Kaunas",
+						"members": [
+							"Grace Murphy",
+							"Lily Bryant",
+							"Chloe Wood",
+							"Zoey Watson",
+							"Harper Foster"
+						]
+					},
+					{
+						"place": 3,
+						"name": "Girls' Team Z",
+						"city": "Kaunas",
+						"members": [
+							"Zoey Watson",
+							"Harper Foster",
+							"Mia Reed",
+							"Emily Perry"
+						]
+					}
+				]
+			},
+			{
+				"name": "LŠL 2022 - Rapid u10/11",
+				"config": {
+					"time_control": "Rapid",
+					"format": "Team",
+					"rank": "All",
+					"open": false,
+					"age_group": 10,
+					"gender": null
+				},
+				"team_winners": [
+					{
+						"place": 1,
+						"name": "Boys' Team Alpha",
+						"city": "Vilnius",
+						"members": [
+							"Liam Bennett",
+							"Noah Scott",
+							"Ethan Reed",
+							"James Garcia",
+							"Daniel Watson"
+						]
+					},
+					{
+						"place": 2,
+						"name": "Boys' Team Beta",
+						"city": "Vilnius",
+						"members": [
+							"Elijah White",
+							"David Hill",
+							"Logan King",
+							"Lucas Young",
+							"Nathan Green"
+						]
+					},
+					{
+						"place": 3,
+						"name": "Boys' Team Gamma",
+						"city": "Vilnius",
+						"members": [
+							"Logan King",
+							"Lucas Young",
+							"Ethan Reed",
+							"James Garcia",
+							"Daniel Watson"
+						]
+					}
+				],
+				"female_team_winners": [
+					{
+						"place": 1,
+						"name": "Girls' Team Delta",
+						"city": "Kaunas",
+						"members": [
+							"Olivia Lewis",
+							"Sophia Young",
+							"Lily Clark",
+							"Ava Adams",
+							"Mia Turner"
+						]
+					},
+					{
+						"place": 2,
+						"name": "Girls' Team Beta",
+						"city": "Kaunas",
+						"members": [
+							"Zoe Parker",
+							"Chloe Evans",
+							"Emily Baker",
+							"Grace Brown",
+							"Lily Hall"
+						]
+					},
+					{
+						"place": 3,
+						"name": "Girls' Team Beta",
+						"city": "Kaunas",
+						"members": [
+							"Sophia Young",
+							"Lily Clark",
+							"Ava Adams",
+							"Grace Brown",
+							"Lily Hall"
+						]
+					}
+				]
+			},
+			{
+				"name": "LŠL 2022 - Blitz u18",
+				"config": {
+					"time_control": "Blitz",
+					"format": "Team",
+					"rank": "All",
+					"open": false,
+					"age_group": 18,
+					"gender": null
+				},
+				"team_winners": [
+					{
+						"place": 1,
+						"name": "Boys' Team Zeta",
+						"city": "Vilnius",
+						"members": [
+							"Elijah White",
+							"David Hill",
+							"Logan King",
+							"Lucas Young",
+							"Nathan Green"
+						]
+					},
+					{
+						"place": 2,
+						"name": "Boys' Team B",
+						"city": "Kaunas",
+						"members": [
+							"Owen Parker",
+							"Caleb Brooks",
+							"Hunter Bell",
+							"Gabriel Hughes",
+							"Isaac Evans"
+						]
+					},
+					{
+						"place": 3,
+						"name": "Boys' Team C",
+						"city": "Kaunas",
+						"members": [
+							"Owen Parker",
+							"Caleb Brooks",
+							"Hunter Bell",
+							"Gabriel Hughes",
+							"Isaac Evans"
+						]
+					}
+				],
+				"female_team_winners": [
+					{
+						"place": 1,
+						"name": "Girls' Team Beta",
+						"city": "Kaunas",
+						"members": [
+							"Zoe Parker",
+							"Chloe Evans",
+							"Emily Baker",
+							"Grace Brown",
+							"Lily Hall"
+						]
+					},
+					{
+						"place": 2,
+						"name": "Girls' Team Y",
+						"city": "Kaunas",
+						"members": [
+							"Grace Murphy",
+							"Lily Bryant",
+							"Chloe Wood",
+							"Zoey Watson",
+							"Harper Foster"
+						]
+					},
+					{
+						"place": 3,
+						"name": "Girls' Team Z",
+						"city": "Kaunas",
+						"members": [
+							"Zoey Watson",
+							"Harper Foster",
+							"Mia Reed",
+							"Emily Perry"
+						]
+					}
+				]
+			},
+			{
+				"name": "LŠL 2022 - Blitz u14",
+				"config": {
+					"time_control": "Blitz",
+					"format": "Team",
+					"rank": "All",
+					"open": false,
+					"age_group": 14,
+					"gender": null
+				},
+				"team_winners": [
+					{
+						"place": 1,
+						"name": "Boys' Team Gamma",
+						"city": "Vilnius",
+						"members": [
+							"Mason Cooper",
+							"Henry Wright",
+							"Carter Lewis",
+							"Leo Roberts",
+							"Michael Turner"
+						]
+					},
+					{
+						"place": 2,
+						"name": "Boys' Team B",
+						"city": "Kaunas",
+						"members": [
+							"Henry Wright",
+							"Carter Lewis",
+							"Hunter Bell",
+							"Gabriel Hughes",
+							"Isaac Evans"
+						]
+					},
+					{
+						"place": 3,
+						"name": "Boys' Team C",
+						"city": "Kaunas",
+						"members": [
+							"Owen Parker",
+							"Caleb Brooks",
+							"Hunter Bell",
+							"Gabriel Hughes",
+							"Isaac Evans"
+						]
+					}
+				],
+				"female_team_winners": [
+					{
+						"place": 1,
+						"name": "Girls' Team Epsilon",
+						"city": "Kaunas",
+						"members": [
+							"Zara Hill",
+							"Madison Green",
+							"Ella Murphy",
+							"Aria Hall",
+							"Scarlett Johnson"
+						]
+					},
+					{
+						"place": 2,
+						"name": "Girls' Team Y",
+						"city": "Kaunas",
+						"members": [
+							"Grace Murphy",
+							"Lily Bryant",
+							"Chloe Wood",
+							"Zoey Watson",
+							"Harper Foster"
+						]
+					},
+					{
+						"place": 3,
+						"name": "Girls' Team Z",
+						"city": "Kaunas",
+						"members": [
+							"Zoey Watson",
+							"Harper Foster",
+							"Mia Reed",
+							"Emily Perry"
+						]
+					}
+				]
+			},
+			{
+				"name": "LŠL 2022 - Blitz u10/11",
+				"config": {
+					"time_control": "Blitz",
+					"format": "Team",
+					"rank": "All",
+					"open": false,
+					"age_group": 10,
+					"gender": null
+				},
+				"results_link": "\"http://chess-results.com/tnr616034.aspx?lan=30&art=0&rd=7&turdet=YES\"",
+				"games_link": "\"https://view.livechesscloud.com/#89702b24-cdc9-4e4c-8c33-74fce9281718\"",
+				"team_winners": [
+					{
+						"place": 1,
+						"name": "Boys' Team Omega",
+						"city": "Vilnius",
+						"members": [
+							"Jack Baker",
+							"Mason Adams",
+							"Hudson Clark",
+							"Ryan Roberts",
+							"Owen Turner"
+						]
+					},
+					{
+						"place": 2,
+						"name": "Boys' Team B",
+						"city": "Kaunas",
+						"members": [
+							"Owen Parker",
+							"Caleb Brooks",
+							"Hunter Bell",
+							"Gabriel Hughes",
+							"Isaac Evans"
+						]
+					},
+					{
+						"place": 3,
+						"name": "Boys' Team C",
+						"city": "Kaunas",
+						"members": [
+							"Owen Parker",
+							"Caleb Brooks",
+							"Hunter Bell",
+							"Gabriel Hughes",
+							"Isaac Evans"
+						]
+					}
+				],
+				"female_team_winners": [
+					{
+						"place": 1,
+						"name": "Girls' Team Theta",
+						"city": "Kaunas",
+						"members": [
+							"Addison Evans",
+							"Hannah White",
+							"Brooklyn Scott",
+							"Zoey Wright",
+							"Layla Murphy"
+						]
+					},
+					{
+						"place": 2,
+						"name": "Girls' Team Y",
+						"city": "Kaunas",
+						"members": [
+							"Grace Murphy",
+							"Lily Bryant",
+							"Chloe Wood",
+							"Zoey Watson",
+							"Harper Foster"
+						]
+					},
+					{
+						"place": 3,
+						"name": "Girls' Team Z",
+						"city": "Kaunas",
+						"members": [
+							"Zoey Watson",
+							"Harper Foster",
+							"Mia Reed",
+							"Emily Perry"
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": 2021,
+		"tournaments": [
+			{
+				"name": "LŠL 2021",
+				"config": {
+					"time_control": "Std",
+					"format": "Team",
+					"rank": "All",
+					"open": false,
+					"age_group": null,
+					"gender": "Open"
+				},
+				"date_start": null,
+				"date_end": null,
+				"results_link": "\"http://chess-results.com/tnr616034.aspx?lan=30&art=0&rd=7&turdet=YES\"",
+				"games_link": "\"https://view.livechesscloud.com/#89702b24-cdc9-4e4c-8c33-74fce9281718\"",
+				"team_winners": [
+					{
+						"place": 1,
+						"name": "MRU-ROSK Consulting",
+						"city": "Vilnius",
+						"members": [
+							"GM Tomas Laurušas",
+							"GM Paulius Pultinevičius",
+							"FM Rokas Klabis",
+							"IM Vaidas Sakalauskas",
+							"FM Tautvydas Vedrickas",
+							"Vaidas Šetkauskas",
+							"Augustas Vaškevičius"
+						]
+					},
+					{
+						"place": 2,
+						"name": "ŠBK Kaunas",
+						"city": null,
+						"members": [
+							"FM Karolis Jukšta",
+							"Pijus Stremavičius",
+							"IM Vytautas Vaznonis",
+							"Šarūnas Germanavičius",
+							"Pijus Greičius",
+							"Aistis Butvilas",
+							"WIM Salomėja Zaksaitė",
+							"Timur Baliasnyj",
+							"Benas Mickus"
+						]
+					},
+					{
+						"place": 3,
+						"name": "Margiris-1",
+						"city": "Kaunas",
+						"members": [
+							"GM Šarūnas Šulskis",
+							"GM Ilmars Starostits",
+							"Stasys Steponavičius",
+							"FM Tomas Tvarijonas",
+							"Aras Jonas Lazaravičius",
+							"Tomas Tamošiūnas",
+							"Tautvydas Šiugždinis",
+							"Titas Bosikis"
+						]
+					}
+				]
+			},
+			{
+				"name": "LŠL 2022 - Blitz",
+				"config": {
+					"time_control": "Blitz",
+					"format": "Team",
+					"rank": "All",
+					"open": false,
+					"age_group": null,
+					"gender": "Open"
+				},
+				"date_start": "12-12",
+				"date_end": null,
+				"location": "Kaunas",
+				"results_link": "\"http://chess-results.com/tnr616034.aspx?lan=30&art=0&rd=7&turdet=YES\"",
+				"games_link": "\"https://view.livechesscloud.com/#89702b24-cdc9-4e4c-8c33-74fce9281718\"",
+				"team_winners": [
+					{
+						"place": 1,
+						"name": "Mixed Team 4",
+						"city": "Vilnius",
+						"members": [
+							"GM Tomas Laurušas",
+							"GM Paulius Pultinevičius",
+							"FM Rokas Klabis",
+							"WIM Salomėja Zaksaitė",
+							"IM Eva Example"
+						]
+					},
+					{
+						"place": 2,
+						"name": "Mixed Team 5",
+						"city": null,
+						"members": [
+							"FM Karolis Jukšta",
+							"Pijus Stremavičius",
+							"IM Vytautas Vaznonis",
+							"Aistis Butvilas",
+							"WIM Anna Example"
+						]
+					},
+					{
+						"place": 3,
+						"name": "Mixed Team 6",
+						"city": "Kaunas",
+						"members": [
+							"GM Šarūnas Šulskis",
+							"GM Ilmars Starostits",
+							"Titas Bosikis",
+							"WIM Laura Example"
+						]
+					}
+				]
+			},
+			{
+				"name": "Youth Rapid 2021 U18",
+				"config": {
+					"time_control": "Rapid",
+					"format": "Individual",
+					"rank": "All",
+					"open": false,
+					"age_group": 18,
+					"gender": "Excl"
+				},
+				"date_start": "05-21",
+				"date_end": "05-22",
+				"results_link": "\"http://chess-results.com/tnr638608.aspx?lan=30&art=1&rd=9&turdet=YES\"",
+				"games_link": null,
+				"winners": [
+					{
+						"place": 1,
+						"name": "Matas Indriūnas",
+						"city": "Vilnius",
+						"points": null,
+						"rating": 2050
+					},
+					{
+						"place": 2,
+						"name": "Pijus Greičius",
+						"city": "Kaunas",
+						"points": null,
+						"rating": 1938
+					},
+					{
+						"place": 3,
+						"name": "Dangis Bagdanskis",
+						"city": "Šiauliai",
+						"points": null,
+						"rating": 1922
+					}
+				],
+				"female_winners": [
+					{
+						"place": 1,
+						"name": "Jorė Balčiūnaitė",
+						"city": "Gargždai",
+						"points": null,
+						"rating": 1290
+					},
+					{
+						"place": 2,
+						"name": "Ieva Grikšaitė",
+						"city": "Šiauliai",
+						"points": null,
+						"rating": 1561
+					},
+					{
+						"place": 3,
+						"name": "Simona Perminaitė",
+						"city": "Kaunas",
+						"points": null,
+						"rating": 1424
+					}
+				]
+			},
+			{
+				"name": "Open Rapid 2021",
+				"config": {
+					"time_control": "Rapid",
+					"format": "Individual",
+					"rank": "All",
+					"open": true,
+					"age_group": null,
+					"gender": "Open"
+				},
+				"date_start": "07-04",
+				"date_end": "07-05",
+				"results_link": "\"http://chess-results.com/tnr529592.aspx?lan=1&art=1&rd=11&turdet=YES&flag=30\"",
+				"games_link": null,
+				"winners": [
+					{
+						"place": 1,
+						"name": "IM Tomas Laurušas",
+						"country": null,
+						"points": null,
+						"rating": 2586
+					},
+					{
+						"place": 2,
+						"name": "GM Bartlomiej Heberla",
+						"country": "Lenkija",
+						"points": null,
+						"rating": 2527
+					},
+					{
+						"place": 3,
+						"name": "GM Daniel Fridman",
+						"country": "Vokietija",
+						"points": null,
+						"rating": 2610
+					}
+				],
+				"ltu_winners": [
+					{
+						"place": 1,
+						"name": "IM Tomas Laurušas",
+						"points": null,
+						"rating": 2586
+					},
+					{
+						"place": 2,
+						"name": "GM Šarūnas Šulskis",
+						"points": null,
+						"rating": 2540
+					},
+					{
+						"place": 3,
+						"name": "FM Dmitrijus Chocenka",
+						"points": null,
+						"rating": 2309
+					}
+				],
+				"female_winners": [
+					{
+						"place": 1,
+						"name": "Gabija Šimkūnaitė",
+						"points": null,
+						"rating": 1881
+					},
+					{
+						"place": 2,
+						"name": "WIM Salomėja Zaksaitė",
+						"points": null,
+						"rating": 2160
+					},
+					{
+						"place": 3,
+						"name": "WFM Vesta Kasputė",
+						"points": null,
+						"rating": 1982
+					}
+				]
+			},
+			{
+				"name": "Std Tournament 2021",
+				"config": {
+					"time_control": "Std",
+					"format": "Individual",
+					"rank": "All",
+					"open": true,
+					"age_group": null,
+					"gender": "Open"
+				},
+				"date_start": "08-10",
+				"date_end": "08-12",
+				"results_link": "http://chess-results.com/tnrXXXXXX.aspx",
+				"games_link": null,
+				"winners": [
+					{
+						"place": 1,
+						"name": "Player AA",
+						"points": null,
+						"rating": 2500
+					},
+					{
+						"place": 2,
+						"name": "Player B",
+						"points": null,
+						"rating": 2450
+					},
+					{
+						"place": 3,
+						"name": "Player C",
+						"points": null,
+						"rating": 2400
+					}
+				],
+				"female_winners": [
+					{
+						"place": 1,
+						"name": "Female Player A",
+						"points": null,
+						"rating": 2500
+					},
+					{
+						"place": 2,
+						"name": "Female Player B",
+						"points": null,
+						"rating": 2450
+					},
+					{
+						"place": 3,
+						"name": "Female Player C",
+						"points": null,
+						"rating": 2400
+					}
+				]
+			},
+			{
+				"name": "Blitz Tournament 2021",
+				"config": {
+					"time_control": "Blitz",
+					"format": "Individual",
+					"rank": "All",
+					"open": true,
+					"age_group": null,
+					"gender": "Open"
+				},
+				"date_start": "09-05",
+				"date_end": "09-06",
+				"results_link": "http://chess-results.com/tnrYYYYYY.aspx",
+				"games_link": null,
+				"winners": [
+					{
+						"place": 1,
+						"name": "Player X",
+						"points": null,
+						"rating": 2600
+					},
+					{
+						"place": 2,
+						"name": "Player Y",
+						"points": null,
+						"rating": 2550
+					},
+					{
+						"place": 3,
+						"name": "Player Z",
+						"points": null,
+						"rating": 2450
+					}
+				],
+				"female_winners": [
+					{
+						"place": 1,
+						"name": "Female Player X",
+						"points": null,
+						"rating": 2600
+					},
+					{
+						"place": 2,
+						"name": "Female Player Y",
+						"points": null,
+						"rating": 2550
+					},
+					{
+						"place": 3,
+						"name": "Female Player Z",
+						"points": null,
+						"rating": 2450
+					}
+				],
+				"ltu_women_winners": [
+					{
+						"place": 1,
+						"name": "Female Player Xx",
+						"points": null,
+						"rating": 2600
+					},
+					{
+						"place": 2,
+						"name": "Female Player Yy",
+						"points": null,
+						"rating": 2550
+					},
+					{
+						"place": 3,
+						"name": "Female Player Zz",
+						"points": null,
+						"rating": 2450
+					}
+				]
+			},
+			{
+				"name": "Multi-Control Tournament 2021",
+				"config": {
+					"time_control": "Std",
+					"format": "Individual",
+					"rank": "All",
+					"open": true,
+					"age_group": null,
+					"gender": "Open"
+				},
+				"date_start": "10-15",
+				"date_end": "10-17",
+				"results_link": "http://chess-results.com/tnrZZZZZZ.aspx",
+				"games_link": null,
+				"winners": [
+					{
+						"place": 1,
+						"name": "Player P",
+						"points": null,
+						"rating": 2650
+					},
+					{
+						"place": 2,
+						"name": "Player Q",
+						"points": null,
+						"rating": 2600
+					},
+					{
+						"place": 3,
+						"name": "Player R",
+						"points": null,
+						"rating": 2550
+					}
+				],
+				"female_winners": [
+					{
+						"place": 1,
+						"name": "Female Player X",
+						"points": null,
+						"rating": 2600
+					},
+					{
+						"place": 2,
+						"name": "Female Player Y",
+						"points": null,
+						"rating": 2550
+					},
+					{
+						"place": 3,
+						"name": "Female Player Z",
+						"points": null,
+						"rating": 2450
+					}
+				]
+			},
+			{
+				"name": "Rapid Tournament 2021",
+				"config": {
+					"time_control": "Rapid",
+					"format": "Individual",
+					"rank": "All",
+					"open": true,
+					"age_group": null,
+					"gender": "Open"
+				},
+				"date_start": "11-05",
+				"date_end": "11-06",
+				"results_link": "http://chess-results.com/tnrAAAAAA.aspx",
+				"games_link": null,
+				"winners": [
+					{
+						"place": 1,
+						"name": "Player P",
+						"points": null,
+						"rating": 2650
+					},
+					{
+						"place": 2,
+						"name": "Player Q",
+						"points": null,
+						"rating": 2600
+					},
+					{
+						"place": 3,
+						"name": "Player R",
+						"points": null,
+						"rating": 2550
+					}
+				],
+				"female_winners": [
+					{
+						"place": 1,
+						"name": "Female Player X",
+						"points": null,
+						"rating": 2600
+					},
+					{
+						"place": 2,
+						"name": "Female Player Y",
+						"points": null,
+						"rating": 2550
+					},
+					{
+						"place": 3,
+						"name": "Female Player Z",
+						"points": null,
+						"rating": 2450
+					}
+				],
+				"ltu_winners": [
+					{
+						"place": 1,
+						"name": "Player A",
+						"points": null,
+						"rating": 2550
+					},
+					{
+						"place": 2,
+						"name": "Player B",
+						"points": null,
+						"rating": 2500
+					},
+					{
+						"place": 3,
+						"name": "Player C",
+						"points": null,
+						"rating": 2450
+					}
+				]
+			},
+			{
+				"name": "Blitz Tournament 2021",
+				"config": {
+					"time_control": "Blitz",
+					"format": "Individual",
+					"rank": "All",
+					"open": true,
+					"age_group": null,
+					"gender": "Open"
+				},
+				"date_start": "12-10",
+				"date_end": "12-11",
+				"results_link": "http://chess-results.com/tnrBBBBBB.aspx",
+				"games_link": null,
+				"winners": [
+					{
+						"place": 1,
+						"name": "Player P",
+						"points": null,
+						"rating": 2650
+					},
+					{
+						"place": 2,
+						"name": "Player Q",
+						"points": null,
+						"rating": 2600
+					},
+					{
+						"place": 3,
+						"name": "Player R",
+						"points": null,
+						"rating": 2550
+					}
+				],
+				"female_winners": [
+					{
+						"place": 1,
+						"name": "Female Player X",
+						"points": null,
+						"rating": 2600
+					},
+					{
+						"place": 2,
+						"name": "Female Player Y",
+						"points": null,
+						"rating": 2550
+					},
+					{
+						"place": 3,
+						"name": "Female Player Z",
+						"points": null,
+						"rating": 2450
+					}
+				],
+				"ltu_winners": [
+					{
+						"place": 1,
+						"name": "Player X",
+						"points": null,
+						"rating": 2600
+					},
+					{
+						"place": 2,
+						"name": "Player Y",
+						"points": null,
+						"rating": 2550
+					},
+					{
+						"place": 3,
+						"name": "Player Z",
+						"points": null,
+						"rating": 2450
+					}
+				]
+			}
+		]
+	}
+]

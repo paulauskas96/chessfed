@@ -1,0 +1,210 @@
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "@wordpress/api-fetch":
+/*!**********************************!*\
+  !*** external ["wp","apiFetch"] ***!
+  \**********************************/
+/***/ ((module) => {
+
+module.exports = window["wp"]["apiFetch"];
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+(() => {
+/*!**********************************!*\
+  !*** ./src/teamstdadult/view.js ***!
+  \**********************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/api-fetch */ "@wordpress/api-fetch");
+/* harmony import */ var _wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_0__);
+
+(function ($) {
+  document.addEventListener("DOMContentLoaded", function () {
+    // Function to fetch and display the tournaments based on the gender and time control
+    function fetchAndDisplayTournaments(gender) {
+      $("#loading").show();
+      _wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_0___default()({
+        path: "/sample/v1/data"
+      }).then(data => {
+        let response = data.map(yearData => {
+          let filteredTournaments = yearData.tournaments.filter(tournament => {
+            return tournament.config.format === "Team" && tournament.config.time_control === "Std" && tournament.config.age_group === null && (gender === "Male" && (tournament.config.gender == null || tournament.config.gender === "Open") || gender === "Female" && tournament.config.gender === "Women");
+          });
+          if (filteredTournaments.length > 0) {
+            return filteredTournaments.map(tournament => {
+              return {
+                ...tournament,
+                year: yearData.year
+              };
+            });
+          }
+        }).filter(Boolean).flat();
+        // Function to initialize the DataTable
+        function initializeDataTable(winners) {
+          if ($.fn.DataTable.isDataTable("#myTable")) {
+            $("#myTable").DataTable().clear().destroy();
+          }
+          $("#myTable").DataTable({
+            ordering: false,
+            lengthChange: false,
+            responsive: true,
+            data: response,
+            language: {
+              zeroRecords: "Įrašų nėra",
+              info: "Puslapis _PAGE_ / _PAGES_",
+              infoEmpty: "Įrašų nėra",
+              infoFiltered: "(iš _MAX_)",
+              search: "Paieška:",
+              paginate: {
+                first: "First",
+                last: "Last",
+                next: ">",
+                previous: "<"
+              }
+            },
+            columns: [{
+              data: "year"
+            }, {
+              data: null,
+              render: function (data, type, row) {
+                let winnersList = "";
+                if (row[winners]) {
+                  var _row$location;
+                  winnersList += `<h4> ${(_row$location = row.location) !== null && _row$location !== void 0 ? _row$location : ""} </h4>`;
+                  row[winners].forEach((winner, index) => {
+                    let className = index === 0 ? "first-item" : "";
+                    winnersList += `
+													<details>
+														<summary class="${className}">${winner.place}. ${winner.name}${winner.city ? ` (${winner.city})` : ""}</summary>
+														<ul>`;
+                    winner.members.forEach(member => {
+                      winnersList += `<li>${member}</li>`;
+                    });
+                    winnersList += `
+														</ul>
+													</details>`;
+                  });
+                }
+                return winnersList;
+              }
+            }, {
+              data: null,
+              render: function (data, type, row) {
+                let links = "";
+                if (row.results_link) {
+                  links += `<a classname="underline" href="${row.results_link} target="_blank"">Rezultatai</a><br>`;
+                }
+                if (row.games_link) {
+                  links += `<a classname="underline" href="${row.games_link} target="_blank"">Partijos</a><br>`;
+                }
+                if (row.download_link) {
+                  links += `<a classname="underline" href="${row.download_link} target="_blank"">Atsisųsti</a><br>`;
+                }
+                return links;
+              }
+            }]
+          });
+        }
+        $("#loading").hide();
+        // Initialize the DataTable with the 'winners' array
+        initializeDataTable(gender === "Male" ? "team_winners" : "team_winners");
+      }).catch(error => {
+        console.error("Error:", error);
+        // Hide the loading animation in case of error
+        $("#loading").hide();
+      });
+    }
+
+    // Fetch and display the tournaments for the initial gender and time control
+    fetchAndDisplayTournaments("Male");
+
+    // Add event listeners to the buttons
+    document.getElementById("maleButton").addEventListener("click", function () {
+      fetchAndDisplayTournaments("Male");
+      this.classList.add("active");
+      document.getElementById("femaleButton").classList.remove("active");
+    });
+    document.getElementById("femaleButton").addEventListener("click", function () {
+      fetchAndDisplayTournaments("Female");
+      this.classList.add("active");
+      document.getElementById("maleButton").classList.remove("active");
+    });
+  });
+})(jQuery);
+})();
+
+/******/ })()
+;
+//# sourceMappingURL=view.js.map
