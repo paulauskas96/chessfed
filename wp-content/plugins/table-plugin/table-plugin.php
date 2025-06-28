@@ -43,7 +43,6 @@ function render_chess_ratings_block($attributes)
 {
 	// Load the data from the JSON file.
 	$dataPath = __DIR__ . '/PhpScraping/data.json';
-	// $dataPath = __DIR__ . '/WebScraping/data.json';
 	$data = json_decode(file_get_contents($dataPath), true);
 
 	// Get the category from the block attributes.

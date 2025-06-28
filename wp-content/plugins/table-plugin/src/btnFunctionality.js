@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
 			// Get the category from the button's data attribute
 			const category = event.target.dataset.category;
 			// Fetch the new table data from data.json
-			// fetch("/wp-content/plugins/table-plugin/WebScraping/data.json")
 			fetch("/wp-content/plugins/table-plugin/PhpScraping/data.json")
 				.then((response) => response.json())
 				.then((data) => {
@@ -62,7 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		categorySelect.addEventListener("change", function () {
 			const selectedCategory = categorySelect.value;
 			// Fetch and update the table based on the selected category
-			// fetch("/wp-content/plugins/table-plugin/WebScraping/data.json")
 			fetch("/wp-content/plugins/table-plugin/PhpScraping/data.json")
 				.then((response) => response.json())
 				.then((data) => {

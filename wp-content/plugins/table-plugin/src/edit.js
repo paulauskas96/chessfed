@@ -2,7 +2,6 @@ import { __ } from "@wordpress/i18n";
 import { useBlockProps } from "@wordpress/block-editor";
 import "./editor.scss";
 import React, { useState } from "react";
-// import data from "../WebScraping/data.json";
 import data from "../PhpScraping/data.json";
 import { CheckboxControl } from "@wordpress/components";
 import { InspectorControls } from "@wordpress/block-editor";
