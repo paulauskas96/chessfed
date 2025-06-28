@@ -400,55 +400,107 @@ tournaments:
         name: Augustė Ovčinikova
         rating: 1698
         city: Vilkaviškis
-  - name: LTU ch 2024 Finalas TODO_EDIT
+  - name: LTU B18 ch 2025
     config:
-      time_control: StdTODO_EDIT
+      time_control: Std
+      format: Individual
+      rank: Įskaita pusfinalyje
+      open: false
+      age_group: 18
+      gender: Open
+    location: Kaunas
+    date_start: 03 11
+    date_end: 03 16
+    results_link: https://chess-results.com/tnr1131236.aspx?lan=1&art=1&rd=8&turdet=YES
+    games_link: https://lichess.org/broadcast/ltu-pusfinalis-2025/6ifK0oS9
+    winners:
+      - place: 1
+        name: FM Gleb Pidlužnij
+        rating: 2426
+        city: Kaunas
+      - place: 2
+        name: CM Augustinas Bazilius
+        rating: 2199
+        city: Vilnius
+      - place: 3
+        name: Karolis Gavėnavičius
+        rating: 2095
+        city: Vilnius
+  - name: LTU G18 ch 2025
+    config:
+      time_control: Std
+      format: Individual
+      rank: Įskaita pusfinalyje
+      open: false
+      age_group: 18
+      gender: Women
+    location: Kaunas
+    date_start: 03 11
+    date_end: 03 16
+    results_link: https://chess-results.com/tnr1131236.aspx?lan=1&art=1&rd=8&turdet=YES
+    games_link: https://lichess.org/broadcast/ltu-pusfinalis-2025/6ifK0oS9
+    winners:
+      - place: 1
+        name: Smiltė Cibulskytė
+        rating: 1718
+        city: Vilnius
+      - place: 2
+        name: Agnė Mickūnaitė
+        rating: 1918
+        city: Ukmergė
+      - place: 3
+        name: Ula Rudzinskaitė
+        rating: 1762
+        city: Vilnius
+  - name: LTU ch 2025 Finalas
+    config:
+      time_control: Std
       format: Individual
       rank: Finalas
       open: false
       age_group: null
       gender: Open
     location: Vilnius
-    date_start: 05 19
-    date_end: 05 26
-    results_link: https://chess-results.com/tnr932405.aspx?lan=30&art=1&turdet=YES
-    games_link: https://lichess.org/broadcast/lithuanian-championship-2024-final--men/UNoGQ9vS
+    date_start: 05 03
+    date_end: 05 10
+    results_link: https://chess-results.com/tnr1169753.aspx?lan=1&art=1&turdet=YES
+    games_link: https://lichess.org/broadcast/lithuanian-championship-2025-final/Wx9BeTZt
     winners:
       - place: 1
-        name: GM Tomas Laurušas
-        rating: 2576
+        name: GM Titas Stremavičius
+        rating: 2544
       - place: 2
-        name: FM Gleb Pidlužnij
-        rating: 2321
+        name: GM Valery Kazakouski
+        rating: 2582
       - place: 3
-        name: IM Pijus Stremavičius
-        rating: 2370
-  - name: LTU ch 2024 Pusfinalis TODO_EDIT
+        name: GM Paulius Pultinevičius
+        rating: 2566
+  - name: LTU ch 2025 Pusfinalis
     config:
-      time_control: StdTODO_EDIT
+      time_control: Std
       format: Individual
       rank: Pusfinalis
       open: false
       age_group: null
       gender: Open
     location: Kaunas
-    date_start: 03 06
-    date_end: 03 11
-    results_link: https://chess-results.com/tnr899844.aspx?lan=30&art=1&rd=8&turdet=YES
-    games_link: https://lichess.org/broadcast/ltu-ch-semifinal-2024/oJyrD4TP
+    date_start: 03 11
+    date_end: 03 16
+    results_link: https://chess-results.com/tnr1131236.aspx?lan=1&art=1&rd=8&turdet=YES
+    games_link: https://lichess.org/broadcast/ltu-pusfinalis-2025/6ifK0oS9
     winners:
       - place: 1
-        name: FM Tautvydas Vedrickas
-        rating: 2326
-      - place: 2
-        name: Žanas Nainys
-        rating: 2010
-      - place: 3
         name: FM Gleb Pidlužnij
-        rating: 2308
-  - name: LTU wch 2024 Finalas TODO_EDIT
+        rating: 2426
+      - place: 2
+        name: FM Gustas Morkūnas
+        rating: 2199
+      - place: 3
+        name: FM Sigitas Kalvaitis
+        rating: 2160
+  - name: LTU wch 2025 Finalas
     config:
-      time_control: StdTODO_EDIT
+      time_control: Std
       format: Individual
       rank: Finalas
       open: false
@@ -457,41 +509,41 @@ tournaments:
     location: Vilnius
     date_start: 05 22
     date_end: 05 26
-    results_link: https://chess-results.com/tnr932406.aspx?lan=30&art=1&turdet=YES
-    games_link: https://lichess.org/broadcast/lithuanian-championship-2024-final--women/RVn7WE1l
+    results_link: https://chess-results.com/tnr1169754.aspx?lan=1&art=1&turdet=YES
+    games_link: https://lichess.org/broadcast/lithuanian-women-championship-2025/hYtYe2HP
     winners:
       - place: 1
-        name: WIM Simona Limontaitė
-        rating: 2174
+        name: WGM Salomėja Zaksaitė
+        rating: 2119
       - place: 2
-        name: WFM Gabija Šimkūnaitė
-        rating: 1974
+        name: WGM Kamilė Baginskaitė
+        rating: 2149
       - place: 3
-        name: WFM Marija Šibajeva
-        rating: 1989
-  - name: LTU wch 2024 Pusfinalis (įskaita) TODO_EDIT
+        name: WFM Gabija Šimkūnaitė
+        rating: 2014
+  - name: LTU wch 2025 Pusfinalis (įskaita)
     config:
-      time_control: StdTODO_EDIT
+      time_control: Std
       format: Individual
       rank: Pusfinalis
       open: false
       age_group: null
       gender: Women
     location: Kaunas
-    date_start: 03 06
-    date_end: 03 11
-    results_link: https://chess-results.com/tnr899844.aspx?lan=30&art=1&rd=8&turdet=YES
-    games_link: https://lichess.org/broadcast/ltu-ch-semifinal-2024/oJyrD4TP
+    date_start: 03 11
+    date_end: 03 16
+    results_link: https://chess-results.com/tnr1131236.aspx?lan=1&art=1&rd=8&turdet=YES
+    games_link: https://lichess.org/broadcast/ltu-pusfinalis-2025/6ifK0oS9
     winners:
       - place: 1
-        name: WFM Margarita Baliūnienė
-        rating: 1931
+        name: Smiltė Cibulskytė
+        rating: 1718
       - place: 2
-        name: Guoda Perminaitė
-        rating: 1888
+        name: Agnė Mickūnaitė
+        rating: 1918
       - place: 3
-        name: WFM Marija Šibajeva
-        rating: 1997
+        name: Kotryna Šukytė
+        rating: 1884
   - name: LTU rapid ch 2024 TODO_EDIT
     config:
       time_control: RapidTODO_EDIT
