@@ -1,0 +1,199 @@
+year: 2008
+tournaments:
+  - name: LTU ch 2008 Finalas
+    config:
+      time_control: Std
+      format: Individual
+      rank: Finalas
+      open: false
+      age_group: null
+      gender: Open
+    location: Kaunas
+    date_start: 05 17
+    date_end: 05 25
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: GM Aloyzas Kveinys
+        rating: 2515
+      - place: 2
+        name: IM Darius Zagorskis
+        rating: 2493
+      - place: 3
+        name: GM Šarūnas Šulskis
+        rating: 2555
+  - name: LTU ch 2008 Pusfinalis
+    config:
+      time_control: Std
+      format: Individual
+      rank: Pusfinalis
+      open: false
+      age_group: null
+      gender: Open
+    location: Vilnius
+    date_start: 02 15
+    date_end: 02 21
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: IM Gediminas Šarakauskas
+      - place: 2
+        name: IM Vaidas Sakalauskas
+      - place: 3
+        name: Vytautas Vaznonis
+  - name: LTU wch 2008 Finalas
+    config:
+      time_control: Std
+      format: Individual
+      rank: Finalas
+      open: false
+      age_group: null
+      gender: Women
+    location: Panevėžys
+    date_start: 04 08
+    date_end: 04 14
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: WIM Deimantė Daulytė
+        rating: 2249
+      - place: 2
+        name: Jovita Žiogaitė
+        rating: 2060
+      - place: 3
+        name: WIM Živilė Šarakauskienė
+        rating: 2189
+  - name: LTU wch 2008 Pusfinalis
+    config:
+      time_control: Std
+      format: Individual
+      rank: Pusfinalis
+      open: false
+      age_group: null
+      gender: Women
+    location: Vilnius
+    date_start: 01 28
+    date_end: 02 02
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: WFM Simona Limontaitė
+        rating: 2152
+      - place: 2
+        name: Brigita Laurušaitė
+        rating: 1973
+      - place: 3
+        name: Kristina Apanavičiūtė
+        rating: 1959
+  - name: LSL 2007/08
+    config:
+      time_control: Std
+      format: Team
+      rank: 1
+      open: false
+      age_group: null
+      gender: null
+    location: Aukščiausioji lyga
+    results_link: http://bsk.puslapiai.lt/lenteles/2007/lsl/lsl.htm
+    games_link: null
+    team_winners:
+      - place: 1
+        name: VŠBK
+        city: Vilnius
+        members:
+          - GM Aloyzas Kveinys
+          - GM Vidmantas Mališauskas
+          - IM Darius Zagorskis
+          - IM Virginijus Grabliauskas
+          - WIM Salomėja Zaksaitė
+          - IM Virginijus Dambrauskas
+          - Vitalij Novikov
+          - FM Donatas Lapienis
+          - Marijonas Ročius
+          - Vygantė Milašiūtė
+      - place: 2
+        name: ŠK-Babilonas
+        city: Panevėžys
+        members:
+          - IM Ilmars Starostits
+          - IM Gediminas Šarakauskas
+          - IM Dagnė Čiukšytė
+          - IM Antanas Zapolskis
+          - WIM Živilė Šarakauskienė
+          - Gediminas Rastenis
+          - Emilis Pileckis
+          - Arūnas Rudys
+          - Steponas Viškelis
+          - Vilma Dambrauskaitė
+      - place: 3
+        name: Margiris-1
+        city: Kaunas
+        members:
+          - GM Šarūnas Šulskis
+          - GM Algimantas Butnorius
+          - IM Algirdas Bandza
+          - IM Aidas Labuckas
+          - Brigita Laurušaitė
+          - Domantas Klimčiauskas
+          - Laimutis Šolys
+          - Andrius Macionis
+          - Giedrius Šulskis
+          - Margarita Baliūnienė
+  - name: LSL 2007/08
+    config:
+      time_control: Std
+      format: Team
+      rank: 2
+      open: false
+      age_group: null
+      gender: null
+    location: Pirmoji lyga
+    results_link: http://bsk.puslapiai.lt/lenteles/2007/lsl/lsl.htm
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Margiris-2
+        city: Kaunas
+        members:
+          - IM Kęstutis Kaunas
+          - Vidmantas Einikis
+          - Tomas Laurušas
+          - Vytautas Simanaitis
+          - Miglė Lepeškaitė
+          - Povilas Lasinskas
+          - Tomas Tamošiūnas
+          - Ignas Balčiūnas
+          - Albertas Mažitovas
+          - Aušra Giedraitytė
+      - place: 2
+        name: AG
+        city: Kaunas
+        members:
+          - Kostas Mačiokas
+          - Rytis Ermalis
+          - Diana Ivoškaitė
+          - Vladas Lukjanovas
+          - Ieva Kuzminaitė
+          - Artūras Voroblievas
+          - Dangiras Kacevičius
+          - Vaidotas Bublys
+          - Aurimas Dikmonas
+          - Danutė Urbanavičiūtė
+      - place: 3
+        name: Mintis
+        city: Gargždai
+        members:
+          - Arvydas Mickus
+          - Rimvydas Lukošius
+          - Audrius Bitinas
+          - Vasilijus Čiornas
+          - Daiva Dieninė
+          - Arūnas Gincas
+          - Tomas Bitinas
+          - Zigmas Bitinas
+          - Darius Alekna
+          - Viktorija Ditmonaitė

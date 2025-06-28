@@ -1,0 +1,1300 @@
+year: 2015
+tournaments:
+  - name: LTU ch 2015 Finalas
+    config:
+      time_control: Std
+      format: Individual
+      rank: Finalas
+      open: false
+      age_group: null
+      gender: Open
+    location: Kaunas
+    date_start: 04 24
+    date_end: 04 30
+    results_link: http://chess-results.com/tnr170664.aspx?lan=30&art=4&turdet=YES&wi=984
+    games_link: null
+    winners:
+      - place: 1
+        name: GM Šarūnas Šulskis
+        rating: 2537
+      - place: 2
+        name: Titas Stremavičius
+        rating: 2435
+      - place: 3
+        name: GM Aloyzas Kveinys
+        rating: 2496
+  - name: LTU ch 2015 Pusfinalis
+    config:
+      time_control: Std
+      format: Individual
+      rank: Pusfinalis
+      open: false
+      age_group: null
+      gender: Open
+    location: Vilnius
+    date_start: 02 18
+    date_end: 02 24
+    results_link: http://chess-results.com/tnr161383.aspx?lan=30&art=1&rd=8
+    games_link: null
+    winners:
+      - place: 1
+        name: IM Vaidas Sakalauskas
+        rating: 2384
+      - place: 2
+        name: Vaidas Šetkauskas
+        rating: 2261
+      - place: 3
+        name: Juras Mickevičius
+        rating: 2312
+  - name: LTU wch 2015 Atviras turnyras
+    config:
+      time_control: Std
+      format: Individual
+      rank: Atviras turnyras
+      open: false
+      age_group: null
+      gender: Women
+    location: Vilnius
+    date_start: 02 18
+    date_end: 02 24
+    results_link: http://chess-results.com/tnr161384.aspx?lan=30&art=1&rd=8
+    games_link: null
+    winners:
+      - place: 1
+        name: WFM Daiva Batytė
+        rating: 2067
+      - place: 2
+        name: WIM Salomėja Zaksaitė
+        rating: 2182
+      - place: 3
+        name: WFM Vesta Kasputė
+        rating: 2062
+  - name: LTU rapid ch 2015
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: Panevėžys
+    date_start: 12 12
+    date_end: 12 13
+    results_link: http://chess-results.com/tnr191807.aspx?lan=30&art=1&rd=11&flag=30
+    games_link: null
+    winners:
+      - place: 1
+        name: IM Berzinsh Roland
+        country: Latvija
+        rating: 2542
+      - place: 2
+        name: GM Stupak Kiril
+        country: Baltarusija
+        rating: 2654
+      - place: 3
+        name: GM Vidmantas Mališauskas
+        country: null
+        rating: 2443
+    ltu_winners:
+      - place: 1
+        name: GM Vidmantas Mališauskas
+        country: null
+        rating: 2443
+      - place: 2
+        name: GM Aloyzas Kveinys
+        country: null
+        rating: 2532
+      - place: 3
+        name: FM Sigitas Kalvaitis
+        country: null
+        rating: 2324
+    women_winners:
+      - place: 1
+        name: WIM Anna Kantane, Lenkija
+        country: Lenkija (2132)
+        rating: 2132
+      - place: 2
+        name: WIM Salomėja Zaksaitė
+        country: null
+        rating: 2217
+      - place: 3
+        name: WFM Giedrė Vanagaitė
+        country: null
+        rating: 1996
+    ltu_women_winners:
+      - place: 1
+        name: WIM Salomėja Zaksaitė
+        country: null
+        rating: 2217
+      - place: 2
+        name: WFM Giedrė Vanagaitė
+        country: null
+        rating: 1996
+      - place: 3
+        name: Viktorija Beinoraitė
+        country: null
+        rating: 1997
+  - name: LTU blitz ch 2015
+    config:
+      time_control: Blitz
+      format: Individual
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: Panevėžys
+    date_start: 12 11
+    date_end: 12 11
+    results_link: http://chess-results.com/tnr191853.aspx?lan=30&art=1&rd=11&flag=30&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: GM Kirill Stupak
+        country: Baltarusija
+        rating: 2507
+      - place: 2
+        name: IM Titas Stremavičius
+        country: null
+        rating: 2450
+      - place: 3
+        name: Johnatan Bakalchuk
+        country: Izraelis
+        rating: 2265
+    ltu_winners:
+      - place: 1
+        name: IM Titas Stremavičius
+        country: null
+        rating: 2450
+      - place: 2
+        name: IM Emilis Pileckis
+        country: null
+        rating: 2448
+      - place: 3
+        name: IM Tomas Laurušas
+        country: null
+        rating: 2461
+    women_winners:
+      - place: 1
+        name: WIM Salomėja Zaksaitė
+        country: null
+        rating: 2146
+      - place: 2
+        name: WIM Anna Kantane
+        country: Latvija
+        rating: 2096
+      - place: 3
+        name: Viktorija Beinoraitė
+        country: null
+        rating: 1962
+    ltu_women_winners:
+      - place: 1
+        name: WIM Salomėja Zaksaitė
+        country: null
+        rating: 2146
+      - place: 2
+        name: Viktorija Beinoraitė
+        country: null
+        rating: 1962
+      - place: 3
+        name: Miglė Semonavičiūtė
+        country: null
+        rating: 1588
+  - name: LSL 2015
+    config:
+      time_control: Std
+      format: Team
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: ''
+    results_link: http://chess-results.com/tnr158482.aspx?lan=30&art=0&rd=7
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Gigant Chess
+        city: Panevėžys
+        members:
+          - GM Igor Kovalenko
+          - GM Arturs Neikšans
+          - GM Aloyzas Kveinys
+          - GM Andrei Kovalev
+          - GM Darius Zagorskis
+          - IM Pavel Shkapenko
+          - IM Virginijus Dambrauskas
+          - Rokas Klabis
+          - Andrius Brazdžionis
+          - Vitalij Novikov
+          - Darius Viškelis
+      - place: 2
+        name: Margiris 1
+        city: Kaunas
+        members:
+          - GM Šarūnas Šulskis
+          - GM Aleksander Mista
+          - GM Kaido Külaots
+          - IM Mindaugas Beinoras
+          - IM Tomas Laurušas
+          - Titas Stremavičius
+          - GM Algimantas Butnorius
+          - FM Tomas Tvarijonas
+          - Stasys Steponavičius
+      - place: 3
+        name: MRU
+        city: Vilnius
+        members:
+          - IM Oleg Krivonosov
+          - IM Vaidas Sakalauskas
+          - FM Tautvydas Vedrickas
+          - Vaidas Šetkauskas
+          - FM Julius Garnelis
+          - WIM Salomėja Zaksaitė
+          - Romanas Skrebnevskis
+          - Dominyka Batkovskytė
+          - Robertas Velioniškis
+  - name: LMSL 2015
+    config:
+      time_control: Std
+      format: Team
+      rank: null
+      open: false
+      age_group: null
+      gender: Women
+    location: null
+    results_link: http://chess-results.com/tnr158483.aspx?lan=30&art=0&rd=7
+    games_link: null
+    team_winners:
+      - place: 1
+        name: MRU-ROSK Consulting
+        city: Vilnius
+        members:
+          - WIM Salomėja Zaksaitė
+          - Dominyka Batkovskytė
+          - WFM Vesta Kasputė
+          - Jovita Vedrickienė
+          - Živilė Urbonavičiūtė
+      - place: 2
+        name: Margiris 1
+        city: Kaunas
+        members:
+          - WGM Ilze Berzina
+          - WCM Marija Šibajeva
+          - Saulė Gailiūnaitė
+      - place: 3
+        name: VŠK Bokštas 1
+        city: Plungė
+        members:
+          - WFM Laima Domarkaitė
+          - WFM Daiva Batytė
+          - Margarita Baliūnienė
+          - Ilona Civilkienė
+          - Ieva Žalimaitė
+          - Lina Buterlevičienė
+  - name: LTU team rapid ch 2015
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: Biržai
+    date_start: 10 10
+    date_end: 10 11
+    results_link: http://chess-results.com/tnr189343.aspx?lan=30&art=0&rd=7&turdet=YES
+    games_link: null
+    team_winners:
+      - place: 1
+        name: VŠK Bokštas-1
+        city: Plungė
+        members:
+          - IM Matas Narmontas
+          - FM Sigitas Kalvaitis
+          - Gytis Vaičekauskas
+          - Ieva Žalimaitė
+          - Lukas Jonkus
+      - place: 2
+        name: Gigant Chess
+        city: Panevėžys
+        members:
+          - Rokas Klabis
+          - IM Virginijus Dambrauskas
+          - IM Kęstutis Labeckas
+          - Rūta Jakaitytė
+      - place: 3
+        name: MRU
+        city: Vilnius
+        members:
+          - IM Laurušas Tomas
+          - IM Vaidas Sakalauskas
+          - FM Tautvydas Vedrickas
+          - Živilė Urbonavičiūtė
+          - Vaidas Šetkauskas
+  - name: LTU B18 ch 2015
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 18
+      gender: Open
+    location: Panevėžys
+    date_start: 03 30
+    date_end: 04 03
+    results_link: http://chess-results.com/tnr166848.aspx?lan=30&art=1&rd=7
+    games_link: null
+    winners:
+      - place: 1
+        name: Titas Stremavičius
+        rating: 2381
+        city: Kaunas
+      - place: 2
+        name: Andrius Brazdžionis
+        rating: 2204
+        city: Panevėžys
+      - place: 3
+        name: Marijus Vičas
+        rating: 2054
+        city: Šiauliai
+  - name: LTU B16 ch 2015
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 16
+      gender: Open
+    location: Panevėžys
+    date_start: 03 30
+    date_end: 04 03
+    results_link: http://chess-results.com/tnr166851.aspx?lan=30&art=1&rd=7
+    games_link: null
+    winners:
+      - place: 1
+        name: Lukas Stauskas
+        rating: 2069
+        city: Šiauliai
+      - place: 2
+        name: Nedas Jankevičius
+        rating: 1638
+        city: Šiauliai
+      - place: 3
+        name: Arnas Povilas Žukauskas
+        rating: 1814
+        city: Marijampolė
+  - name: LTU B14 ch 2015
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 14
+      gender: Open
+    location: Panevėžys
+    date_start: 03 30
+    date_end: 04 03
+    results_link: http://chess-results.com/tnr166852.aspx?lan=30&art=1&rd=8
+    games_link: null
+    winners:
+      - place: 1
+        name: Paulius Pultinevičius
+        rating: 2182
+        city: Marijampolė
+      - place: 2
+        name: Paulius Vaitkevičius
+        rating: 1930
+        city: Vilnius
+      - place: 3
+        name: Markas Černiauskas
+        rating: 1757
+        city: Kaunas
+  - name: LTU B12 ch 2015
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 12
+      gender: Open
+    location: Vilnius
+    date_start: 04 11
+    date_end: 04 13
+    results_link: http://chess-results.com/tnr168660.aspx?lan=30&art=1&rd=8
+    games_link: null
+    winners:
+      - place: 1
+        name: Karolis Jukšta
+        rating: 1760
+        city: Kaunas
+      - place: 2
+        name: Benas Mickus
+        rating: 1559
+        city: Kaunas
+      - place: 3
+        name: Augustas Gucaga
+        rating: 1599
+        city: Kaunas
+  - name: LTU B10 ch 2015
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 10
+      gender: Open
+    location: Vilnius
+    date_start: 04 11
+    date_end: 04 13
+    results_link: http://chess-results.com/tnr168661.aspx?lan=30&art=1&rd=8
+    games_link: null
+    winners:
+      - place: 1
+        name: Matas Indriūnas
+        rating: 1734
+        city: Vilnius
+      - place: 2
+        name: Dovydas Labanauskas
+        rating: 1272
+        city: Šiauliai
+      - place: 3
+        name: Nikita Posaškov
+        rating: 1523
+        city: Vilnius
+  - name: LTU B08 ch 2015
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 8
+      gender: Open
+    location: Vilnius
+    date_start: 04 11
+    date_end: 04 15
+    results_link: http://chess-results.com/tnr168662.aspx?lan=30&art=1&rd=8
+    games_link: null
+    winners:
+      - place: 1
+        name: Gleb Pidlužnij
+        rating: 1256
+        city: Klaipėda
+      - place: 2
+        name: Deivis Kungys
+        city: Šiauliai
+      - place: 3
+        name: Haroldas Vainauskas
+        city: Klaipėda
+  - name: LTU G18 ch 2015
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 18
+      gender: Women
+    location: Panevėžys
+    date_start: 03 30
+    date_end: 04 03
+    results_link: http://chess-results.com/tnr166853.aspx?lan=30&art=1&rd=8
+    games_link: null
+    winners:
+      - place: 1
+        name: Skaistė Šaumanaitė
+        rating: 1859
+        city: Panevėžys
+      - place: 2
+        name: WFM Giedrė Vanagaitė
+        rating: 1981
+        city: Panevėžys
+      - place: 3
+        name: Meda Mačiuitytė
+        rating: 1496
+        city: Plungė
+  - name: LTU G16 ch 2015
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 16
+      gender: Women
+    location: Panevėžys
+    date_start: 03 30
+    date_end: 04 03
+    results_link: http://chess-results.com/tnr166854.aspx?lan=30&art=1&rd=7
+    games_link: null
+    winners:
+      - place: 1
+        name: Saulė Gailiūnaitė
+        rating: 1730
+        city: Kaunas
+      - place: 2
+        name: Agnė Semonavičiūtė
+        rating: 1787
+        city: Šiauliai
+      - place: 3
+        name: Jana Bespalova
+        rating: 1682
+        city: Pskovas
+  - name: LTU G14 ch 2015
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 14
+      gender: Women
+    location: Panevėžys
+    date_start: 03 30
+    date_end: 04 03
+    results_link: http://chess-results.com/tnr166855.aspx?lan=30&art=1&rd=7
+    games_link: null
+    winners:
+      - place: 1
+        name: WCM Marija Šibajeva
+        rating: 1865
+        city: Klaipėda
+      - place: 2
+        name: Guoda Perminaitė
+        rating: 1543
+        city: Kaunas
+      - place: 3
+        name: Miglė Semonavičiūtė
+        rating: 1661
+        city: Šiauliai
+  - name: LTU G12 ch 2015
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 12
+      gender: Women
+    location: Vilnius
+    date_start: 04 11
+    date_end: 04 13
+    results_link: http://chess-results.com/tnr168663.aspx?lan=30&art=1&rd=7
+    games_link: null
+    winners:
+      - place: 1
+        name: Evelina Ravluševič
+        rating: 1399
+        city: Vilnius
+      - place: 2
+        name: Emilija Misiuk
+        rating: 1464
+        city: Vilnius
+      - place: 3
+        name: Ieva Sabaliauskytė
+        rating: 1242
+        city: Plungė
+  - name: LTU G10 ch 2015
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 10
+      gender: Women
+    location: Vilnius
+    date_start: 04 11
+    date_end: 04 13
+    results_link: http://chess-results.com/tnr168664.aspx?lan=30&art=1&rd=7
+    games_link: null
+    winners:
+      - place: 1
+        name: Kristina Maziukaitė
+        city: Vilnius
+      - place: 2
+        name: Ieva Grikšaitė
+        city: Tauragė
+      - place: 3
+        name: Izabelė Navickaitė
+        city: Šiauliai
+  - name: LTU G08 ch 2015
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 8
+      gender: Women
+    location: Vilnius
+    date_start: 04 11
+    date_end: 04 15
+    results_link: http://chess-results.com/tnr168665.aspx?lan=30&art=1&rd=7&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Monika Misiuk
+        city: Vilnius
+      - place: 2
+        name: Aistė Lengvinaitė
+        city: Kretinga
+      - place: 3
+        name: Emilė Motuzaitė
+        city: Kaunas
+  - name: LTU BG18 rapid ch 2015
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 18
+      gender: Excl
+    location: Dubingiai
+    date_start: 05 24
+    date_end: 05 24
+    results_link: http://chess-results.com/tnr174056.aspx?lan=30&art=1&rd=8
+    games_link: null
+    winners:
+      - place: 1
+        name: IM Titas Stremavičius
+        rating: 2467
+        city: Kaunas
+      - place: 2
+        name: Laurynas Miknevičius
+        rating: 2091
+        city: Kaunas
+      - place: 3
+        name: Marijus Vičas
+        rating: 2229
+        city: Šiauliai
+    women_winners:
+      - place: 1
+        name: WFM Giedrė Vanagaitė
+        rating: 1984
+        city: Panevėžys
+      - place: 2
+        name: Greta Mačiuitytė
+        rating: 1686
+        city: Plungė
+      - place: 3
+        name: Meda Mačiuitytė
+        rating: 1509
+        city: Plungė
+  - name: LTU BG16 ch 2015
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 16
+      gender: Excl
+    location: Dubingiai
+    date_start: 05 24
+    date_end: 05 24
+    results_link: http://chess-results.com/tnr174057.aspx?lan=30&art=1&rd=8
+    games_link: null
+    winners:
+      - place: 1
+        name: Kipras Eigminas
+        rating: 1873
+        city: Vilnius
+      - place: 2
+        name: Nedas Jankevičius
+        rating: 1903
+        city: Šiauliai
+      - place: 3
+        name: Augustas Vaškevičius
+        rating: 1785
+        city: Marijampolė
+    women_winners:
+      - place: 1
+        name: Saulė Gailiūnaitė
+        rating: 1764
+        city: Kaunas
+      - place: 2
+        name: Agnė Semonavičiūtė
+        rating: 1845
+        city: Šiauliai
+      - place: 3
+        name: Berta Rėja Butvilaitė
+        rating: 1603
+        city: Šiauliai
+  - name: LTU BG14 ch 2015
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 14
+      gender: Excl
+    location: Dubingiai
+    date_start: 05 24
+    date_end: 05 24
+    results_link: http://chess-results.com/tnr174058.aspx?lan=30&art=1&rd=8
+    games_link: null
+    winners:
+      - place: 1
+        name: Markas Černiauskas
+        rating: 1792
+        city: Kaunas
+      - place: 2
+        name: Aironas Koliasnikovas
+        rating: 1577
+        city: Šiauliai
+      - place: 3
+        name: Aras Jonas Lazaravičius
+        rating: 1861
+        city: Kaunas
+    women_winners:
+      - place: 1
+        name: Miglė Semonavičiūtė
+        rating: 1708
+        city: Šiauliai
+      - place: 2
+        name: WCM Marija Šibajeva
+        rating: 1734
+        city: Klaipėda
+      - place: 3
+        name: Rosita Griciūtė
+        rating: 1618
+        city: Plungė
+  - name: LTU BG12 ch 2015
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 12
+      gender: Excl
+    location: Dubingiai
+    date_start: 05 24
+    date_end: 05 24
+    results_link: http://chess-results.com/tnr173992.aspx?lan=30&art=1&rd=8
+    games_link: null
+    winners:
+      - place: 1
+        name: Karolis Jukšta
+        rating: 1840
+        city: Kaunas
+      - place: 2
+        name: Augustas Gucaga
+        rating: 1696
+        city: Kaunas
+      - place: 3
+        name: Lukas Bagvilas
+        rating: 1477
+        city: Šiauliai
+    women_winners:
+      - place: 1
+        name: Emilija Misiuk
+        rating: 1493
+        city: Vilnius
+      - place: 2
+        name: Simona Perminaitė
+        rating: 1263
+        city: Kaunas
+      - place: 3
+        name: Darija Staškevičiūtė
+        rating: 1225
+        city: Panevėžys
+  - name: LTU BG10 ch 2015
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 10
+      gender: Excl
+    location: Dubingiai
+    date_start: 05 24
+    date_end: 05 24
+    results_link: http://chess-results.com/tnr174059.aspx?lan=30&art=1&rd=8
+    games_link: null
+    winners:
+      - place: 1
+        name: Paulius Meškėnas
+        rating: 1640
+        city: Plungė
+      - place: 2
+        name: Gleb Pidlužnij
+        rating: 1395
+        city: Klaipėda
+      - place: 3
+        name: Matas Indriūnas
+        rating: 1699
+        city: Vilnius
+    women_winners:
+      - place: 1
+        name: Kristina Maziukaitė
+        city: Vilnius
+      - place: 2
+        name: Rusnė Andrašūnaitė
+        city: Šiauliai
+      - place: 3
+        name: Izabelė Navickaitė
+        rating: 1265
+        city: Šiauliai
+  - name: LTU BG08 ch 2015
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 8
+      gender: Excl
+    location: Dubingiai
+    date_start: 05 24
+    date_end: 05 24
+    results_link: http://chess-results.com/tnr174060.aspx?lan=30&art=1&rd=8
+    games_link: null
+    winners:
+      - place: 1
+        name: Saulius Žiukas
+        city: Alytus
+      - place: 2
+        name: Deivis Kungys
+        rating: 1227
+        city: Šiauliai
+      - place: 3
+        name: Nikas Umbrasas
+        city: Vilnius
+    women_winners:
+      - place: 1
+        name: Monika Misiuk
+        rating: 1399
+        city: Vilnius
+      - place: 2
+        name: Emilė Motuzaitė
+        city: Kaunas
+      - place: 3
+        name: Eglė Grikšaitė
+        city: Tauragė
+  - name: LTU BG18 blitz ch 2015
+    config:
+      time_control: Blitz
+      format: Individual
+      rank: null
+      open: false
+      age_group: 18
+      gender: Excl
+    location: Dubingiai
+    date_start: 05 23
+    date_end: 05 23
+    results_link: http://chess-results.com/tnr173997.aspx?lan=30&art=1&rd=9
+    games_link: null
+    winners:
+      - place: 1
+        name: Andrius Brazdžionis
+        rating: 2179
+        city: Panevėžys
+      - place: 2
+        name: IM Titas Stremavičius
+        rating: 2354
+        city: Kaunas
+      - place: 3
+        name: Marijus Vičas
+        rating: 2093
+        city: Šiauliai
+    women_winners:
+      - place: 1
+        name: WFM Giedrė Vanagaitė
+        rating: 1976
+        city: Panevėžys
+      - place: 2
+        name: Meda Mačiuitytė
+        rating: 1507
+        city: Plungė
+      - place: 3
+        name: Greta Mačiuitytė
+        rating: 1641
+        city: Plungė
+  - name: LTU BG16 blitz ch 2015
+    config:
+      time_control: Blitz
+      format: Individual
+      rank: null
+      open: false
+      age_group: 16
+      gender: Excl
+    location: Dubingiai
+    date_start: 05 23
+    date_end: 05 23
+    results_link: http://chess-results.com/tnr173997.aspx?lan=30&art=1&rd=9
+    games_link: null
+    winners:
+      - place: 1
+        name: Paulius Vaitkevičius
+        rating: 2087
+        city: Vilnius
+      - place: 2
+        name: Paulius Pultinevičius
+        rating: 2134
+        city: Marijampolė
+      - place: 3
+        name: Kipras Eigminas
+        rating: 1848
+        city: Vilnius
+    women_winners:
+      - place: 1
+        name: Berta Rėja Butvilaitė
+        rating: 1660
+        city: Šiauliai
+      - place: 2
+        name: Agnė Semonavičiūtė
+        rating: 1688
+        city: Šiauliai
+      - place: 3
+        name: Saulė Gailiūnaitė
+        rating: 1683
+        city: Kaunas
+  - name: LTU BG14 blitz ch 2015
+    config:
+      time_control: Blitz
+      format: Individual
+      rank: null
+      open: false
+      age_group: 14
+      gender: Excl
+    location: Dubingiai
+    date_start: 05 23
+    date_end: 05 23
+    results_link: http://chess-results.com/tnr174053.aspx?lan=30&art=1&rd=9
+    games_link: null
+    winners:
+      - place: 1
+        name: Markas Černiauskas
+        rating: 1727
+        city: Kaunas
+      - place: 2
+        name: Augustas Vaškevičius
+        rating: 1706
+        city: Marijampolė
+      - place: 3
+        name: Martynas Dolmantas
+        rating: 1531
+        city: Ukmergė
+    women_winners:
+      - place: 1
+        name: Rosita Griciūtė
+        rating: 1565
+        city: Plungė
+      - place: 2
+        name: Miglė Semonavičiūtė
+        rating: 1620
+        city: Šiauliai
+      - place: 3
+        name: Guoda Perminaitė
+        rating: 1468
+        city: Kaunas
+  - name: LTU BG12 blitz ch 2015
+    config:
+      time_control: Blitz
+      format: Individual
+      rank: null
+      open: false
+      age_group: 12
+      gender: Excl
+    location: Dubingiai
+    date_start: 05 23
+    date_end: 05 23
+    results_link: http://chess-results.com/tnr174053.aspx?lan=30&art=1&rd=9
+    games_link: null
+    winners:
+      - place: 1
+        name: Ignas Mačiuitis
+        rating: 1658
+        city: Plungė
+      - place: 2
+        name: Benas Mickus
+        rating: 1667
+        city: Kaunas
+      - place: 3
+        name: Aistis Butvilas
+        rating: 1517
+        city: Kaunas
+    women_winners:
+      - place: 1
+        name: Aušra Plutaitė
+        rating: 1266
+        city: Kaunas
+      - place: 2
+        name: Simona Perminaitė
+        rating: 1114
+        city: Kaunas
+      - place: 3
+        name: Darija Staškevičiūtė
+        rating: 1171
+        city: Panevėžys
+  - name: LTU BG10 blitz ch 2015
+    config:
+      time_control: Blitz
+      format: Individual
+      rank: null
+      open: false
+      age_group: 10
+      gender: Excl
+    location: Dubingiai
+    date_start: 05 23
+    date_end: 05 23
+    results_link: http://chess-results.com/tnr174055.aspx?lan=30&art=1&rd=9
+    games_link: null
+    winners:
+      - place: 1
+        name: Matas Indriūnas
+        rating: 1563
+        city: Vilnius
+      - place: 2
+        name: Tomas Povilaitis
+        rating: 1556
+        city: Šiauliai
+      - place: 3
+        name: Matas Povilaitis
+        rating: 1225
+        city: Šiauliai
+    women_winners:
+      - place: 1
+        name: Vytautė Mikalauskaitė
+        city: Šiauliai
+      - place: 2
+        name: Kristina Maziukaitė
+        city: Vilnius
+      - place: 3
+        name: Vlada Sokolova
+        city: Ukmergė
+  - name: LTU BG08 blitz ch 2015
+    config:
+      time_control: Blitz
+      format: Individual
+      rank: null
+      open: false
+      age_group: 8
+      gender: Excl
+    location: Dubingiai
+    date_start: 05 23
+    date_end: 05 23
+    results_link: http://chess-results.com/tnr174055.aspx?lan=30&art=1&rd=9
+    games_link: null
+    winners:
+      - place: 1
+        name: Gleb Pidlužnij
+        rating: 1568
+        city: Klaipėda
+      - place: 2
+        name: Deivis Kungys
+        city: Šiauliai
+      - place: 3
+        name: Saulius Žiukas
+        city: Alytus
+    women_winners:
+      - place: 1
+        name: Emilė Motuzaitė
+        city: Kaunas
+      - place: 2
+        name: Audinga Grubinskaitė
+        city: Biržai
+      - place: 3
+        name: Atėnė Kregždaitė
+        city: Biržai
+  - name: LTU team youth ch rapid B18 2015
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: 18
+      gender: Open
+    location: Šiauliai
+    date_start: 11 21
+    date_end: 11 21
+    results_link: http://chess-results.com/tnr195810.aspx?lan=30&art=1&turdet=YES
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Šiauliai 1
+        members:
+          - Marijus Vičas
+          - Lukas Stauskas
+          - Lukas Bučinskas
+          - Nedas Jankevičius
+          - Vilius Barkauskas
+      - place: 2
+        name: Panevėžys
+        members:
+          - Andrius Brazdžionis
+          - Skaistė Šaumanaitė
+          - WFM Giedrė Vanagaitė
+          - Paulius Bisigirskas
+          - Mantas Samuolis
+      - place: 3
+        name: Kaunas 1
+        members:
+          - Laurynas Miknevičius
+          - Aras Jonas Lazaravičius
+          - Karolis Jukšta
+          - Augustas Gucaga
+          - Paulius Pluta
+  - name: LTU team youth ch rapid B14 2015
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: 14
+      gender: Open
+    location: Kaunas
+    date_start: 11 14
+    date_end: 11 15
+    results_link: http://chess-results.com/tnr193768.aspx?lan=30&art=1&turdet=YES
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Šiauliai 1
+        members:
+          - Lukas Bagvilas
+          - Tomas Povilaitis
+          - Andrius Šarauskas
+          - Dangis Bagdanskis
+          - Justas Venckevičius
+      - place: 2
+        name: Kaunas 1
+        members:
+          - Markas Černiauskas
+          - Aras Jonas Lazaravičius
+          - Karolis Jukšta
+          - Augustas Gucaga
+          - Benas Mickus
+      - place: 3
+        name: Šiauliai 2
+        members:
+          - Aironas Koliasnikovas
+          - Dovydas Labanauskas
+          - Joris Delkus
+          - Rokas Šlikas
+          - Mykolas Liandzbergas
+  - name: LTU team youth ch rapid G18 2015
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: 18
+      gender: Women
+    location: Šiauliai
+    date_start: 11 21
+    date_end: 11 21
+    results_link: http://chess-results.com/tnr195811.aspx?lan=30&art=1&turdet=YES
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Plungė
+        members:
+          - Greta Mačiuitytė
+          - Rugilė Meškėnaitė
+          - Meda Mačiuitytė
+      - place: 2
+        name: Šiauliai 1
+        members:
+          - Agnė Semonavičiūtė
+          - Berta Rėja Butvilaitė
+          - Miglė Semonavičiūtė
+      - place: 3
+        name: Kaunas 1
+        members:
+          - Saulė Gailiūnaitė
+          - Guoda Perminaitė
+          - Barbora Mačiulaitytė
+  - name: LTU team youth ch rapid G14 2015
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: 14
+      gender: Women
+    location: Kaunas
+    date_start: 11 14
+    date_end: 11 15
+    results_link: http://chess-results.com/tnr193767.aspx?lan=30&art=1&turdet=YES
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Šiauliai 1
+        members:
+          - Miglė Semonavičiūtė
+          - Gabija Šimkūnaitė
+          - Austėja Šernaitė
+      - place: 2
+        name: Kaunas 1
+        members:
+          - Guoda Perminaitė
+          - Barbora Mačiulaitytė
+          - Simona Perminaitė
+      - place: 3
+        name: Biržai
+        members:
+          - Kamilė Rauckytė
+          - Meida Šimaitė
+          - Viktorija Krivičiūtė
+  - name: LTU team youth ch rapid B11 2015
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: U11
+      gender: Open
+    location: Šiauliai
+    date_start: 11 21
+    date_end: 11 21
+    results_link: http://chess-results.com/tnr191075.aspx?lan=30&art=1
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Kaunas
+        members:
+          - Augustas Gucaga
+          - Andrius Aleknavičius
+          - Pijus Stremavičius
+          - Laimis Šilkaitis
+          - Rokas Jončas
+      - place: 2
+        name: Vilnius
+        members:
+          - Ernest Misiuk
+          - Matas Indriūnas
+          - Rapolas Likatavičius
+          - Karolis Juodzevičius
+          - Dovydas Viliamas
+      - place: 3
+        name: Šiauliai 1
+        members:
+          - Dovydas Labanauskas
+          - Rokas Šlikas
+          - Mykolas Liandzbergas
+          - Dangiras Grušas
+          - Rokas Šlikas
+  - name: LTU team youth ch rapid G11 2015
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: U11
+      gender: Women
+    location: Šiauliai
+    date_start: 11 21
+    date_end: 11 21
+    results_link: http://chess-results.com/tnr191076.aspx?lan=30&art=1
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Kaunas
+        members:
+          - Barbora Mačiulaitytė
+          - Simona Perminaitė
+          - Gabija Versekėnaitė
+      - place: 2
+        name: Vilnius
+        members:
+          - Karolina Misiuk
+          - Emilija Misiuk
+          - Kristina Maziukaitė
+      - place: 3
+        name: Šiauliai 1
+        members:
+          - Vytautė Mikalauskaitė
+          - Rusnė Andrašūnaitė
+          - Aleksa Kozlovaitė

@@ -1,0 +1,187 @@
+year: 2009
+tournaments:
+  - name: LTU ch 2009 Finalas
+    config:
+      time_control: Std
+      format: Individual
+      rank: Finalas
+      open: false
+      age_group: null
+      gender: Open
+    location: Vilnius
+    date_start: 05 03
+    date_end: 05 10
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: GM Šarūnas Šulskis
+        rating: 2555
+      - place: 2
+        name: GM Vidmantas Mališauskas
+        rating: 2459
+      - place: 3
+        name: GM Aloyzas Kveinys
+        rating: 2534
+  - name: LTU ch 2009 Pusfinalis
+    config:
+      time_control: Std
+      format: Individual
+      rank: Pusfinalis
+      open: false
+      age_group: null
+      gender: Open
+    location: Vilnius
+    date_start: 02 13
+    date_end: 02 19
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: Laimonas Kudžma
+      - place: 2
+        name: IM Vytautas Vaznonis
+      - place: 3
+        name: IM Virginijus Grabliauskas
+  - name: LTU wch 2009 Finalas
+    config:
+      time_control: Std
+      format: Individual
+      rank: Finalas
+      open: false
+      age_group: null
+      gender: Women
+    location: Vilnius
+    date_start: 05 02
+    date_end: 05 08
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: WIM Živilė Šarakauskienė
+        rating: 2210
+      - place: 2
+        name: WGM Deimantė Daulytė
+        rating: 2269
+      - place: 3
+        name: WIM Simona Limontaitė
+        rating: 2208
+  - name: LTU wch 2009 Pusfinalis
+    config:
+      time_control: Std
+      format: Individual
+      rank: Pusfinalis
+      open: false
+      age_group: null
+      gender: Women
+    location: Vilnius
+    date_start: 02 13
+    date_end: 02 19
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: Vesta Kalvytė
+      - place: 2
+        name: Agnė Balčaitė
+      - place: 3
+        name: Reda Prišmontaitė
+  - name: LSL 2008/09
+    config:
+      time_control: Std
+      format: Team
+      rank: 1
+      open: false
+      age_group: null
+      gender: null
+    location: Aukščiausioji lyga
+    results_link: http://bsk.puslapiai.lt/lenteles/2008/lsl_sudetys.htm
+    games_link: null
+    team_winners:
+      - place: 1
+        name: VŠBK NSEL
+        city: Vilnius
+        members:
+          - GM Aloyzas Kveinys
+          - IM Darius Zagorskis
+          - IM Virginijus Grabliauskas
+          - IM Algirdas Bandza
+          - IM Virginijus Dambrauskas
+          - Vitalij Novikov
+          - Marijonas Ročius
+          - Pavelas Rubinas
+          - WIM Salomėja Zaksaitė
+          - Vygantė Milašiūtė
+      - place: 2
+        name: ŠK Margiris
+        city: Kaunas
+        members:
+          - GM Šarūnas Šulskis
+          - GM Vidmantas Mališauskas
+          - GM Algimantas Butnorius
+          - IM Mindaugas Beinoras
+          - Brigita Laurušaitė
+          - IM Vytautas Vaznonis
+          - IM Aidas Labuckas
+          - Domantas Klimčiauskas
+          - FM Laimutis Šolys
+          - Viktorija Beinoraitė
+      - place: 3
+        name: VŠK Bokštas
+        city: Plungė
+        members:
+          - FM Henrikas Asauskas
+          - FM Airidas Savickas
+          - Sigitas Kalvaitis
+          - Kazys Godlauskas
+          - WFM Laima Domarkaitė
+          - Henrikas Jadenkus
+          - FM Aleksandras Jegorovas
+  - name: LSL 2008/09
+    config:
+      time_control: Std
+      format: Team
+      rank: 2
+      open: false
+      age_group: null
+      gender: null
+    location: Pirmoji lyga
+    results_link: http://bsk.puslapiai.lt/lenteles/2008/lsl_sudetys.htm
+    games_link: null
+    team_winners:
+      - place: 1
+        name: ŠK Trys nuliai
+        city: Kaunas
+        members:
+          - Julius Garnelis
+          - Anaras Alekberovas
+          - Justinas Stojanas
+          - Marius Bieliauskas
+          - Kristina Apanavičiūtė
+          - Mindaugas Asauskas
+      - place: 2
+        name: ŠK Margiris-2
+        city: Kaunas
+        members:
+          - IM Kęstutis Kaunas
+          - Tomas Laurušas
+          - Vidmantas Einikis
+          - Vytautas Simanaitis
+          - Miglė Lepeškaitė
+          - Ignas Balčiūnas
+          - Gintautas Petraitis
+          - Arūnas Ščiupokas
+          - Tomas Tamošiūnas
+          - Neringa Levinskaitė
+          - Eglė Marcinkevičienė
+      - place: 3
+        name: ŠSK Akmena
+        city: Kretinga
+        members:
+          - Dalius Jocys
+          - Konstantinas Dubinskas
+          - Vytautas Vaitonis
+          - Audrius Jonuševičius
+          - Donata Januševičiūtė
+          - Artūras Šlušnys
+          - Loreta Drungilienė

@@ -1,0 +1,68 @@
+year: 2007
+tournaments:
+  - name: LTU ch 2007 Finalas
+    config:
+      time_control: Std
+      format: Individual
+      rank: Finalas
+      open: false
+      age_group: null
+      gender: Open
+    location: Šiauliai
+    date_start: 05 03
+    date_end: 05 13
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: GM Šarūnas Šulskis
+        rating: 2533
+      - place: 2
+        name: GM Vidmantas Mališauskas
+        rating: 2505
+      - place: 3
+        name: IM Darius Zagorskis
+        rating: 2463
+  - name: LTU ch 2007 Pusfinalis
+    config:
+      time_control: Std
+      format: Individual
+      rank: Pusfinalis
+      open: false
+      age_group: null
+      gender: Open
+    location: Vilnius
+    date_start: 02 16
+    date_end: 02 20
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: IM Aidas Labuckas
+      - place: 2
+        name: Mindaugas Beinoras
+      - place: 3
+        name: FM Aleksandras Jegorovas
+  - name: LTU wch 2007 Atviras turnyras
+    config:
+      time_control: Std
+      format: Individual
+      rank: Atviras turnyras
+      open: false
+      age_group: null
+      gender: Women
+    location: Vilnius
+    date_start: 02 16
+    date_end: 02 20
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: WIM Deimantė Daulytė
+        rating: 2190
+      - place: 2
+        name: Daiva Batytė
+        rating: 2192
+      - place: 3
+        name: Reda Prišmontaitė
+        rating: 1972

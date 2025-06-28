@@ -1,0 +1,68 @@
+year: 2005
+tournaments:
+  - name: LTU ch 2005 Finalas
+    config:
+      time_control: Std
+      format: Individual
+      rank: Finalas
+      open: false
+      age_group: null
+      gender: Open
+    location: Šiauliai
+    date_start: 05 07
+    date_end: 05 14
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: IM Viktorija Čmilytė
+        rating: 2459
+      - place: 2
+        name: GM Šarūnas Šulskis
+        rating: 2525
+      - place: 3
+        name: IM Vaidas Sakalauskas
+        rating: 2476
+  - name: LTU ch 2005 Pusfinalis
+    config:
+      time_control: Std
+      format: Individual
+      rank: Pusfinalis
+      open: false
+      age_group: null
+      gender: Open
+    location: Vilnius
+    date_start: vasario mėn.
+    date_end: vasario mėn.
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: Vitalij Novikov
+      - place: 2
+        name: Dmitrijus Chocenka
+      - place: 3
+        name: IM Virginijus Dambrauskas
+  - name: LTU wch 2005 Atviras turnyras
+    config:
+      time_control: Std
+      format: Individual
+      rank: Atviras turnyras
+      open: false
+      age_group: null
+      gender: Women
+    location: Vilnius
+    date_start: 03 16
+    date_end: 03 26
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: Simona Limontaitė
+        rating: 2076
+      - place: 2
+        name: Deimantė Daulytė
+        rating: 2047
+      - place: 3
+        name: Daiva Batytė
+        rating: 2138

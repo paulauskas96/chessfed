@@ -1,0 +1,1467 @@
+year: 2023
+tournaments:
+  - name: LTU ch 2023 Finalas
+    config:
+      time_control: Std
+      format: Individual
+      rank: Finalas
+      open: false
+      age_group: null
+      gender: Open
+    location: Kaunas
+    date_start: 06 06
+    date_end: 06 13
+    results_link: https://chess-results.com/tnr771436.aspx?lan=30&art=1&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: GM Tomas Laurušas
+        rating: 2548
+      - place: 2
+        name: GM Titas Stremavičius
+        rating: 2540
+      - place: 3
+        name: GM Valery Kazakouski
+        rating: 2538
+  - name: LTU ch 2023 Pusfinalis
+    config:
+      time_control: Std
+      format: Individual
+      rank: Pusfinalis
+      open: false
+      age_group: null
+      gender: Open
+    location: Vilnius
+    date_start: 04 11
+    date_end: 04 16
+    results_link: https://chess-results.com/tnr750975.aspx?lan=30&art=1&rd=9&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: FM Pijus Stremavičius
+        rating: 2390
+      - place: 2
+        name: FM Matas Indriūnas
+        rating: 2243
+      - place: 3
+        name: Gleb Pidlužnij
+        rating: 2259
+  - name: LTU wch 2023 Finalas
+    config:
+      time_control: Std
+      format: Individual
+      rank: Finalas
+      open: false
+      age_group: null
+      gender: Women
+    location: Panevėžys
+    date_start: 08 18
+    date_end: 08 20
+    results_link: https://chess-results.com/tnr803312.aspx?lan=30&art=1&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: WIM Olena Martynkova
+        rating: 2241
+      - place: 2
+        name: WFM Gabija Šimkūnaitė
+        rating: 1974
+      - place: 3
+        name: WFM Marija Šibajeva
+        rating: 2057
+  - name: LTU wch 2023 Pusfinalis (įskaita)
+    config:
+      time_control: Std
+      format: Individual
+      rank: Pusfinalis
+      open: false
+      age_group: null
+      gender: Women
+    location: Vilnius
+    date_start: 04 11
+    date_end: 04 16
+    results_link: https://chess-results.com/tnr750975.aspx?lan=30&art=1&rd=9&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: WFM Gabija Šimkūnaitė
+        rating: 1948
+      - place: 2
+        name: Kotryna Šukytė
+        rating: 1710
+      - place: 3
+        name: Guoda Perminaitė
+        rating: 1792
+  - name: LTU rapid ch 2023
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: Taujėnai
+    date_start: 10 28
+    date_end: 10 29
+    results_link: https://chess-results.com/tnr834673.aspx?lan=30&art=1&rd=10&turdet=YES&flag=30
+    games_link: null
+    winners:
+      - place: 1
+        name: GM Tomas Laurušas
+        country: null
+        rating: 2493
+      - place: 2
+        name: Karolis Gavėnavičius
+        country: null
+        rating: 1927
+      - place: 3
+        name: FM Sigitas Kalvaitis
+        country: null
+        rating: 2147
+    women_winners:
+      - place: 1
+        name: WFM Gabija Šimkūnaitė
+        country: null
+        rating: 1987
+      - place: 2
+        name: WIM Salomėja Zaksaitė
+        country: null
+        rating: 2080
+      - place: 3
+        name: Yaryna Ozhaiska
+        country: Ukraina
+        rating: 1740
+    ltu_women_winners:
+      - place: 1
+        name: WFM Gabija Šimkūnaitė
+        country: null
+        rating: 1987
+      - place: 2
+        name: WIM Salomėja Zaksaitė
+        country: null
+        rating: 2080
+      - place: 3
+        name: Agnė Mickūnaitė
+        country: null
+        rating: 1721
+  - name: LTU blitz ch 2023
+    config:
+      time_control: Blitz
+      format: Individual
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: Taujėnai
+    date_start: 10 28
+    date_end: 10 28
+    results_link: https://chess-results.com/tnr834672.aspx?lan=30&art=1&rd=9&turdet=YES&flag=30
+    games_link: null
+    winners:
+      - place: 1
+        name: GM Tomas Laurušas
+        country: null
+        rating: 2508
+      - place: 2
+        name: IM Vaidas Sakalauskas
+        country: null
+        rating: 2254
+      - place: 3
+        name: Pijus Greičius
+        country: null
+        rating: 2009
+    women_winners:
+      - place: 1
+        name: WFM Gabija Šimkūnaitė
+        country: null
+        rating: 1850
+      - place: 2
+        name: WIM Salomėja Zaksaitė
+        country: null
+        rating: 2113
+      - place: 3
+        name: Laura Maurutytė
+        country: null
+        rating: 1501
+  - name: LSL 2023
+    config:
+      time_control: Std
+      format: Team
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: ''
+    results_link: https://chess-results.com/tnr735096.aspx?lan=30&art=0&rd=7&turdet=YES&flag=30
+    games_link: null
+    team_winners:
+      - place: 1
+        name: MRU-ROSK Consulting
+        city: Vilnius
+        members:
+          - GM Paulius Pultinevičius
+          - GM Tomas Laurušas
+          - FM Rokas Klabis
+          - IM Vaidas Sakalauskas
+          - FM Tautvydas Vedrickas
+          - Vaidas Šetkauskas
+          - FM Matas Indriūnas
+          - Augustas Vaškevičius
+      - place: 2
+        name: Juoda balta JŠRF
+        city: Vilnius
+        members:
+          - GM Arturs Neikšans
+          - GM Valery Kazakouski
+          - GM Platon Galperin
+          - GM Eduardas Rozentalis
+          - GM Piotr Bobras
+          - CM Augustinas Bazilius
+          - IM Gediminas Šarakauskas
+          - Steponas Žilakauskis
+      - place: 3
+        name: ES SECURITY
+        city: Kaunas
+        members:
+          - IM Oleg Krivonosov
+          - GM Titas Stremavičius
+          - FM Pijus Stremavičius
+          - IM Vytautas Vaznonis
+          - CM Paulius Juknis
+          - Pijus Greičius
+          - Timur Baliasnyj
+          - Aistis Butvilas
+          - Benas Mickus
+  - name: LMSL 2023
+    config:
+      time_control: Std
+      format: Team
+      rank: null
+      open: false
+      age_group: null
+      gender: Women
+    location: null
+    results_link: https://chess-results.com/tnr757868.aspx?lan=30&art=0&turdet=YES&flag=30
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Panevėžio ŠK
+        city: null
+        members:
+          - WGM Laura Rogule
+          - WIM Olena Martynkova
+          - WIM Anna Kantane
+          - WFM Giedrė Vanagaitė
+          - Rūta Jakaitytė
+      - place: 2
+        name: Juoda balta Novadenta
+        city: Vilnius
+        members:
+          - WIM Simona Limontaitė
+          - WFM Renate Vidruska
+          - Ula Rudzinskaitė
+      - place: 3
+        name: Margiris
+        city: Kaunas
+        members:
+          - WIM Salomėja Zaksaitė
+          - Viktorija Savickienė
+          - Guoda Perminaitė
+          - Barbora Mačiulaitytė
+          - Eglė Marcinkevičienė
+  - name: LTU team rapid ch 2023
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: Biržai
+    date_start: 10 21
+    date_end: 10 22
+    results_link: https://chess-results.com/tnr834020.aspx?lan=30&art=0&turdet=YES
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Vilniaus ŠK-1
+        city: null
+        members:
+          - Kipras Eigminas
+          - Aleksandras Šalna
+          - Lukas Stauskas
+          - Agnė Mickūnaitė
+          - Andrius Paulauskas
+      - place: 2
+        name: MRU - ROSK Consulting
+        city: Vilnius
+        members:
+          - IM Vaidas Sakalauskas
+          - FM Matas Indriūnas
+          - Augustas Vaškevičius
+          - WFM Gabija Šimkūnaitė
+      - place: 3
+        name: Kamilės studija
+        city: Vilnius
+        members:
+          - GM Vidmantas Mališauskas
+          - Nikita Posaškov
+          - Justas Dailidėnas
+          - WGM Kamilė Baginskaitė
+  - name: LTU team blitz ch 2023
+    config:
+      time_control: Blitz
+      format: Team
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: Biržai
+    date_start: 10 21
+    date_end: 10 21
+    results_link: https://chess-results.com/tnr834019.aspx?lan=30&turdet=YES
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Dubysa 1
+        city: Šiauliai
+        members:
+          - Tomas Povilaitis
+          - Daniel Šer
+          - Matas Povilaitis
+          - Ieva Grikšaitė
+      - place: 2
+        name: Tauras 1
+        city: Vilnius
+        members:
+          - Žanas Nainys
+          - Pijus Grybkauskas
+          - Karolis Gavėnavičius
+          - Kotryna Šukytė
+          - Daniel Leclere
+      - place: 3
+        name: Vilniaus ŠK-1
+        city: null
+        members:
+          - Kipras Eigminas
+          - Aleksandras Šalna
+          - Lukas Stauskas
+          - Agnė Mickūnaitė
+          - Andrius Paulauskas
+  - name: LTU B18 ch 2023
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 18
+      gender: Open
+    location: Vilnius
+    date_start: 03 29
+    date_end: 04 02
+    results_link: https://chess-results.com/tnr744944.aspx?lan=30&art=1&rd=7&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Nikita Posaškov
+        rating: 2182
+        city: Vilnius
+      - place: 2
+        name: Pijus Greičius
+        rating: 2062
+        city: Kaunas
+      - place: 3
+        name: FM Matas Indriūnas
+        rating: 2263
+        city: Vilnius
+  - name: LTU B16 ch 2023
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 16
+      gender: Open
+    location: Vilnius
+    date_start: 03 29
+    date_end: 04 02
+    results_link: https://chess-results.com/tnr744943.aspx?lan=30&art=1&rd=8&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Gleb Pidlužnij
+        rating: 2240
+        city: Klaipėda
+      - place: 2
+        name: Karolis Gavėnavičius
+        rating: 1748
+        city: Vilnius
+      - place: 3
+        name: Vilius Rudzkis
+        rating: 1883
+        city: Vilnius
+  - name: LTU B14 ch 2023
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 14
+      gender: Open
+    location: Vilnius
+    date_start: 03 29
+    date_end: 04 02
+    results_link: https://chess-results.com/tnr744942.aspx?lan=30&art=1&rd=8&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: FM Gustas Morkūnas
+        rating: 2067
+        city: Kėdainiai<
+      - place: 2
+        name: CM Augustinas Bazilius
+        rating: 2089
+        city: Vilnius
+      - place: 3
+        name: Martynas Misiuk
+        rating: 1804
+        city: Vilnius
+  - name: LTU B12 ch 2023
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 12
+      gender: Open
+    location: Vilnius
+    date_start: 03 29
+    date_end: 04 02
+    results_link: https://chess-results.com/tnr744941.aspx?lan=30&art=1&rd=8&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Jokūbas Dijokas
+        rating: 1573
+        city: Vilnius
+      - place: 2
+        name: Rytis Kavalnis
+        rating: 1470
+        city: Vilnius
+      - place: 3
+        name: Šarūnas Norkeliūnas
+        rating: 1266
+        city: Marijampolė
+  - name: LTU B10 ch 2023
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 10
+      gender: Open
+    location: Vilnius
+    date_start: 03 29
+    date_end: 04 02
+    results_link: https://chess-results.com/tnr744940.aspx?lan=30&art=1&rd=8&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Rokas Šakinis
+        rating: 1341
+        city: Plungė
+      - place: 2
+        name: Vytis Vedrickas
+        rating: 1129
+        city: Vilnius
+      - place: 3
+        name: Jonas Ušinskas
+        rating: 1133
+        city: Vilnius
+  - name: LTU B08 ch 2023
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 8
+      gender: Open
+    location: Vilnius
+    date_start: 03 04-06
+    date_end: 03 04-06
+    results_link: https://chess-results.com/tnr731780.aspx?lan=30&art=1&rd=8
+    games_link: null
+    winners:
+      - place: 1
+        name: Aistis Vedrickas
+        city: Vilnius
+      - place: 2
+        name: Benas Bausys
+        city: Vilnius
+      - place: 3
+        name: Joris Jurėnas
+        city: Klaipėda
+  - name: LTU G18 ch 2023
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 18
+      gender: Women
+    location: Vilnius
+    date_start: 03 29
+    date_end: 04 02
+    results_link: https://chess-results.com/tnr744938.aspx?lan=30&art=1&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Kotryna Šukytė
+        rating: 1673
+        city: Vilnius
+      - place: 2
+        name: Ieva Grikšaitė
+        rating: 1423
+        city: Šiauliai
+      - place: 3
+        name: Jorė Balčiūnaitė
+        rating: 1473
+        city: Gargždai
+  - name: LTU G16 ch 2023
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 16
+      gender: Women
+    location: Vilnius
+    date_start: 03 29
+    date_end: 04 02
+    results_link: https://chess-results.com/tnr744937.aspx?lan=30&art=1&rd=6&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Agnė Mickūnaitė
+        rating: 1584
+        city: Ukmergė
+      - place: 2
+        name: Smiltė Cibulskytė
+        rating: 1086
+        city: Vilnius
+      - place: 3
+        name: Deina Ščipokaitė
+        rating: 1216
+        city: Šiauliai
+  - name: LTU G14 ch 2023
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 14
+      gender: Women
+    location: Vilnius
+    date_start: 03 29
+    date_end: 04 02
+    results_link: https://chess-results.com/tnr744935.aspx?lan=30&art=1&rd=7&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Augustė Ovčinikova
+        rating: 1226
+        city: Vilkaviškis
+      - place: 2
+        name: Marta Aglinskytė
+        rating: 1182
+        city: Vilnius
+      - place: 3
+        name: Ula Rudzinskaitė
+        rating: 1313
+        city: Vilnius
+  - name: LTU G12 ch 2023
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 12
+      gender: Women
+    location: Vilnius
+    date_start: 03 29
+    date_end: 04 02
+    results_link: https://chess-results.com/tnr744934.aspx?lan=30&art=1&rd=6&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Arina Budiak
+        rating: 1278
+        city: Klaipėda
+      - place: 2
+        name: Laura Grikšaitė
+        rating: 1103
+        city: Šiauliai
+      - place: 3
+        name: Sofija Kiseleva
+        rating: 1056
+        city: Telšiai
+  - name: LTU G10 ch 2023
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 10
+      gender: Women
+    location: Vilnius
+    date_start: 03 29
+    date_end: 04 02
+    results_link: https://chess-results.com/tnr744932.aspx?lan=30&art=1&rd=6&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Zlata Bogomolnikova
+        rating: 1241
+        city: Vilnius
+      - place: 2
+        name: Milda Alejūnaitė
+        rating: 1132
+        city: Šiauliai
+      - place: 3
+        name: Gytė Pečiukevičiūtė
+        city: Biržai
+  - name: LTU G08 ch 2023
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 8
+      gender: Women
+    location: Vilnius
+    date_start: 03 24
+    date_end: 03 26
+    results_link: https://chess-results.com/tnr744538.aspx?lan=30&art=1&rd=7&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Karina Šer
+        city: Šiauliai
+      - place: 2
+        name: Aurora Kulikovaitė
+        city: Šiauliai
+      - place: 3
+        name: Medeinė Katinaitė
+        city: Panevėžys
+  - name: LTU BG18 rapid ch 2023
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 18
+      gender: Excl
+    location: Vilnius
+    date_start: 06 03
+    date_end: 06 03
+    results_link: https://chess-results.com/tnr772657.aspx?lan=30&art=1&rd=7&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Daniel Leclere
+        rating: 1937
+        city: Vilnius
+      - place: 2
+        name: Matas Povilaitis
+        rating: 1937
+        city: Šiauliai
+      - place: 3
+        name: Pijus Greičius
+        rating: 2042
+        city: Kaunas
+    women_winners:
+      - place: 1
+        name: Jorė Balčiūnaitė
+        rating: 1465
+        city: Gargždai
+      - place: 2
+        name: Ieva Grikšaitė
+        rating: 1559
+        city: Šiauliai
+      - place: 3
+        name: Kotryna Šukytė
+        rating: 1605
+        city: Vilnius
+  - name: LTU BG16 ch 2023
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 16
+      gender: Excl
+    location: Vilnius
+    date_start: 06 03
+    date_end: 06 03
+    results_link: https://chess-results.com/tnr772659.aspx?lan=30&art=1&rd=9&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Karolis Gavėnavičius
+        rating: 1878
+        city: Vilnius
+      - place: 2
+        name: Vilius Rudzkis
+        rating: 1785
+        city: Vilnius
+      - place: 3
+        name: Dovydas Spevak
+        rating: 1731
+        city: Gargždai
+    women_winners:
+      - place: 1
+        name: Deina Ščipokaitė
+        rating: 1457
+        city: Šiauliai
+      - place: 2
+        name: Medeina Strokova
+        rating: 1446
+        city: Jurbarkas
+      - place: 3
+        name: Jogailė Paliulytė
+        rating: 1182
+        city: Gargždai
+  - name: LTU BG14 ch 2023
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 14
+      gender: Excl
+    location: Vilnius
+    date_start: 06 03
+    date_end: 06 03
+    results_link: https://chess-results.com/tnr772663.aspx?lan=30&art=1&rd=9&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: FM Gustas Morkūnas
+        rating: 2131
+        city: Kėdainiai
+      - place: 2
+        name: Pijus Grybkauskas
+        rating: 1887
+        city: Vilnius
+      - place: 3
+        name: Martynas Misiuk
+        rating: 1882
+        city: Vilnius
+    women_winners:
+      - place: 1
+        name: Ula Rudzinskaitė
+        rating: 1443
+        city: Vilnius
+      - place: 2
+        name: Agota Kontrimaitė
+        rating: 1349
+        city: Plungė
+      - place: 3
+        name: Laura Maurutytė
+        rating: 1440
+        city: Vilkaviškis
+  - name: LTU BG12 ch 2023
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 12
+      gender: Excl
+    location: Vilnius
+    date_start: 06 03
+    date_end: 06 03
+    results_link: https://chess-results.com/tnr772665.aspx?lan=30&art=1&rd=9&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Šarūnas Norkeliūnas
+        rating: 1615
+        city: Marijampolė
+      - place: 2
+        name: Ignas Jasas
+        rating: 1576
+        city: Panevėžys
+      - place: 3
+        name: Rytis Kavalnis
+        rating: 1593
+        city: Vilnius
+    women_winners:
+      - place: 1
+        name: Arina Budiak
+        rating: 1360
+        city: Klaipėda
+      - place: 2
+        name: Auksė Zonytė
+        rating: 1468
+        city: Gargždai
+      - place: 3
+        name: Eva Sergeeva
+        rating: 1220
+        city: Vilnius
+  - name: LTU BG10 ch 2023
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 10
+      gender: Excl
+    location: Vilnius
+    date_start: 06 03
+    date_end: 06 03
+    results_link: https://chess-results.com/tnr772666.aspx?lan=30&art=1&rd=9&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Rokas Šakinis
+        rating: 1461
+        city: Plungė
+      - place: 2
+        name: Edvinas Zaborovskis
+        rating: 1139
+        city: Vilnius
+      - place: 3
+        name: Augustas Rudys
+        rating: 1225
+        city: Vilnius
+    women_winners:
+      - place: 1
+        name: Zlata Bogomolnikova
+        rating: 1300
+        city: Vilnius
+      - place: 2
+        name: Milda Alejūnaitė
+        rating: 1327
+        city: Šiauliai
+      - place: 3
+        name: Diana Deviatkova
+        rating: 1080
+        city: Klaipėda
+  - name: LTU BG08 ch 2023
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 8
+      gender: Excl
+    location: Vilnius
+    date_start: 06 03
+    date_end: 06 03
+    results_link: https://chess-results.com/tnr772668.aspx?lan=30&art=1&rd=9&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Benas Bausys
+        rating: 1200
+        city: Vilnius
+      - place: 2
+        name: Oskaras Kušlikis
+        rating: 1045
+        city: Gargždai
+      - place: 3
+        name: Kasparas Puzas
+        rating: 1133
+        city: Kaunas
+    women_winners:
+      - place: 1
+        name: Karina Šer
+        rating: 1170
+        city: Šiauliai
+      - place: 2
+        name: Mingailė Latanauskaitė
+        city: Ukmergė
+      - place: 3
+        name: Kamilė Šerpytytė
+        city: Tauragė
+  - name: LTU BG18 blitz ch 2023
+    config:
+      time_control: Blitz
+      format: Individual
+      rank: null
+      open: false
+      age_group: 18
+      gender: Excl
+    location: Vilnius
+    date_start: 06 02
+    date_end: 06 02
+    results_link: https://chess-results.com/tnr772646.aspx?lan=30&art=1&rd=9&fed=LTU&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Daniel Leclere
+        rating: 1859
+        city: Vilnius
+      - place: 2
+        name: Nikita Posaškov
+        rating: 2069
+        city: Vilnius
+      - place: 3
+        name: Matas Raugevičius
+        rating: 1814
+        city: Kaunas
+    women_winners:
+      - place: 1
+        name: Ieva Grikšaitė
+        rating: 1672
+        city: Šiauliai
+      - place: 2
+        name: Kotryna Šukytė
+        rating: 1590
+        city: Vilnius
+      - place: 3
+        name: Jorė Balčiūnaitė
+        rating: 1420
+        city: Gargždai
+  - name: LTU BG16 blitz ch 2023
+    config:
+      time_control: Blitz
+      format: Individual
+      rank: null
+      open: false
+      age_group: 16
+      gender: Excl
+    location: Vilnius
+    date_start: 06 02
+    date_end: 06 02
+    results_link: https://chess-results.com/tnr772646.aspx?lan=30&art=1&rd=9&fed=LTU&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Gleb Pidlužnij
+        rating: 2166
+        city: Klaipėda
+      - place: 2
+        name: Vilius Rudzkis
+        rating: 1839
+        city: Vilnius
+      - place: 3
+        name: Karolis Gavėnavičius
+        rating: 1900
+        city: Vilnius
+    women_winners:
+      - place: 1
+        name: Deimantė Karaliūtė
+        rating: 1299
+        city: Biržai
+      - place: 2
+        name: Barbora Gedvilaitė
+        rating: 1358
+        city: Plungė
+      - place: 3
+        name: Medeina Strokova
+        rating: 1112
+        city: Jurbarkas
+  - name: LTU BG14 blitz ch 2023
+    config:
+      time_control: Blitz
+      format: Individual
+      rank: null
+      open: false
+      age_group: 14
+      gender: Excl
+    location: Vilnius
+    date_start: 06 02
+    date_end: 06 02
+    results_link: https://chess-results.com/tnr772649.aspx?lan=30&art=1&rd=9&fed=LTU&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: FM Gustas Morkūnas
+        rating: 2004
+        city: Kėdainiai
+      - place: 2
+        name: CM Augustinas Bazilius
+        rating: 1980
+        city: Vilnius
+      - place: 3
+        name: Daniel Šer
+        rating: 1828
+        city: Šiauliai
+    women_winners:
+      - place: 1
+        name: Saulė Čumačenko
+        rating: 1196
+        city: Kaunas
+      - place: 2
+        name: Patricija Alionytė
+        rating: 1565
+        city: Kaunas
+      - place: 3
+        name: Ula Rudzinskaitė
+        rating: 1302
+        city: Vilnius
+  - name: LTU BG12 blitz ch 2023
+    config:
+      time_control: Blitz
+      format: Individual
+      rank: null
+      open: false
+      age_group: 12
+      gender: Excl
+    location: Vilnius
+    date_start: 06 02
+    date_end: 06 02
+    results_link: https://chess-results.com/tnr772649.aspx?lan=30&art=1&rd=9&fed=LTU&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Šarūnas Norkeliūnas
+        rating: 1416
+        city: Marijampolė
+      - place: 2
+        name: Julius Mikolavičius
+        rating: 1336
+        city: Šiauliai
+      - place: 3
+        name: Ernestas Žiukas
+        rating: 1511
+        city: Vilnius
+    women_winners:
+      - place: 1
+        name: Arina Budiak
+        rating: 1394
+        city: Klaipėda
+      - place: 2
+        name: Auksė Zonytė
+        rating: 1328
+        city: Gargždai
+      - place: 3
+        name: Laura Grikšaitė
+        rating: 1029
+        city: Šiauliai
+  - name: LTU BG10 blitz ch 2023
+    config:
+      time_control: Blitz
+      format: Individual
+      rank: null
+      open: false
+      age_group: 10
+      gender: Excl
+    location: Vilnius
+    date_start: 06 02
+    date_end: 06 02
+    results_link: https://chess-results.com/tnr772653.aspx?lan=30&art=1&rd=9&fed=LTU&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Rokas Šakinis
+        rating: 1488
+        city: Plungė
+      - place: 2
+        name: Margiris Pocius
+        rating: 1110
+        city: Vilnius
+      - place: 3
+        name: Vytis Vedrickas
+        rating: 1195
+        city: Vilnius
+    women_winners:
+      - place: 1
+        name: Milda Alejūnaitė
+        rating: 1204
+        city: Šiauliai
+      - place: 2
+        name: Zlata Bogomolnikova
+        rating: 1203
+        city: Vilnius
+      - place: 3
+        name: Elizaveta Burdina
+        city: Klaipėda
+  - name: LTU BG08 blitz ch 2023
+    config:
+      time_control: Blitz
+      format: Individual
+      rank: null
+      open: false
+      age_group: 8
+      gender: Excl
+    location: Vilnius
+    date_start: 06 02
+    date_end: 06 02
+    results_link: https://chess-results.com/tnr772653.aspx?lan=30&art=1&rd=9&fed=LTU&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Benas Bausys
+        rating: 1259
+        city: Vilnius
+      - place: 2
+        name: Aistis Vedrickas
+        rating: 1284
+        city: Vilnius
+      - place: 3
+        name: Oskaras Kušlikis
+        city: Gargždai
+    women_winners:
+      - place: 1
+        name: Karina Šer
+        rating: 1072
+        city: Šiauliai
+      - place: 2
+        name: Medeinė Katinaitė
+        city: Panevėžys
+      - place: 3
+        name: Mingailė Latanauskaitė
+        city: Ukmergė
+  - name: LTU team youth ch rapid B10 2023
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: 10
+      gender: Open
+    location: Vilnius
+    date_start: 10 14
+    date_end: 10 14
+    results_link: https://chess-results.com/tnr830836.aspx?lan=30&art=0&rd=6&turdet=YES
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Vilniaus „Tauras-1“
+        members:
+          - Benas Bausys
+          - Edvinas Zaborovskis
+          - Nikita Latyševas
+          - Robert Malakhovskiy
+          - Kuzma Katin
+      - place: 2
+        name: Vilniaus „Šachmatų erdvės“ 1
+        members:
+          - Augustas Rudys
+          - Mantas Vasilevskis
+          - Raigardas Krivka
+          - Artiom Vysockij
+          - Vincentas Devyžis
+      - place: 3
+        name: Tauragės SC 1
+        members:
+          - Dominykas Stankaitis
+          - Herkus Grigaliūnas
+          - Paulius Gudaitis
+          - Markas Norvaišas
+          - Adomas Vilius Kybartas
+  - name: LTU team youth ch rapid G10 2023
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: 10
+      gender: Women
+    location: Vilnius
+    date_start: 10 14
+    date_end: 10 14
+    results_link: https://chess-results.com/tnr830837.aspx?lan=30&art=0&turdet=YES
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Šiaulių SC „Dubysa“
+        members:
+          - Milda Alejūnaitė
+          - Karina Šer
+          - Jorė Kaplunaitė
+      - place: 2
+        name: Vilniaus „Šachmatų erdvės“ 1
+        members:
+          - Zlata Bogomolnikova
+          - Adelė Rudytė
+          - Gytė Viškelytė
+      - place: 3
+        name: Tauragės SC 1
+        members:
+          - Eligija Misevičiūtė
+          - Augustė Majūtė
+          - Kamilė Šerpytytė
+  - name: LTU team youth ch rapid B14 2023
+    config:
+      time_control: Rapid
+      format: Team
+      rank: Rapid
+      open: false
+      age_group: 14
+      gender: Open
+    location: Panevėžys
+    date_start: 11 18
+    date_end: 11 18
+    results_link: https://chess-results.com/tnr846904.aspx?lan=1&art=1
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Kauno SM „Gaja“ 1
+        members:
+          - Pijus Grybkauskas
+          - Rokas Šakinis
+          - Patricija Alionytė
+          - Rojus Budreckas
+          - Augustas Alionis
+      - place: 2
+        name: Vilniaus „Šachmatų erdvės“ 1
+        members:
+          - Jokūbas Dijokas
+          - Rytis Kavalnis
+          - Tadas Navickas
+          - Titas Blažys
+          - Ernestas Žiukas
+      - place: 3
+        name: Šiaulių SC „Dubysa“ 1
+        members:
+          - Daniel Šer
+          - Igor Gerasimov
+          - Julius Mikolavičius
+          - Domas Platbarzdis
+          - Kostas Milkevičius
+  - name: LTU team youth ch blitz B14 2023
+    config:
+      time_control: Blitz
+      format: Team
+      rank: Blitz
+      open: false
+      age_group: 14
+      gender: Open
+    location: Panevėžys
+    date_start: 11 18
+    date_end: 11 18
+    results_link: https://chess-results.com/tnr849236.aspx?lan=1&art=1
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Šiaulių SC „Dubysa“ 1
+        members:
+          - Daniel Šer
+          - Igor Gerasimov
+          - Julius Mikolavičius
+          - Domas Platbarzdis
+          - Kostas Milkevičius
+      - place: 2
+        name: Vilniaus „Šachmatų erdvės“ 1
+        members:
+          - Jokūbas Dijokas
+          - Rytis Kavalnis
+          - Tadas Navickas
+          - Titas Blažys
+          - Ernestas Žiukas
+      - place: 3
+        name: Vilkaviškio SM
+        members:
+          - Deividas Ivanauskas
+          - Žygimantas Narušis
+          - Laura Maurutytė
+          - Deimantas Ivanauskas
+          - Tautvydas Narušis
+  - name: LTU team youth ch rapid G14 2023
+    config:
+      time_control: Rapid
+      format: Team
+      rank: Rapid
+      open: false
+      age_group: 14
+      gender: Women
+    location: Panevėžys
+    date_start: 11 18
+    date_end: 11 18
+    results_link: https://chess-results.com/tnr846906.aspx?lan=30&art=0&turdet=YES
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Vilniaus „Šachmatų erdvės“
+        members:
+          - Marta Aglinskytė
+          - Zlata Bogomolnikova
+          - Sofija Kiseleva
+      - place: 2
+        name: Vilniaus „Sostinės Tauras“
+        members:
+          - Ula Rudzinskaitė
+          - Eva Sergeeva
+          - Ugnė Paužaitė
+      - place: 3
+        name: Šiaulių SC „Dubysa“
+        members:
+          - Milda Alejūnaitė
+          - Ugnė Platbarzdytė
+          - Laura Grikšaitė
+  - name: LTU team youth ch blitz G14 2023
+    config:
+      time_control: Blitz
+      format: Team
+      rank: Blitz
+      open: false
+      age_group: 14
+      gender: Women
+    location: Panevėžys
+    date_start: 11 18
+    date_end: 11 18
+    results_link: https://chess-results.com/tnrr849087.aspx?lan=30&art=0&turdet=YES
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Vilniaus „Sostinės Tauras“
+        members:
+          - Ula Rudzinskaitė
+          - Eva Sergeeva
+          - Ugnė Paužaitė
+      - place: 2
+        name: Vilniaus „Šachmatų erdvės“
+        members:
+          - Marta Aglinskytė
+          - Zlata Bogomolnikova
+          - Sofija Kiseleva
+      - place: 3
+        name: Panevėžio SC 1
+        members:
+          - Smiltė Petronytė
+          - Austėja Liobikaitė
+          - Emma Victoria Seifert
+  - name: LTU team youth ch rapid B18 2023
+    config:
+      time_control: Rapid
+      format: Team
+      rank: Rapid
+      open: false
+      age_group: 18
+      gender: Open
+    location: Šiauliai
+    date_start: 11 04
+    date_end: 11 04
+    results_link: https://chess-results.com/tnr841836.aspx?lan=1&art=1
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Kauno SM „Gaja“
+        members:
+          - Gleb Pidlužnij
+          - FM Gustas Morkūnas
+          - Pijus Grybkauskas
+          - Matas Raugevičius
+          - Domantas Jasiukaitis
+      - place: 2
+        name: Vilniaus SM „Sostinės Tauras“
+        members:
+          - Karolis Gavėnavičius
+          - Daniel Leclere
+          - Ugnius Michailovas
+          - Vincentas Dobrovolskis
+          - Vincentas Apšega
+      - place: 3
+        name: Šiaulių SC „Dubysa“
+        members:
+          - Daniel Šer
+          - Tomas Povilaitis
+          - Matas Povilaitis
+          - Mantas Matulaitis
+          - Julius Mikolavičius
+  - name: LTU team youth ch blitz B18 2023
+    config:
+      time_control: Blitz
+      format: Team
+      rank: Blitz
+      open: false
+      age_group: 18
+      gender: Open
+    location: Šiauliai
+    date_start: 11 04
+    date_end: 11 04
+    results_link: https://chess-results.com/tnr842372.aspx?lan=1&art=1
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Kauno SM „Gaja“
+        members:
+          - Gleb Pidlužnij
+          - FM Gustas Morkūnas
+          - Pijus Grybkauskas
+          - Matas Raugevičius
+          - Domantas Jasiukaitis
+      - place: 2
+        name: Šiaulių SC „Dubysa“
+        members:
+          - Daniel Šer
+          - Tomas Povilaitis
+          - Matas Povilaitis
+          - Mantas Matulaitis
+          - Julius Mikolavičius
+      - place: 3
+        name: Vilniaus SM „Sostinės Tauras“
+        members:
+          - Daniel Leclere
+          - Karolis Gavėnavičius
+          - Ugnius Michailovas
+          - Vincentas Dobrovolskis
+          - Vincentas Apšega
+  - name: LTU team youth ch rapid G18 2023
+    config:
+      time_control: Rapid
+      format: Team
+      rank: Rapid
+      open: false
+      age_group: 18
+      gender: Women
+    location: Šiauliai
+    date_start: 11 04
+    date_end: 11 04
+    results_link: https://chess-results.com/tnr841835.aspx?lan=30&art=0&turdet=YES
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Šiaulių SC „Dubysa“ 1
+        members:
+          - Ieva Grikšaitė
+          - Eglė Grikšaitė
+          - Rusnė Andrašūnaitė
+      - place: 2
+        name: Klaipėdos r. BĮSC
+        members:
+          - Jorė Balčiūnaitė
+          - Jogailė Paliulytė
+          - Auksė Zonytė
+      - place: 3
+        name: Vilkaviškio SM
+        members:
+          - Laura Maurutytė
+          - Augustė Ovčinikova
+          - Liepa Čibirkaitė
+  - name: LTU team youth ch blitz G18 2023
+    config:
+      time_control: Blitz
+      format: Team
+      rank: Blitz
+      open: false
+      age_group: 18
+      gender: Women
+    location: Šiauliai
+    date_start: 11 04
+    date_end: 11 04
+    results_link: https://chess-results.com/tnr842371.aspx?lan=30&art=0&turdet=YES
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Šiaulių SC „Dubysa“ 1
+        members:
+          - Ieva Grikšaitė
+          - Eglė Grikšaitė
+          - Rusnė Andrašūnaitė
+      - place: 2
+        name: Plungės SRC
+        members:
+          - Barbora Gedvilaitė
+          - Agota Kontrimaitė
+          - Lėja Žutautė
+      - place: 3
+        name: Vilkaviškio SM
+        members:
+          - Laura Maurutytė
+          - Augustė Ovčinikova
+          - Liepa Čibirkaitė

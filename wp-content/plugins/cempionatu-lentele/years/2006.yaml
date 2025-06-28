@@ -1,0 +1,68 @@
+year: 2006
+tournaments:
+  - name: LTU ch 2006 Finalas
+    config:
+      time_control: Std
+      format: Individual
+      rank: Finalas
+      open: false
+      age_group: null
+      gender: Open
+    location: Vilnius
+    date_start: 03 18
+    date_end: 03 26
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: GM Vidmantas Mališauskas
+        rating: 2503
+      - place: 2
+        name: IM Algimantas Butnorius
+        rating: 2392
+      - place: 3
+        name: IM Darius Zagorskis
+        rating: 2489
+  - name: LTU ch 2006 Pusfinalis
+    config:
+      time_control: Std
+      format: Individual
+      rank: Pusfinalis
+      open: false
+      age_group: null
+      gender: Open
+    location: Vilnius
+    date_start: 02 20
+    date_end: 02 26
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: IM Vytautas Šlapikas
+      - place: 2
+        name: IM Gintautas Piešina
+      - place: 3
+        name: Vytautas Vaznonis
+  - name: LTU wch 2006 Atviras turnyras
+    config:
+      time_control: Std
+      format: Individual
+      rank: Atviras turnyras
+      open: false
+      age_group: null
+      gender: Women
+    location: Šiauliai
+    date_start: 03 18
+    date_end: 03 26
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: Deimantė Daulytė
+        rating: 2244
+      - place: 2
+        name: Daiva Batytė
+        rating: 2162
+      - place: 3
+        name: Jovita Žiogaitė
+        rating: 2081
