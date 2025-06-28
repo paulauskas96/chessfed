@@ -5,6 +5,10 @@ function startScrapper() {
   (async function () {
     const browser = await puppeteer.launch({ headless: false });
     const page = await browser.newPage();
+    // Set X-Requested-With header for all requests
+    await page.setExtraHTTPHeaders({
+      "X-Requested-With": "XMLHttpRequest",
+    });
     console.log("scraperis started");
     const urls = {
       "https://ratings.fide.com/a_top_var.php?continent=&country=LTU&rating=&gender=M&age1=&age2=&period=&period2=":

@@ -7,6 +7,9 @@ use Goutte\Client;
 function startScraper()
 {
     $client = new Client();
+    // Set X-Requested-With header for all requests
+    $client->setServerParameter('HTTP_X-Requested-With', 'XMLHttpRequest');
+
     $urls = [
         "men" => "https://ratings.fide.com/a_top_var.php?continent=&country=LTU&rating=&gender=M&age1=&age2=&period=&period2=",
         "men" => "https://ratings.fide.com/a_top_var.php?continent=&country=LTU&rating=&gender=M&age1=&age2=&period=&period2=",
