@@ -47,3 +47,7 @@ wp-config.php
 # uncomment the next line
 #/wp-content/themes
 wp-content/plugins/cempionatu-lentele/LSF_varzybu_istorija.json
+wp-content/plugins/table-plugin/PhpScraping/data.json
+
+# Ignore build output for all WordPress plugins built with npm
+wp-content/plugins/*/build/
