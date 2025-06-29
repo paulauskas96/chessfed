@@ -108,19 +108,26 @@ function render_chess_ratings_block($attributes)
 	$html .= '<tr class="table-heading">';
 	$html .= '<th>Nr.</th>';
 	if ($attributes['showButtons']) {
-		$html .= '<th>FIDE Title</th>';
+		$html .= '<th>Titulas</th>';
 	}
 	$html .= '<th>Žaidėjas</th>';
 	$html .= '<th>Reitingas</th>';
 	$html .= '</tr>';
 	$html .= '</thead>';
 	$html .= '<tbody class="table-body">';
+	// Load nameMap.json for diacritic replacements
+	$nameMapPath = __DIR__ . '/src/nameMap.json';
+	$nameMap = [];
+	if (file_exists($nameMapPath)) {
+		$nameMap = json_decode(file_get_contents($nameMapPath), true);
+	}
+
 	foreach ($tableData as $row) {
 		$html .= '<tr class="table-info">';
 		$html .= '<td class="nr">' . $row['nr'] . '</td>';
 		$html .= '<td class="playerTitle">' . $row['playerTitle'] . '</td>';
 
-		// Extract href attribute from playerName
+		// Format hyperlink text like in edit.js, but keep the hyperlink
 		$playerNameHtml = $row['playerName'];
 		$dom = new DOMDocument;
 		$dom->loadHTML($playerNameHtml, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
@@ -129,9 +136,40 @@ function render_chess_ratings_block($attributes)
 			$href = $links->item(0)->getAttribute('href');
 			// Add the prefix to the href attribute
 			$href = 'https://ratings.fide.com/' . ltrim($href, '/');
-			$playerName = '<a href="' . $href . '" target="_blank">' . $links->item(0)->nodeValue . '</a>';
+			$linkText = $links->item(0)->nodeValue;
+			// Format link text as in edit.js
+			$text = strip_tags($linkText);
+			$parts = explode(',', $text);
+			if (count($parts) === 2) {
+				$surname = trim($parts[0]);
+				$name = trim($parts[1]);
+				$fullKey = $name . ' ' . $surname;
+				if (isset($nameMap[$fullKey])) {
+					$displayName = $nameMap[$fullKey];
+				} else {
+					$displayName = $fullKey;
+				}
+			} else {
+				$displayName = $text;
+			}
+			$playerName = '<a href="' . $href . '" target="_blank">' . htmlspecialchars($displayName) . '</a>';
 		} else {
-			$playerName = $playerNameHtml;
+			// No link, just format as in edit.js
+			$text = strip_tags($playerNameHtml);
+			$parts = explode(',', $text);
+			if (count($parts) === 2) {
+				$surname = trim($parts[0]);
+				$name = trim($parts[1]);
+				$fullKey = $name . ' ' . $surname;
+				if (isset($nameMap[$fullKey])) {
+					$displayName = $nameMap[$fullKey];
+				} else {
+					$displayName = $fullKey;
+				}
+			} else {
+				$displayName = $text;
+			}
+			$playerName = htmlspecialchars($displayName);
 		}
 
 		$html .= '<td class="playerName underline">' . $playerName . '</td>';

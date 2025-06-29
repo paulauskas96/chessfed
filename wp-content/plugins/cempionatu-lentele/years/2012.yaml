@@ -259,7 +259,7 @@ tournaments:
           - IM Vaidas Sakalauskas
           - FM Tautvydas Vedrickas
           - Vaidas Šetkauskas
-          - WGM Daulytė Deimantė
+          - WGM Deimantė Daulytė
           - Laimonas Kudžma
       - place: 3
         name: Panevėžio KKSC-1
@@ -268,7 +268,7 @@ tournaments:
           - Tadas Vanagas
           - Andrius Brazdžionis
           - Nerijus Jurkūnas
-          - Vanagaitė Giedrė
+          - Giedrė Vanagaitė
   - name: LTU B18 ch 2012
     config:
       time_control: Std

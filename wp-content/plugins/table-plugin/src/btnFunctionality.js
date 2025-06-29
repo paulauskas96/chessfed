@@ -99,19 +99,41 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 function updateTable(newTableData) {
 	// Get the table body element
-
 	const tableBody = document.querySelector(".table-body");
-	// Clear the current table data
 	tableBody.innerHTML = "";
-	// Define the order of the columns
 	const columnOrder = ["nr", "playerTitle", "playerName", "playerRating"];
+
+	// Load nameMap.json synchronously (since it's small)
+	let nameMap = {};
+	const xhr = new XMLHttpRequest();
+	xhr.open("GET", "/wp-content/plugins/table-plugin/src/nameMap.json", false);
+	xhr.overrideMimeType("application/json");
+	xhr.send(null);
+	if (xhr.status === 200) {
+		nameMap = JSON.parse(xhr.responseText);
+	}
+
+	function formatPlayerName(playerName) {
+		const text = playerName.replace(/<[^>]*>/g, "");
+		const parts = text.split(",");
+		if (parts.length === 2) {
+			let surname = parts[0].trim();
+			let name = parts[1].trim();
+			let fullKey = `${name} ${surname}`;
+			if (nameMap[fullKey]) {
+				return nameMap[fullKey];
+			}
+			return `${name} ${surname}`;
+		}
+		return text;
+	}
+
 	newTableData.forEach((rowData) => {
 		const row = document.createElement("tr");
 		row.className = "table-info";
 		columnOrder.forEach((key) => {
 			const cellData = rowData[key];
 			const cell = document.createElement("td");
-			// Add class to each cell based on its position in the row
 			switch (columnOrder.indexOf(key)) {
 				case 0:
 					cell.className = "playerNr";
@@ -124,20 +146,18 @@ function updateTable(newTableData) {
 				case 2:
 					cell.className = "playerName";
 					if (key === "playerName") {
-						// Use a regular expression to extract the anchor tag's href attribute
+						const displayName = formatPlayerName(cellData);
 						const match = cellData.match(/href="([^"]*)"/);
 						if (match) {
 							const href = match[1];
-							// Create an anchor tag and set its href attribute
 							const anchor = document.createElement("a");
 							anchor.href = "https://ratings.fide.com" + href;
 							anchor.target = "_blank";
-							// Set the innerHTML to preserve the anchor tag
-							anchor.textContent = cellData.replace(/<[^>]*>/g, ""); // Remove HTML tags
+							anchor.textContent = displayName;
 							cell.appendChild(anchor);
 							cell.classList.add("underline");
 						} else {
-							cell.textContent = cellData;
+							cell.textContent = displayName;
 						}
 					}
 					break;
@@ -148,7 +168,6 @@ function updateTable(newTableData) {
 			}
 			row.appendChild(cell);
 		});
-		// Add the row to the table body
 		tableBody.appendChild(row);
 	});
 }

@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import data from "../PhpScraping/data.json";
 import { CheckboxControl } from "@wordpress/components";
 import { InspectorControls } from "@wordpress/block-editor";
+import nameMap from "./nameMap.json";
 
 export default function Edit({ attributes, setAttributes }) {
 	const [tableData, setTableData] = useState(data.general);
@@ -49,6 +50,23 @@ export default function Edit({ attributes, setAttributes }) {
 		setActiveCategory("s50");
 		setAttributes({ category: "s50" });
 	};
+
+	// Map using "name surname" as the key for more precise mapping
+	function formatPlayerName(playerName) {
+		const text = playerName.replace(/<[^>]*>/g, "");
+		const parts = text.split(",");
+		if (parts.length === 2) {
+			let surname = parts[0].trim();
+			let name = parts[1].trim();
+			let fullKey = `${name} ${surname}`;
+			// Use mapping for "name surname" if available
+			if (nameMap[fullKey]) {
+				return nameMap[fullKey];
+			}
+			return `${name} ${surname}`;
+		}
+		return text;
+	}
 
 	return (
 		<>
@@ -171,7 +189,7 @@ export default function Edit({ attributes, setAttributes }) {
 						<thead>
 							<tr className="table-heading">
 								<th>Nr.</th>
-								<th>FIDE Title</th>
+								<th>Titulas</th>
 								<th>Žaidėjas</th>
 								<th>Reitingas</th>
 							</tr>
@@ -182,7 +200,7 @@ export default function Edit({ attributes, setAttributes }) {
 									<tr className="table-info" key={index}>
 										<td className="playerNr">{row.nr}</td>
 										<td className="playerTitle">{row.playerTitle}</td>
-										<td className="playerName">{row.playerName}</td>
+										<td className="playerName">{formatPlayerName(row.playerName)}</td>
 										<td className="playerRating">{row.playerRating}</td>
 									</tr>
 								);
