@@ -53,3 +53,5 @@ wp-content/plugins/table-plugin/PhpScraping/data.json
 wp-content/plugins/*/build/
 wp-content/plugins/*/vendor/
 wp-content/plugins/*/*/vendor/
+
+node_modules/

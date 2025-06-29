@@ -4,6 +4,22 @@ require 'vendor/autoload.php';
 
 use Goutte\Client;
 
+// Helper to build FIDE rating URLs
+function buildFideUrl($params = []) {
+    $defaults = [
+        'continent' => '',
+        'country' => 'LTU',
+        'rating' => '',
+        'gender' => '',
+        'age1' => '',
+        'age2' => '',
+        'period' => '',
+        'period2' => ''
+    ];
+    $query = array_merge($defaults, $params);
+    return "https://ratings.fide.com/a_top_var.php?" . http_build_query($query);
+}
+
 function startScraper()
 {
     $client = new Client();
@@ -11,14 +27,14 @@ function startScraper()
     $client->setServerParameter('HTTP_X-Requested-With', 'XMLHttpRequest');
 
     $urls = [
-        "men" => "https://ratings.fide.com/a_top_var.php?continent=&country=LTU&rating=&gender=M&age1=&age2=&period=&period2=",
-        "men" => "https://ratings.fide.com/a_top_var.php?continent=&country=LTU&rating=&gender=M&age1=&age2=&period=&period2=",
-        "female" => "https://ratings.fide.com/a_top_var.php?continent=&country=LTU&rating=&gender=F&age1=&age2=&period=&period2=",
-        "general" => "https://ratings.fide.com/a_top_var.php?continent=&country=LTU&rating=&gender=&age1=&age2=&period=&period2=",
-        "youthU18" => "https://ratings.fide.com/a_top_var.php?continent=&country=LTU&rating=&gender=&age1=&age2=18&period=&period2=",
-        "youthU14" => "https://ratings.fide.com/a_top_var.php?continent=&country=LTU&rating=&gender=&age1=&age2=14&period=&period2=",
-        "youthU10" => "https://ratings.fide.com/a_top_var.php?continent=&country=LTU&rating=&gender=&age1=&age2=10&period=&period2=",
-        "senior" => "https://ratings.fide.com/a_top_var.php?continent=&country=LTU&rating=&gender=&age1=50&age2=&period=&period2="
+        "men" => buildFideUrl(['gender' => 'M']),
+        "female" => buildFideUrl(['gender' => 'F']),
+        "general" => buildFideUrl(),
+        "youthU18" => buildFideUrl(['age2' => '18']),
+        "youthU14" => buildFideUrl(['age2' => '14']),
+        "youthU10" => buildFideUrl(['age2' => '10']),
+        "s50" => buildFideUrl(['age1' => '50']),
+        "s65" => buildFideUrl(['age1' => '65'])
     ];
 
     $data = [];

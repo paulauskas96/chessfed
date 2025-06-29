@@ -9,6 +9,7 @@ import { InspectorControls } from "@wordpress/block-editor";
 export default function Edit({ attributes, setAttributes }) {
 	const [tableData, setTableData] = useState(data.general);
 	const [youthOpen, setYouthOpen] = useState(false);
+	const [seniorOpen, setSeniorOpen] = useState(false);
 	const [activeCategory, setActiveCategory] = useState("general");
 
 	const { showButtons } = attributes;
@@ -18,8 +19,13 @@ export default function Edit({ attributes, setAttributes }) {
 
 		if (["youthU18", "youthU14", "youthU10"].includes(category)) {
 			setYouthOpen(true);
+			setSeniorOpen(false);
+		} else if (["s50", "s65"].includes(category)) {
+			setSeniorOpen(true);
+			setYouthOpen(false);
 		} else {
 			setYouthOpen(false);
+			setSeniorOpen(false);
 		}
 
 		setActiveCategory(category);
@@ -29,9 +35,19 @@ export default function Edit({ attributes, setAttributes }) {
 	const youthBtnHandler = () => {
 		setTableData(data.youthU18);
 		setYouthOpen(!youthOpen);
+		setSeniorOpen(false);
 
 		setActiveCategory("youthU18");
 		setAttributes({ category: "youthU18" });
+	};
+
+	const seniorBtnHandler = () => {
+		setTableData(data.s50);
+		setSeniorOpen(!seniorOpen);
+		setYouthOpen(false);
+
+		setActiveCategory("s50");
+		setAttributes({ category: "s50" });
 	};
 
 	return (
@@ -116,16 +132,37 @@ export default function Edit({ attributes, setAttributes }) {
 								</>
 							)}
 						</div>
-
 						<button
-							data-category="senior"
+							data-category="s50"
 							className={`table-btn ${
-								activeCategory === "senior" ? "active" : ""
+								(seniorOpen || activeCategory === "s50" || activeCategory === "s65")
+									? "active"
+									: ""
 							}`}
-							onClick={() => handleButtonClick("senior")}
+							onClick={seniorBtnHandler}
 						>
-							Senjoraiiii
+							Senjorai
 						</button>
+						{seniorOpen && (
+							<div className="senior-btn-wrapper">
+								<button
+									className={`table-btn ${
+										activeCategory === "s50" ? "active" : ""
+									} S50`}
+									onClick={() => handleButtonClick("s50")}
+								>
+									S50
+								</button>
+								<button
+									className={`table-btn ${
+										activeCategory === "s65" ? "active" : ""
+									} S65`}
+									onClick={() => handleButtonClick("s65")}
+								>
+									S65
+								</button>
+							</div>
+						)}
 					</div>
 				)}
 				<div className="table-wrapper">

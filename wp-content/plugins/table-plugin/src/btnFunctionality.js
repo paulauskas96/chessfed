@@ -3,9 +3,15 @@ document.addEventListener("DOMContentLoaded", function () {
 	const youthBtnWrapper = document.querySelector(".youth-btn-wrapper");
 	const youthBtn = document.querySelector('[data-category="youthU18"]');
 	const youthU18Btn = document.querySelector(".U18");
+	const seniorBtnWrapper = document.querySelector(".senior-btn-wrapper");
+	const seniorBtn = document.querySelector('[data-category="s50"].senior');
+	const s50Btn = document.querySelector(".S50");
 
 	if (youthBtnWrapper) {
 		youthBtnWrapper.style.display = "none";
+	}
+	if (seniorBtnWrapper) {
+		seniorBtnWrapper.style.display = "none";
 	}
 
 	const generalButton = document.querySelector('[data-category="general"]');
@@ -29,10 +35,18 @@ document.addEventListener("DOMContentLoaded", function () {
 					// Update the table on the frontend
 					updateTable(newTableData);
 				});
+			// Youth group toggle
 			if (["youthU18", "youthU14", "youthU10"].includes(category)) {
-				youthBtnWrapper.style.display = "flex";
+				if (youthBtnWrapper) youthBtnWrapper.style.display = "flex";
 			} else {
-				youthBtnWrapper.style.display = "none";
+				if (youthBtnWrapper) youthBtnWrapper.style.display = "none";
+			}
+
+			// Senior group toggle
+			if (["s50", "s65"].includes(category)) {
+				if (seniorBtnWrapper) seniorBtnWrapper.style.display = "flex";
+			} else {
+				if (seniorBtnWrapper) seniorBtnWrapper.style.display = "none";
 			}
 
 			buttons.forEach((btn) => {
@@ -40,15 +54,28 @@ document.addEventListener("DOMContentLoaded", function () {
 			});
 			event.target.classList.add("active");
 
-			// If 'U18', 'U14', or 'U10' is clicked, also add 'active' class to 'Jauniai' button
-			youthBtn.classList.add("active");
-			if (["youthU18", "youthU14", "youthU10"].includes(category)) {
-				youthBtn.classList.add("active");
-			} else {
-				youthBtn.classList.remove("active");
+			// Youth active state
+			if (youthBtn) {
+				if (["youthU18", "youthU14", "youthU10"].includes(category)) {
+					youthBtn.classList.add("active");
+				} else {
+					youthBtn.classList.remove("active");
+				}
 			}
-			if (event.target.classList.contains("youth")) {
+			if (event.target.classList.contains("youth") && youthU18Btn) {
 				youthU18Btn.classList.add("active");
+			}
+
+			// Senior active state
+			if (seniorBtn) {
+				if (["s50", "s65"].includes(category)) {
+					seniorBtn.classList.add("active");
+				} else {
+					seniorBtn.classList.remove("active");
+				}
+			}
+			if (event.target.classList.contains("senior") && s50Btn) {
+				s50Btn.classList.add("active");
 			}
 		});
 	});

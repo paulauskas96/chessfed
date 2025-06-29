@@ -64,7 +64,11 @@ function render_chess_ratings_block($attributes)
 		$html .= '<button data-category="youthU14" class="table-btn">U14</button>';
 		$html .= '<button data-category="youthU10" class="table-btn">U10</button>';
 		$html .= '</div>';
-		$html .= '<button data-category="senior" class="table-btn">Senjorai</button>';
+		$html .= '<button data-category="s50" class="table-btn senior">Senjorai</button>';
+		$html .= '<div class="senior-btn-wrapper">';
+		$html .= '<button data-category="s50" class="table-btn S50">S50</button>';
+		$html .= '<button data-category="s65" class="table-btn S65">S65</button>';
+		$html .= '</div>';
 		$html .= '</div>';
 		// cia yra mobile responsive meniu
 		$html .= '<select id="category-select" class="table-select">';
@@ -83,7 +87,15 @@ function render_chess_ratings_block($attributes)
 		}
 		$html .= '</optgroup>';
 
-		$html .= '<option value="senior">Senjorai</option>';
+		$html .= '<optgroup label="Senjorai">';
+		$seniorCategories = array(
+			"s50" => "S50",
+			"s65" => "S65"
+		);
+		foreach ($seniorCategories as $value => $label) {
+			$html .= '<option value="' . $value . '">' . $label . '</option>';
+		}
+		$html .= '</optgroup>';
 
 		$html .= '</select>';
 	}
