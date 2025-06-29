@@ -1,72 +1,25 @@
 import { __ } from "@wordpress/i18n";
 import { useBlockProps } from "@wordpress/block-editor";
 import "./editor.scss";
-import React, { useState } from "react";
-import data from "../PhpScraping/data.json";
+import React, { useEffect, useRef } from "react";
 import { CheckboxControl } from "@wordpress/components";
 import { InspectorControls } from "@wordpress/block-editor";
-import nameMap from "./nameMap.json";
 
 export default function Edit({ attributes, setAttributes }) {
-	const [tableData, setTableData] = useState(data.general);
-	const [youthOpen, setYouthOpen] = useState(false);
-	const [seniorOpen, setSeniorOpen] = useState(false);
-	const [activeCategory, setActiveCategory] = useState("general");
+	const containerRef = useRef(null);
+	const { showButtons, category = "general" } = attributes;
 
-	const { showButtons } = attributes;
-
-	const handleButtonClick = (category) => {
-		setTableData(data[category]);
-
-		if (["youthU18", "youthU14", "youthU10"].includes(category)) {
-			setYouthOpen(true);
-			setSeniorOpen(false);
-		} else if (["s50", "s65"].includes(category)) {
-			setSeniorOpen(true);
-			setYouthOpen(false);
-		} else {
-			setYouthOpen(false);
-			setSeniorOpen(false);
+	useEffect(() => {
+		if (containerRef.current && typeof window.renderRatingsTable === 'function') {
+			window.renderRatingsTable({
+				container: containerRef.current,
+				dataUrl: "/wp-content/plugins/table-plugin/PhpScraping/data.json",
+				nameMapUrl: "/wp-content/plugins/table-plugin/src/nameMap.json",
+				initialCategory: category,
+				showButtons: showButtons !== false,
+			});
 		}
-
-		setActiveCategory(category);
-		setAttributes({ category: category });
-	};
-
-	const youthBtnHandler = () => {
-		setTableData(data.youthU18);
-		setYouthOpen(!youthOpen);
-		setSeniorOpen(false);
-
-		setActiveCategory("youthU18");
-		setAttributes({ category: "youthU18" });
-	};
-
-	const seniorBtnHandler = () => {
-		setTableData(data.s50);
-		setSeniorOpen(!seniorOpen);
-		setYouthOpen(false);
-
-		setActiveCategory("s50");
-		setAttributes({ category: "s50" });
-	};
-
-	// Map using "name surname" as the key for more precise mapping
-	function formatPlayerName(playerName) {
-		const text = playerName.replace(/<[^>]*>/g, "");
-		const parts = text.split(",");
-		if (parts.length === 2) {
-			let surname = parts[0].trim();
-			let name = parts[1].trim();
-			let fullKey = `${name} ${surname}`;
-			// Use mapping for "name surname" if available
-			if (nameMap[fullKey]) {
-				return nameMap[fullKey];
-			}
-			return `${name} ${surname}`;
-		}
-		return text;
-	}
+	}, [showButtons, category]);
 
 	return (
 		<>
@@ -77,138 +30,11 @@ export default function Edit({ attributes, setAttributes }) {
 					onChange={(value) => setAttributes({ showButtons: value })}
 				/>
 			</InspectorControls>
-			<div className="table-button-wrapper">
-				{attributes.showButtons && (
-					<div className="button-wrapper">
-						<button
-							data-category="general"
-							className={`table-btn ${
-								activeCategory === "general" ? "active" : ""
-							}`}
-							onClick={() => handleButtonClick("general")}
-						>
-							Bendras
-						</button>
-						<button
-							data-category="men"
-							className={`table-btn ${
-								activeCategory === "men" ? "active" : ""
-							}`}
-							onClick={() => handleButtonClick("men")}
-						>
-							Vyrai
-						</button>
-						<button
-							data-category="female"
-							className={`table-btn ${
-								activeCategory === "female" ? "active" : ""
-							}`}
-							onClick={() => handleButtonClick("female")}
-						>
-							Moterys
-						</button>
-						<button
-							data-category="youthU14"
-							className={`table-btn ${
-								activeCategory === "youthU18" ||
-								activeCategory === "youthU14" ||
-								activeCategory === "youthU10"
-									? "active"
-									: ""
-							}`}
-							onClick={youthBtnHandler}
-						>
-							Jauniai
-						</button>
-						<div className="youth-btn-wrapper">
-							{youthOpen && (
-								<>
-									<button
-										className={`table-btn ${
-											activeCategory === "youthU18" ? "active" : ""
-										}`}
-										onClick={() => handleButtonClick("youthU18")}
-									>
-										U18
-									</button>
-									<button
-										className={`table-btn ${
-											activeCategory === "youthU14" ? "active" : ""
-										}`}
-										onClick={() => handleButtonClick("youthU14")}
-									>
-										U14
-									</button>
-									<button
-										className={`table-btn ${
-											activeCategory === "youthU10" ? "active" : ""
-										}`}
-										onClick={() => handleButtonClick("youthU10")}
-									>
-										U10
-									</button>
-								</>
-							)}
-						</div>
-						<button
-							data-category="s50"
-							className={`table-btn ${
-								(seniorOpen || activeCategory === "s50" || activeCategory === "s65")
-									? "active"
-									: ""
-							}`}
-							onClick={seniorBtnHandler}
-						>
-							Senjorai
-						</button>
-						{seniorOpen && (
-							<div className="senior-btn-wrapper">
-								<button
-									className={`table-btn ${
-										activeCategory === "s50" ? "active" : ""
-									} S50`}
-									onClick={() => handleButtonClick("s50")}
-								>
-									S50
-								</button>
-								<button
-									className={`table-btn ${
-										activeCategory === "s65" ? "active" : ""
-									} S65`}
-									onClick={() => handleButtonClick("s65")}
-								>
-									S65
-								</button>
-							</div>
-						)}
-					</div>
-				)}
-				<div className="table-wrapper">
-					<h3 className="table-title"></h3>
-					<table className="rating-table">
-						<thead>
-							<tr className="table-heading">
-								<th>Nr.</th>
-								<th>Titulas</th>
-								<th>Žaidėjas</th>
-								<th>Reitingas</th>
-							</tr>
-						</thead>
-						<tbody className="table-body">
-							{tableData.map((row, index) => {
-								return (
-									<tr className="table-info" key={index}>
-										<td className="playerNr">{row.nr}</td>
-										<td className="playerTitle">{row.playerTitle}</td>
-										<td className="playerName">{formatPlayerName(row.playerName)}</td>
-										<td className="playerRating">{row.playerRating}</td>
-									</tr>
-								);
-							})}
-						</tbody>
-					</table>
-				</div>
-			</div>
+			<div
+				ref={containerRef}
+				id="ratings-table-container"
+				className="table-button-wrapper"
+			></div>
 		</>
 	);
 }
