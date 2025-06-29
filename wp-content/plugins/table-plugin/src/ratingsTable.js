@@ -6,6 +6,7 @@ function renderRatingsTable({
   dataUrl = "/wp-content/plugins/table-plugin/PhpScraping/data.json",
   nameMapUrl = "/wp-content/plugins/table-plugin/src/nameMap.json",
   initialCategory = "general",
+  initialRatingType = "standard",
   showButtons = true
 }) {
   // Helper to fetch JSON
@@ -78,9 +79,18 @@ function renderRatingsTable({
     });
   }
 
-  // Render buttons and select
-  function renderControls(categories, currentCategory) {
+  // Render buttons, rating type select, and category select
+  function renderControls(categories, currentCategory, currentRatingType) {
     let html = "";
+    // Rating type dropdown
+    html += '<div class="rating-type-wrapper" style="margin-bottom:8px">';
+    html += '<label for="rating-type-select" style="margin-right:8px">Reitingo tipas:</label>';
+    html += '<select id="rating-type-select" class="rating-type-select">';
+    html += '<option value="standard">Standard</option>';
+    html += '<option value="rapid">Rapid</option>';
+    html += '<option value="blitz">Blitz</option>';
+    html += '</select>';
+    html += '</div>';
     if (showButtons) {
       html += '<div class="button-wrapper">';
       html += '<button data-category="general" class="table-btn">Bendras</button>';
@@ -121,18 +131,42 @@ function renderRatingsTable({
     html += '<tbody class="table-body"></tbody>';
     html += '</table></div>';
     container.innerHTML = html;
+    // Set rating type select value
+    const ratingTypeSelect = container.querySelector('#rating-type-select');
+    if (ratingTypeSelect) ratingTypeSelect.value = currentRatingType;
   }
 
   // Main logic
   let currentCategory = initialCategory;
+  let currentRatingType = initialRatingType;
   let tableData = {};
   let nameMap = {};
 
   Promise.all([fetchJson(dataUrl), fetchJson(nameMapUrl)]).then(([data, nMap]) => {
     tableData = data;
     nameMap = nMap;
-    renderControls(Object.keys(data), currentCategory);
-    updateTable(data[currentCategory], nameMap);
+    // Defensive: fallback to standard if not present
+    if (!tableData[currentRatingType]) currentRatingType = 'standard';
+    renderControls(Object.keys(tableData[currentRatingType]), currentCategory, currentRatingType);
+    updateTable(tableData[currentRatingType][currentCategory], nameMap);
+    attachEventListeners();
+  });
+
+  function attachEventListeners() {
+    // Rating type select logic
+    const ratingTypeSelect = container.querySelector('#rating-type-select');
+    if (ratingTypeSelect) {
+      ratingTypeSelect.value = currentRatingType;
+      ratingTypeSelect.onchange = null;
+      ratingTypeSelect.addEventListener('change', function () {
+        currentRatingType = ratingTypeSelect.value;
+        // Defensive: fallback to general if not present
+        if (!tableData[currentRatingType][currentCategory]) currentCategory = 'general';
+        renderControls(Object.keys(tableData[currentRatingType]), currentCategory, currentRatingType);
+        updateTable(tableData[currentRatingType][currentCategory], nameMap);
+        attachEventListeners();
+      });
+    }
 
     // Button logic
     const buttons = container.querySelectorAll(".table-btn");
@@ -149,6 +183,48 @@ function renderRatingsTable({
       buttons.forEach((btn) => btn.classList.remove("active"));
       const btn = container.querySelector(`[data-category="${category}"]`);
       if (btn) btn.classList.add("active");
+
+      // Helper to handle group logic
+      function handleGroup(group, wrapper, mainBtnClass, subBtnClasses) {
+        if (wrapper) {
+          wrapper.style.display = group.includes(category) ? "flex" : "none";
+        }
+        const mainBtn = container.querySelector(mainBtnClass);
+        if (mainBtn) {
+          if (group.includes(category)) mainBtn.classList.add("active");
+          else mainBtn.classList.remove("active");
+        }
+        subBtnClasses.forEach(sub => {
+          const subBtn = container.querySelector(sub.selector);
+          if (subBtn) {
+            if (category === sub.value) subBtn.classList.add("active");
+            else subBtn.classList.remove("active");
+          }
+        });
+      }
+
+      // Youth group
+      handleGroup(
+        ["youthU18", "youthU14", "youthU10"],
+        youthBtnWrapper,
+        '[data-category="youthU18"]',
+        [
+          { selector: ".U18", value: "youthU18" },
+          { selector: '[data-category="youthU14"]', value: "youthU14" },
+          { selector: '[data-category="youthU10"]', value: "youthU10" }
+        ]
+      );
+
+      // Senior group
+      handleGroup(
+        ["s50", "s65"],
+        seniorBtnWrapper,
+        '[data-category="s50"].senior',
+        [
+          { selector: ".S50", value: "s50" },
+          { selector: ".S65", value: "s65" }
+        ]
+      );
     }
 
     buttons.forEach((button) => {
@@ -156,7 +232,7 @@ function renderRatingsTable({
         event.preventDefault();
         const category = event.target.dataset.category;
         currentCategory = category;
-        updateTable(tableData[category], nameMap);
+        updateTable(tableData[currentRatingType][category], nameMap);
         // Youth group toggle
         if (["youthU18", "youthU14", "youthU10"].includes(category)) {
           if (youthBtnWrapper) youthBtnWrapper.style.display = "flex";
@@ -170,28 +246,6 @@ function renderRatingsTable({
           if (seniorBtnWrapper) seniorBtnWrapper.style.display = "none";
         }
         setActiveButton(category);
-        // Youth active state
-        if (youthBtn) {
-          if (["youthU18", "youthU14", "youthU10"].includes(category)) {
-            youthBtn.classList.add("active");
-          } else {
-            youthBtn.classList.remove("active");
-          }
-        }
-        if (event.target.classList.contains("youth") && youthU18Btn) {
-          youthU18Btn.classList.add("active");
-        }
-        // Senior active state
-        if (seniorBtn) {
-          if (["s50", "s65"].includes(category)) {
-            seniorBtn.classList.add("active");
-          } else {
-            seniorBtn.classList.remove("active");
-          }
-        }
-        if (event.target.classList.contains("senior") && s50Btn) {
-          s50Btn.classList.add("active");
-        }
       });
     });
 
@@ -199,13 +253,21 @@ function renderRatingsTable({
     const categorySelect = container.querySelector("#category-select");
     if (categorySelect) {
       categorySelect.value = currentCategory;
+      categorySelect.onchange = null;
       categorySelect.addEventListener("change", function () {
         const selectedCategory = categorySelect.value;
         currentCategory = selectedCategory;
-        updateTable(tableData[selectedCategory], nameMap);
+        renderControls(Object.keys(tableData[currentRatingType]), currentCategory, currentRatingType);
+        updateTable(tableData[currentRatingType][selectedCategory], nameMap);
+        attachEventListeners();
+        setActiveButton(currentCategory); // Restore active button after re-render (including subcategories)
       });
     }
-  });
+
+    // Restore active button after initial attach (including subcategories)
+    setActiveButton(currentCategory);
+  }
+  attachEventListeners();
 }
 
 // Auto-initiate the ratings table if the container exists in the DOM
