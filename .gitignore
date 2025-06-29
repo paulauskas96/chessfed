@@ -51,3 +51,5 @@ wp-content/plugins/table-plugin/PhpScraping/data.json
 
 # Ignore build output for all WordPress plugins built with npm
 wp-content/plugins/*/build/
+wp-content/plugins/*/vendor/
+wp-content/plugins/*/*/vendor/
