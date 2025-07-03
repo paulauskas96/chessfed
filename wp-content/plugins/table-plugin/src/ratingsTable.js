@@ -7,7 +7,8 @@ function renderRatingsTable({
   nameMapUrl = "/wp-content/plugins/table-plugin/src/nameMap.json",
   initialCategory = "general",
   initialRatingType = "standard",
-  showButtons = true
+  showButtons = true,
+  initialRowsPerPage = 20
 }) {
   // Helper to fetch JSON
   function fetchJson(url) {
@@ -31,7 +32,7 @@ function renderRatingsTable({
   }
 
   // Render table
-  function updateTable(newTableData, nameMap) {
+  function updateTable(newTableData, nameMap, rowsPerPage = 20) {
     const tableBody = container.querySelector(".table-body");
     tableBody.innerHTML = "";
     const columnOrder = ["nr", "playerTitle", "playerName", "playerRating"];
@@ -42,7 +43,10 @@ function renderRatingsTable({
       return;
     }
     
-    newTableData.forEach((rowData) => {
+    // Limit the data to the specified number of rows
+    const limitedData = newTableData.slice(0, rowsPerPage);
+    
+    limitedData.forEach((rowData) => {
       const row = document.createElement("tr");
       row.className = "table-info";
       columnOrder.forEach((key) => {
@@ -87,8 +91,15 @@ function renderRatingsTable({
   }
 
   // Render buttons, rating type select, and category select
-  function renderControls(categories, currentCategory, currentRatingType) {
+  function renderControls(currentRatingType, currentRowsPerPage) {
     let html = "";
+    // Rows per page select dropdown - always visible at the top
+    html += '<select id="rows-per-page-select" class="rows-per-page-select">';
+    html += '<option value="10">10 įrašų</option>';
+    html += '<option value="20">20 įrašų</option>';
+    html += '<option value="50">50 įrašų</option>';
+    html += '<option value="100">100 įrašų</option>';
+    html += '</select>';
     // Rating type select dropdown
     html += '<select id="rating-type-select" class="rating-type-select">';
     html += '<option value="standard">Standard</option>';
@@ -155,18 +166,23 @@ function renderRatingsTable({
     // Set rating type select value
     const ratingTypeSelect = container.querySelector('#rating-type-select');
     if (ratingTypeSelect) ratingTypeSelect.value = currentRatingType;
+    
+    // Set rows per page select value
+    const rowsPerPageSelect = container.querySelector('#rows-per-page-select');
+    if (rowsPerPageSelect) rowsPerPageSelect.value = currentRowsPerPage;
   }
 
   // Main logic
   let currentCategory = initialCategory;
   let currentRatingType = initialRatingType;
+  let currentRowsPerPage = initialRowsPerPage;
   let tableData = {};
   let nameMap = {};
 
   Promise.all([fetchJson(dataUrl), fetchJson(nameMapUrl)]).then(([data, nMap]) => {
     tableData = data;
     nameMap = nMap;
-    
+
     // Since the current data structure is flat (categories directly), 
     // we'll organize it for multiple rating types
     if (!tableData.standard) {
@@ -180,8 +196,8 @@ function renderRatingsTable({
     
     // Defensive: fallback to standard if not present
     if (!tableData[currentRatingType]) currentRatingType = 'standard';
-    renderControls(Object.keys(tableData[currentRatingType]), currentCategory, currentRatingType);
-    updateTable(tableData[currentRatingType][currentCategory], nameMap);
+    renderControls(Object.keys(tableData[currentRatingType]), currentCategory, currentRatingType, currentRowsPerPage);
+    updateTable(tableData[currentRatingType][currentCategory], nameMap, currentRowsPerPage);
     attachEventListeners();
   });
 
@@ -196,8 +212,8 @@ function renderRatingsTable({
           currentRatingType = newRatingType;
           // Defensive: fallback to general if not present
           if (!tableData[currentRatingType][currentCategory]) currentCategory = 'general';
-          renderControls(Object.keys(tableData[currentRatingType]), currentCategory, currentRatingType);
-          updateTable(tableData[currentRatingType][currentCategory], nameMap);
+          renderControls(Object.keys(tableData[currentRatingType]), currentCategory, currentRatingType, currentRowsPerPage);
+          updateTable(tableData[currentRatingType][currentCategory], nameMap, currentRowsPerPage);
           attachEventListeners();
         }
       });
@@ -214,9 +230,23 @@ function renderRatingsTable({
           currentRatingType = newRatingType;
           // Defensive: fallback to general if not present
           if (!tableData[currentRatingType][currentCategory]) currentCategory = 'general';
-          renderControls(Object.keys(tableData[currentRatingType]), currentCategory, currentRatingType);
-          updateTable(tableData[currentRatingType][currentCategory], nameMap);
+          renderControls(Object.keys(tableData[currentRatingType]), currentCategory, currentRatingType, currentRowsPerPage);
+          updateTable(tableData[currentRatingType][currentCategory], nameMap, currentRowsPerPage);
           attachEventListeners();
+        }
+      });
+    }
+
+    // Rows per page select logic
+    const rowsPerPageSelect = container.querySelector('#rows-per-page-select');
+    if (rowsPerPageSelect) {
+      rowsPerPageSelect.value = currentRowsPerPage;
+      rowsPerPageSelect.onchange = null;
+      rowsPerPageSelect.addEventListener('change', function () {
+        const newRowsPerPage = parseInt(rowsPerPageSelect.value);
+        if (newRowsPerPage && newRowsPerPage !== currentRowsPerPage) {
+          currentRowsPerPage = newRowsPerPage;
+          updateTable(tableData[currentRatingType][currentCategory], nameMap, currentRowsPerPage);
         }
       });
     }
@@ -285,7 +315,7 @@ function renderRatingsTable({
         event.preventDefault();
         const category = event.target.dataset.category;
         currentCategory = category;
-        updateTable(tableData[currentRatingType][category], nameMap);
+        updateTable(tableData[currentRatingType][category], nameMap, currentRowsPerPage);
         // Youth group toggle
         if (["youthU18", "youthU14", "youthU10"].includes(category)) {
           if (youthBtnWrapper) youthBtnWrapper.style.display = "flex";
@@ -310,8 +340,8 @@ function renderRatingsTable({
       categorySelect.addEventListener("change", function () {
         const selectedCategory = categorySelect.value;
         currentCategory = selectedCategory;
-        renderControls(Object.keys(tableData[currentRatingType]), currentCategory, currentRatingType);
-        updateTable(tableData[currentRatingType][selectedCategory], nameMap);
+        renderControls(Object.keys(tableData[currentRatingType]), currentCategory, currentRatingType, currentRowsPerPage);
+        updateTable(tableData[currentRatingType][selectedCategory], nameMap, currentRowsPerPage);
         attachEventListeners();
         setActiveButton(currentCategory); // Restore active button after re-render (including subcategories)
       });
@@ -328,8 +358,16 @@ if (typeof window !== 'undefined') {
   document.addEventListener("DOMContentLoaded", function() {
     var container = document.getElementById("ratings-table-container");
     if (container) {
+      // Read attributes from the container element
+      const category = container.getAttribute('data-category') || 'general';
+      const showButtons = container.getAttribute('data-show-buttons') !== '0';
+      const rowsPerPage = parseInt(container.getAttribute('data-rows-per-page')) || 20;
+      
       renderRatingsTable({
-        container: container
+        container: container,
+        initialCategory: category,
+        showButtons: showButtons,
+        initialRowsPerPage: rowsPerPage
       });
     }
   });

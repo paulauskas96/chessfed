@@ -32,6 +32,16 @@
   margin-bottom: 20px;
 }
 
+.rows-per-page-select {
+  cursor: pointer;
+  color: #fefefe;
+  background-color: #15803d;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
 .button-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -44,6 +54,9 @@
     display: block;
   }
   .rating-type-select {
+    display: block;
+  }
+  .rows-per-page-select {
     display: block;
   }
   .button-wrapper {

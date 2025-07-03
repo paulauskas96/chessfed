@@ -70,7 +70,8 @@ function render_chess_ratings_block($attributes)
 {
     $showButtons = isset($attributes['showButtons']) ? $attributes['showButtons'] : true;
     $category = isset($attributes['category']) ? $attributes['category'] : 'general';
-    $html = '<div id="ratings-table-container" class="table-button-wrapper" data-category="' . esc_attr($category) . '" data-show-buttons="' . ($showButtons ? '1' : '0') . '"></div>';
+    $rowsPerPage = isset($attributes['rowsPerPage']) ? $attributes['rowsPerPage'] : 20;
+    $html = '<div id="ratings-table-container" class="table-button-wrapper" data-category="' . esc_attr($category) . '" data-show-buttons="' . ($showButtons ? '1' : '0') . '" data-rows-per-page="' . esc_attr($rowsPerPage) . '"></div>';
     return $html;
 }
 // cia yra registruojama lentele kaip block, kad galetume naudoti editor'iuje
@@ -85,6 +86,10 @@ function create_block_table_plugin_block_init()
             'showButtons' => array(
                 'type' => 'boolean',
                 'default' => true,
+            ),
+            'rowsPerPage' => array(
+                'type' => 'number',
+                'default' => 20,
             ),
         ),
         'render_callback' => 'render_chess_ratings_block',

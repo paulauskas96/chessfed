@@ -52,7 +52,7 @@ function startScraper()
             $crawler = $client->request('GET', $url);
             $counter = 0;
             $pageData = $crawler->filter('table tr')->each(function ($row) use (&$counter) {
-                if ($counter >= 20) {
+                if ($counter >= 100) {
                     return null;
                 }
                 $tdElements = $row->filter('td');
