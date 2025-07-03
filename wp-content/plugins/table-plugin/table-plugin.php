@@ -14,14 +14,20 @@
  * @package           create-block
  */
 
-// Register the script on init
+// Register the script and style on init
 function register_my_table_plugin_scripts() {
     wp_register_script(
         'rating-table-plugin-script',
         plugin_dir_url(__FILE__) . 'src/ratingsTable.js',
         array(),
-        '1.0',
+        '1.1',
         true
+    );
+    wp_register_style(
+        'rating-table-plugin-style',
+        plugin_dir_url(__FILE__) . 'src/style.css',
+        array(),
+        '1.1'
     );
     if (function_exists('wp_script_add_data')) {
         wp_script_add_data('rating-table-plugin-script', 'type', 'module');
@@ -33,18 +39,25 @@ add_action('init', 'register_my_table_plugin_scripts');
 function enqueue_rating_table_plugin_script() {
     if (is_singular() && has_block('create-block/table-plugin')) {
         wp_enqueue_script('rating-table-plugin-script');
+        wp_enqueue_style('rating-table-plugin-style');
     }
 }
 add_action('wp_enqueue_scripts', 'enqueue_rating_table_plugin_script');
 
-// Enqueue ratingsTable.js in the block editor as well
+// Enqueue ratingsTable.js and style.css in the block editor as well
 function enqueue_rating_table_plugin_editor_script() {
     wp_enqueue_script(
         'rating-table-plugin-script',
         plugin_dir_url(__FILE__) . 'src/ratingsTable.js',
         array(),
-        '1.0',
+        '1.1',
         true
+    );
+    wp_enqueue_style(
+        'rating-table-plugin-style',
+        plugin_dir_url(__FILE__) . 'src/style.css',
+        array(),
+        '1.1'
     );
     if (function_exists('wp_script_add_data')) {
         wp_script_add_data('rating-table-plugin-script', 'type', 'module');

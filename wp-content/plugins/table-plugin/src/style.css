@@ -20,10 +20,16 @@
   padding: 10px;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 600px) {
-  .table-select {
-    display: block;
-  }
+
+.rating-type-select {
+  display: none;
+  cursor: pointer;
+  color: #fefefe;
+  background-color: #15803d;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 .button-wrapper {
@@ -34,8 +40,27 @@
   margin-bottom: 15px;
 }
 @media screen and (max-width: 600px) {
+  .table-select {
+    display: block;
+  }
+  .rating-type-select {
+    display: block;
+  }
   .button-wrapper {
     display: none; /* Hide buttons */
+  }
+}
+
+.rating-type-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 600px) {
+  .rating-type-wrapper {
+    display: none; /* Hide rating type buttons */
   }
 }
 

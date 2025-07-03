@@ -35,6 +35,13 @@ function renderRatingsTable({
     const tableBody = container.querySelector(".table-body");
     tableBody.innerHTML = "";
     const columnOrder = ["nr", "playerTitle", "playerName", "playerRating"];
+    
+    // Check if newTableData exists and is an array
+    if (!newTableData || !Array.isArray(newTableData)) {
+      console.warn("No data available for this rating type and category combination");
+      return;
+    }
+    
     newTableData.forEach((rowData) => {
       const row = document.createElement("tr");
       row.className = "table-info";
@@ -82,14 +89,17 @@ function renderRatingsTable({
   // Render buttons, rating type select, and category select
   function renderControls(categories, currentCategory, currentRatingType) {
     let html = "";
-    // Rating type dropdown
-    html += '<div class="rating-type-wrapper" style="margin-bottom:8px">';
-    html += '<label for="rating-type-select" style="margin-right:8px">Reitingo tipas:</label>';
+    // Rating type select dropdown
     html += '<select id="rating-type-select" class="rating-type-select">';
     html += '<option value="standard">Standard</option>';
     html += '<option value="rapid">Rapid</option>';
     html += '<option value="blitz">Blitz</option>';
     html += '</select>';
+    // Rating type buttons
+    html += '<div class="rating-type-wrapper">';
+    html += '<button data-rating-type="standard" class="table-btn rating-btn">Standard</button>';
+    html += '<button data-rating-type="rapid" class="table-btn rating-btn">Rapid</button>';
+    html += '<button data-rating-type="blitz" class="table-btn rating-btn">Blitz</button>';
     html += '</div>';
     if (showButtons) {
       html += '<div class="button-wrapper">';
@@ -131,6 +141,17 @@ function renderRatingsTable({
     html += '<tbody class="table-body"></tbody>';
     html += '</table></div>';
     container.innerHTML = html;
+    
+    // Set active rating type button
+    const ratingButtons = container.querySelectorAll('.rating-btn');
+    ratingButtons.forEach(btn => {
+      if (btn.dataset.ratingType === currentRatingType) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+    
     // Set rating type select value
     const ratingTypeSelect = container.querySelector('#rating-type-select');
     if (ratingTypeSelect) ratingTypeSelect.value = currentRatingType;
@@ -145,6 +166,18 @@ function renderRatingsTable({
   Promise.all([fetchJson(dataUrl), fetchJson(nameMapUrl)]).then(([data, nMap]) => {
     tableData = data;
     nameMap = nMap;
+    
+    // Since the current data structure is flat (categories directly), 
+    // we'll organize it for multiple rating types
+    if (!tableData.standard) {
+      // Wrap the flat data structure in a "standard" rating type
+      tableData = {
+        standard: data,
+        rapid: data,  // For now, use same data for all rating types
+        blitz: data
+      };
+    }
+    
     // Defensive: fallback to standard if not present
     if (!tableData[currentRatingType]) currentRatingType = 'standard';
     renderControls(Object.keys(tableData[currentRatingType]), currentCategory, currentRatingType);
@@ -153,23 +186,43 @@ function renderRatingsTable({
   });
 
   function attachEventListeners() {
+    // Rating type button logic
+    const ratingTypeButtons = container.querySelectorAll('.rating-btn');
+    ratingTypeButtons.forEach(button => {
+      button.addEventListener('click', function(event) {
+        event.preventDefault();
+        const newRatingType = event.target.dataset.ratingType;
+        if (newRatingType && newRatingType !== currentRatingType) {
+          currentRatingType = newRatingType;
+          // Defensive: fallback to general if not present
+          if (!tableData[currentRatingType][currentCategory]) currentCategory = 'general';
+          renderControls(Object.keys(tableData[currentRatingType]), currentCategory, currentRatingType);
+          updateTable(tableData[currentRatingType][currentCategory], nameMap);
+          attachEventListeners();
+        }
+      });
+    });
+
     // Rating type select logic
     const ratingTypeSelect = container.querySelector('#rating-type-select');
     if (ratingTypeSelect) {
       ratingTypeSelect.value = currentRatingType;
       ratingTypeSelect.onchange = null;
       ratingTypeSelect.addEventListener('change', function () {
-        currentRatingType = ratingTypeSelect.value;
-        // Defensive: fallback to general if not present
-        if (!tableData[currentRatingType][currentCategory]) currentCategory = 'general';
-        renderControls(Object.keys(tableData[currentRatingType]), currentCategory, currentRatingType);
-        updateTable(tableData[currentRatingType][currentCategory], nameMap);
-        attachEventListeners();
+        const newRatingType = ratingTypeSelect.value;
+        if (newRatingType && newRatingType !== currentRatingType) {
+          currentRatingType = newRatingType;
+          // Defensive: fallback to general if not present
+          if (!tableData[currentRatingType][currentCategory]) currentCategory = 'general';
+          renderControls(Object.keys(tableData[currentRatingType]), currentCategory, currentRatingType);
+          updateTable(tableData[currentRatingType][currentCategory], nameMap);
+          attachEventListeners();
+        }
       });
     }
 
     // Button logic
-    const buttons = container.querySelectorAll(".table-btn");
+    const buttons = container.querySelectorAll(".table-btn:not(.rating-btn)");
     const youthBtnWrapper = container.querySelector(".youth-btn-wrapper");
     const youthBtn = container.querySelector('[data-category="youthU18"]');
     const youthU18Btn = container.querySelector(".U18");
