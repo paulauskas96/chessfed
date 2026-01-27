@@ -56,11 +56,17 @@ function startScraper()
                     return null;
                 }
                 $tdElements = $row->filter('td');
-                if ($tdElements->count() >= 6) {
+                if ($tdElements->count() >= 5) {
+                    // Detect if title column exists (6 columns) or not (5 columns)
+                    $hasTitle = $tdElements->count() >= 6;
+                    
                     $nr = $tdElements->eq(0)->text();
-                    $playerTitle = $tdElements->eq(2)->text();
+                    $playerTitle = $hasTitle ? $tdElements->eq(2)->text() : '';
                     $playerNameHtml = $tdElements->eq(1)->html();
-                    $playerRating = $tdElements->eq(4)->text();
+                    $ratingIdx = $hasTitle ? 4 : 3;
+                    
+                    $playerRating = $tdElements->eq($ratingIdx)->text();
+                    
                     $counter++;
                     return [
                         'nr' => $nr,
