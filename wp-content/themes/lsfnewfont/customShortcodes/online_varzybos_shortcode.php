@@ -20,8 +20,8 @@ function online_turnyrai_posts_shortcode($atts)
             $post_url = get_permalink(($query->ID));
             $output .= '<div class="turnyro-card">';
             $output .= '<div class="turnyro-info-wrapper">';
-            $output .= '<a href=' . $post_url . '>';
-            $output .= '<h3 class="turnyro-title underline">' . get_the_title() . '</h3>';
+            $output .= '<a href="' . esc_url($post_url) . '">';
+            $output .= '<h3 class="turnyro-title underline">' . esc_html(get_the_title()) . '</h3>';
             $output .= '</a>';
 
             // Get the custom field values
@@ -34,12 +34,12 @@ function online_turnyrai_posts_shortcode($atts)
                 array('a', 'c', 'e', 'e', 'i', 's', 'u', 'u', 'z', 'a', 'c', 'e', 'e', 'i', 's', 'u', 'u', 'z'),
                 $turnyro_stilius
             );
-            $turnyro_stilius_formatted = mb_strtolower($turnyro_stilius_formatted);
+            $turnyro_stilius_formatted = sanitize_html_class(mb_strtolower($turnyro_stilius_formatted));
 
             // Display the custom field values
             $output .= '<ul class="turnyro-info">';
-            $output .= '<li class="turnyro-data">' . $varzybu_data . '</li>';
-            $output .= '<li class="turnyro-tipas ' . $turnyro_stilius_formatted . '" >' . $turnyro_stilius . '</li>';
+            $output .= '<li class="turnyro-data">' . esc_html($varzybu_data) . '</li>';
+            $output .= '<li class="turnyro-tipas ' . esc_attr($turnyro_stilius_formatted) . '" >' . esc_html($turnyro_stilius) . '</li>';
             $output .= '</ul>';
             $output .= '</div>';
 

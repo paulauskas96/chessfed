@@ -57,8 +57,8 @@ function varzybos_posts_shortcode($atts)
       $post_url = get_permalink(($query->ID));
       $output .= '<div class="turnyro-card">';
       $output .= '<div class="turnyro-info-wrapper">';
-      $output .= '<a href=' . $post_url . '>';
-      $output .= '<h3 class="turnyro-title underline">' . get_the_title() . '</h3>';
+      $output .= '<a href="' . esc_url($post_url) . '">';
+      $output .= '<h3 class="turnyro-title underline">' . esc_html(get_the_title()) . '</h3>';
       $output .= '</a>';
 
       // Get the custom field values
@@ -81,28 +81,22 @@ function varzybos_posts_shortcode($atts)
         array('a', 'c', 'e', 'e', 'i', 's', 'u', 'u', 'z', 'a', 'c', 'e', 'e', 'i', 's', 'u', 'u', 'z'),
         $turnyro_stilius
       );
-      $turnyro_stilius_formatted = mb_strtolower($turnyro_stilius_formatted);
+      $turnyro_stilius_formatted = sanitize_html_class(mb_strtolower($turnyro_stilius_formatted));
 
       // reikia dar sutvarkyti jeigu lietuvos mastu true tai rodyti abidvi datas nuo ir iki. Dar reikia sudeti css (red, blue ir svg icon)
       // Display the custom field values
       $output .= '<ul class="turnyro-info">';
 
       if ($kiek_dienu == true) {
-        $output .= '<li class="turnyro-data">Nuo ' . $varzybu_data_formatted . ' iki ' . $varzybu_pabaiga_formatted . '</li>';
+        $output .= '<li class="turnyro-data">Nuo ' . esc_html($varzybu_data_formatted) . ' iki ' . esc_html($varzybu_pabaiga_formatted) . '</li>';
       }
       if ($kiek_dienu == false) {
-        $output .= '<li class="turnyro-data">' . $varzybu_data_formatted . '</li>';
+        $output .= '<li class="turnyro-data">' . esc_html($varzybu_data_formatted) . '</li>';
       }
 
-      // Check if "Lietuvos mastu?" is true
-      if ($lietuvos_mastu) {
-        // Add a class to change the color to red
-        $output .= '<li class="turnyro-tipas red ' . $turnyro_stilius_formatted . '">' . $turnyro_stilius . '</li>';
-      } else {
-        // Add a class to change the color to blue
-        $output .= '<li class="turnyro-tipas blue ' . $turnyro_stilius_formatted . '">' . $turnyro_stilius . '</li>';
-      }
-      $output .= '<li class="turnyro-vieta">' . $turnyro_vieta . '</li>';
+      $color = $lietuvos_mastu ? 'red' : 'blue';
+      $output .= '<li class="turnyro-tipas ' . $color . ' ' . esc_attr($turnyro_stilius_formatted) . '">' . esc_html($turnyro_stilius) . '</li>';
+      $output .= '<li class="turnyro-vieta">' . esc_html($turnyro_vieta) . '</li>';
       $output .= '</ul>';
       $output .= '</div>';
 
