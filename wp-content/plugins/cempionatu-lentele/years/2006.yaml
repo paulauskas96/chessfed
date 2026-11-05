@@ -11,18 +11,21 @@ tournaments:
     location: Vilnius
     date_start: 03 18
     date_end: 03 26
-    results_link: null
+    results_link: http://bsk.puslapiai.lt/lenteles/2006/LTU%20vyrai%20final%20lentele.htm
     games_link: null
     winners:
       - place: 1
         name: GM Vidmantas Mališauskas
         rating: 2503
+        city: Vilnius
       - place: 2
         name: IM Algimantas Butnorius
         rating: 2392
+        city: Kaunas
       - place: 3
         name: IM Darius Zagorskis
         rating: 2489
+        city: Vilnius
   - name: LTU ch 2006 Pusfinalis
     config:
       time_control: Std
@@ -34,15 +37,18 @@ tournaments:
     location: Vilnius
     date_start: 02 20
     date_end: 02 26
-    results_link: null
+    results_link: https://www.chessfed.lt/old/20110701/ARTICLE/ARCHIVE/327/INDEX.HTM
     games_link: null
     winners:
       - place: 1
         name: IM Vytautas Šlapikas
+        rating: 2337
       - place: 2
         name: IM Gintautas Piešina
+        rating: 2358
       - place: 3
         name: Vytautas Vaznonis
+        rating: 2193
   - name: LTU wch 2006 Atviras turnyras
     config:
       time_control: Std
@@ -53,8 +59,8 @@ tournaments:
       gender: Women
     location: Šiauliai
     date_start: 03 18
-    date_end: 03 26
-    results_link: null
+    date_end: 03 24
+    results_link: https://www.chessfed.lt/old/20110701/ARTICLE/ARCHIVE/328/INDEX.HTM
     games_link: null
     winners:
       - place: 1
@@ -66,3 +72,412 @@ tournaments:
       - place: 3
         name: Jovita Žiogaitė
         rating: 2081
+  - name: LTU rapid ch 2006
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: Vilnius
+    date_start: 11 25
+    date_end: 11 25
+    results_link: https://www.chessfed.lt/old/20110701/ARTICLE/ARCHIVE/347/INDEX.HTM
+    games_link: null
+    winners:
+      - place: 1
+        name: FM Vytautas Vaznonis
+        rating: 2291
+        city: Kaunas
+      - place: 2
+        name: IM Vaidas Sakalauskas
+        rating: 2441
+        city: Radviliškis
+      - place: 3
+        name: Aleksandras Jegorovas
+        rating: 2262
+        city: Kaunas
+    women_winners:
+      - place: 1
+        name: WIM Deimantė Daulytė
+        rating: 2205
+        city: Šiauliai
+      - place: 2
+        name: Simona Limontaitė
+        rating: 2138
+        city: Vilnius
+      - place: 3
+        name: Evelina Šaulytė
+        rating: 1980
+        city: Šiauliai
+  - name: LTU blitz ch 2006
+    config:
+      time_control: Blitz
+      format: Individual
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: Vilnius
+    date_start: 11 26
+    date_end: 11 26
+    results_link: https://www.chessfed.lt/old/20110701/ARTICLE/ARCHIVE/349/INDEX.HTM
+    games_link: null
+    winners:
+      - place: 1
+        name: Mindaugas Beinoras
+        rating: 2222
+        city: Kaunas
+      - place: 2
+        name: IM Vaidas Sakalauskas
+        rating: 2441
+        city: Radviliškis
+      - place: 3
+        name: IM Gediminas Šarakauskas
+        rating: 2438
+        city: Vilnius
+    women_winners:
+      - place: 1
+        name: Simona Limontaitė
+        rating: 2138
+        city: Vilnius
+      - place: 2
+        name: Evelina Šaulytė
+        rating: 1980
+        city: Šiauliai
+      - place: 3
+        name: WIM Deimantė Daulytė
+        rating: 2205
+        city: Šiauliai
+  - name: LTU team ch 2006
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: Panevėžys
+    date_start: 10 20
+    date_end: 10 22
+    results_link: http://bsk.puslapiai.lt/lenteles/2006/LTU_komandines/LTU_komandines.htm
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Montalitus
+        city: Kaunas
+        members:
+          - Aleksandras Jegorovas
+          - FM Vytautas Vaznonis
+          - Povilas Tvarijonas
+          - Diana Ivoškaitė
+      - place: 2
+        name: Plungė
+        city: Plungė
+        members:
+          - FM Henrikas Asauskas
+          - Kazys Godlauskas
+          - Sigitas Kalvaitis
+          - Henrikas Jadenkus
+          - WFM Laima Domarkaitė
+      - place: 3
+        name: Panevėžys-1
+        city: Panevėžys
+        members:
+          - IM Virginijus Dambrauskas
+          - Vitalijus Lomonosovas
+          - Stepas Viškelis
+          - Arvydas Baltrūnas
+          - Lina Baltramiejūnaitė
+  - name: LTU B18 ch 2006
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 18
+      gender: Open
+    location: Panevėžys
+    date_start: 04 07
+    date_end: 04 12
+    results_link: http://bsk.puslapiai.lt/lenteles/2006/b18.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Tautvydas Vedrickas
+        rating: 2231
+        city: Vilnius
+      - place: 2
+        name: Matas Narmontas
+        rating: 2299
+        city: Šiauliai
+      - place: 3
+        name: Simonas Žičkus
+        rating: 2228
+        city: Vilnius
+  - name: LTU B16 ch 2006
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 16
+      gender: Open
+    location: Palanga
+    date_start: 04 25
+    date_end: 05 01
+    results_link: http://bsk.puslapiai.lt/lenteles/2006/b16.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Emilis Pileckis
+        rating: 2253
+        city: Vilnius
+      - place: 2
+        name: Matas Narmontas
+        rating: 2299
+        city: Šiauliai
+      - place: 3
+        name: Tauras Narmontas
+        rating: 2078
+        city: Šiauliai
+  - name: LTU B14 ch 2006
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 14
+      gender: Open
+    location: Palanga
+    date_start: 04 25
+    date_end: 05 01
+    results_link: http://bsk.puslapiai.lt/lenteles/2006/b14.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Aleksandras Džikia
+        city: Klaipėda
+      - place: 2
+        name: Algirdas Tiuninas
+        city: Vilnius
+      - place: 3
+        name: Donatas Urbonas
+        city: Panevėžys
+  - name: LTU B12 ch 2006
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 12
+      gender: Open
+    location: Palanga
+    date_start: 04 25
+    date_end: 05 01
+    results_link: http://bsk.puslapiai.lt/lenteles/2006/b12.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Rokas Klabis
+        city: Šiauliai
+      - place: 2
+        name: Lukas Žitinskas
+        city: Marijampolė
+      - place: 3
+        name: Justas Rupšys
+        city: Šiauliai
+  - name: LTU B10 ch 2006
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 10
+      gender: Open
+    location: Palanga
+    date_start: 04 25
+    date_end: 05 01
+    results_link: http://bsk.puslapiai.lt/lenteles/2006/b10f.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Tomas Laurušas
+        rating: 1976
+        city: Kaunas
+      - place: 2
+        name: Tomas Tvarijonas
+        city: Kaunas
+      - place: 3
+        name: Orestas Andriulevičius
+        city: Panevėžys
+  - name: LTU B08 ch 2006
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 8
+      gender: Open
+    location: Šiauliai
+    date_start: 03 31
+    date_end: 04 02
+    results_link: http://bsk.puslapiai.lt/lenteles/2006/b8.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Adomas Kačerauskas
+        city: Kaunas
+      - place: 2
+        name: Lukas Sysojevas
+        city: Vilnius
+      - place: 3
+        name: Titas Stremavičius
+        city: Kaunas
+  - name: LTU G18 ch 2006
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 18
+      gender: Women
+    location: Panevėžys
+    date_start: 04 07
+    date_end: 04 12
+    results_link: http://bsk.puslapiai.lt/lenteles/2006/m18.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Deimantė Daulytė
+        rating: 2230
+        city: Šiauliai
+      - place: 2
+        name: Brigita Laurušaitė
+        rating: 1970
+        city: Kaunas
+      - place: 3
+        name: Evelina Šaulytė
+        rating: 1994
+        city: Šiauliai
+  - name: LTU G16 ch 2006
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 16
+      gender: Women
+    location: Palanga
+    date_start: 04 25
+    date_end: 05 01
+    results_link: http://bsk.puslapiai.lt/lenteles/2006/m16.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Brigita Laurušaitė
+        rating: 1970
+        city: Kaunas
+      - place: 2
+        name: Evelina Šaulytė
+        rating: 1994
+        city: Šiauliai
+      - place: 3
+        name: Gintarė Paulauskaitė
+        rating: 1965
+        city: Šiauliai
+  - name: LTU G14 ch 2006
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 14
+      gender: Women
+    location: Palanga
+    date_start: 04 25
+    date_end: 05 01
+    results_link: http://bsk.puslapiai.lt/lenteles/2006/m14.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Ieva Žalimaitė
+        rating: 1878
+        city: Plungė
+      - place: 2
+        name: Henrieta Juciūtė
+        city: Šiauliai
+      - place: 3
+        name: Dominyka Batkovskytė
+        rating: 1867
+        city: Vilnius
+  - name: LTU G12 ch 2006
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 12
+      gender: Women
+    location: Palanga
+    date_start: 04 25
+    date_end: 05 01
+    results_link: http://bsk.puslapiai.lt/lenteles/2006/m12.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Miglė Rudytė
+        city: Panevėžys
+      - place: 2
+        name: Ivona Misiuk
+        city: Vilnius
+      - place: 3
+        name: Emilija Šabatina
+        city: Kaunas
+  - name: LTU G10 ch 2006
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 10
+      gender: Women
+    location: Šiauliai
+    date_start: 03 31
+    date_end: 04 02
+    results_link: http://bsk.puslapiai.lt/lenteles/2006/m10.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Giedrė Vanagaitė
+        city: Panevėžys
+      - place: 2
+        name: Rugilė Pevcevičiūtė
+        city: Kaunas
+      - place: 3
+        name: Aurelija Juknaitė
+        city: Biržai
+  - name: LTU G08 ch 2006
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 8
+      gender: Women
+    location: Šiauliai
+    date_start: 03 31
+    date_end: 04 02
+    results_link: http://bsk.puslapiai.lt/lenteles/2006/m8.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Skaistė Šaumanaitė
+        city: Panevėžys
+      - place: 2
+        name: Berta Rėja Butvilaitė
+        city: Šiauliai
+      - place: 3
+        name: Rugilė Klabytė
+        city: Šiauliai

@@ -1,2 +1,48 @@
 year: 2002
-tournaments: []
+tournaments:
+  - name: LTU ch 2002 Finalas
+    config:
+      time_control: Std
+      format: Individual
+      rank: Finalas
+      open: false
+      age_group: null
+      gender: Open
+    location: Vilnius
+    date_start: 05 17
+    date_end: 05 25
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: GM Eduardas Rozentalis
+        rating: 2586
+      - place: 2
+        name: GM Vidmantas Mališauskas
+        rating: 2514
+      - place: 3
+        name: IM Darius Zagorskis
+        rating: 2469
+  - name: LTU wch 2002 Finalas
+    config:
+      time_control: Std
+      format: Individual
+      rank: Finalas
+      open: false
+      age_group: null
+      gender: Women
+    location: Vilnius
+    date_start: 04 20
+    date_end: 04 28
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: Živilė Šarakauskienė
+        rating: 2105
+      - place: 2
+        name: Renata Turauskienė
+        rating: 2176
+      - place: 3
+        name: Rita Varnienė
+        rating: 2212

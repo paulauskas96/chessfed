@@ -60,12 +60,15 @@ tournaments:
       - place: 1
         name: WIM Deimantė Daulytė
         rating: 2249
+        city: Šiauliai
       - place: 2
         name: Jovita Žiogaitė
         rating: 2060
+        city: Vilnius
       - place: 3
         name: WIM Živilė Šarakauskienė
         rating: 2189
+        city: Vilnius
   - name: LTU wch 2008 Pusfinalis
     config:
       time_control: Std
@@ -152,48 +155,278 @@ tournaments:
       age_group: null
       gender: null
     location: Pirmoji lyga
-    results_link: http://bsk.puslapiai.lt/lenteles/2007/lsl/lsl.htm
+    results_link: http://bsk.puslapiai.lt/lenteles/2007/lsl/pirmospirmasfinalas.htm
     games_link: null
     team_winners:
       - place: 1
-        name: Margiris-2
-        city: Kaunas
+        name: Drakonas
+        city: Šiauliai
         members:
-          - IM Kęstutis Kaunas
-          - Vidmantas Einikis
-          - Tomas Laurušas
-          - Vytautas Simanaitis
-          - Miglė Lepeškaitė
-          - Povilas Lasinskas
-          - Tomas Tamošiūnas
-          - Ignas Balčiūnas
-          - Albertas Mažitovas
-          - Aušra Giedraitytė
+          - Arvydas Karkalas
+          - Sergej Alifanov
+          - Rimas Tamošaitis
+          - Vaidas Žilinskas
+          - Vilma Paulauskienė
+          - Josifas Buršteinas
+          - Gintautas Plungė
+          - Raimondas Narmontas
+          - Viktoras Kairys
+          - Gražina Šetikienė
       - place: 2
-        name: AG
-        city: Kaunas
+        name: Bokštas-2
+        city: Plungė
         members:
-          - Kostas Mačiokas
-          - Rytis Ermalis
-          - Diana Ivoškaitė
-          - Vladas Lukjanovas
-          - Ieva Kuzminaitė
-          - Artūras Voroblievas
-          - Dangiras Kacevičius
-          - Vaidotas Bublys
-          - Aurimas Dikmonas
-          - Danutė Urbanavičiūtė
+          - Kęstutis Vasylius
+          - Saulius Petrauskas
+          - Vaidas Šetkauskas
+          - Andrius Rimeikis
+          - Ieva Žalimaitė
+          - Mindaugas Asauskas
+          - Gytis Vaičekauskas
+          - Lukas Jonkus
+          - Marius Rutkus
+          - Monika Narmontaitė
       - place: 3
-        name: Mintis
-        city: Gargždai
+        name: Minija
+        city: Kretinga
         members:
-          - Arvydas Mickus
-          - Rimvydas Lukošius
-          - Audrius Bitinas
-          - Vasilijus Čiornas
-          - Daiva Dieninė
-          - Arūnas Gincas
-          - Tomas Bitinas
-          - Zigmas Bitinas
-          - Darius Alekna
-          - Viktorija Ditmonaitė
+          - Martynas Taučius
+          - Sergej Drozdov
+          - Dalius Jocys
+          - FM Boris Rumiancev
+          - Donata Januševičiūtė
+          - Darius Babrauskas
+          - Vytautas Vaitonis
+          - Konstantinos Dubinskas
+          - Gintautas Barščiauskas
+          - Jelena Murašova
+  - name: LTU B10 ch 2008
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 10
+      gender: Open
+    location: Druskininkai
+    date_start: 03 28
+    date_end: 04 02
+    results_link: http://bsk.puslapiai.lt/lenteles/2008/LTU_MB_10_12/B_10.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Titas Stremavičius
+        city: Kaunas
+      - place: 2
+        name: Adomas Kačerauskas
+        city: Kaunas
+      - place: 3
+        name: Kipras Eigminas
+        city: Vilnius
+  - name: LTU B12 ch 2008
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 12
+      gender: Open
+    location: Druskininkai
+    date_start: 03 28
+    date_end: 04 02
+    results_link: http://bsk.puslapiai.lt/lenteles/2008/LTU_MB_10_12/B_12.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Tomas Laurušas
+        city: Kaunas
+      - place: 2
+        name: Tomas Tvarijonas
+        city: Kaunas
+      - place: 3
+        name: Žygimantas Svitojus
+        city: Marijampolė
+  - name: LTU G10 ch 2008
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 10
+      gender: Women
+    location: Druskininkai
+    date_start: 03 28
+    date_end: 04 02
+    results_link: http://bsk.puslapiai.lt/lenteles/2008/LTU_MB_10_12/M_10.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Rugilė Klabytė
+        city: Šiauliai
+      - place: 2
+        name: Skaistė Šaumanaitė
+        city: Panevėžys
+      - place: 3
+        name: Neringa Levinskaitė
+        city: Kaunas
+  - name: LTU G12 ch 2008
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 12
+      gender: Women
+    location: Druskininkai
+    date_start: 03 28
+    date_end: 04 02
+    results_link: http://bsk.puslapiai.lt/lenteles/2008/LTU_MB_10_12/M_12.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Giedrė Vanagaitė
+        city: Panevėžys
+      - place: 2
+        name: Rugilė Pevcevičiūtė
+        city: Kaunas
+      - place: 3
+        name: Aurelija Juknaitė
+        city: Biržai
+  - name: LTU B14 ch 2008
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 14
+      gender: Open
+    location: Panevėžys
+    date_start: 03 06
+    date_end: 03 11
+    results_link: http://bsk.puslapiai.lt/lenteles/2008/LTU_MB_14_16_18/B_14.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Rokas Klabis
+        city: Šiauliai
+      - place: 2
+        name: Tomas Laurušas
+        city: Kaunas
+      - place: 3
+        name: Gytis Vaičekauskas
+        city: Plungė
+  - name: LTU B16 ch 2008
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 16
+      gender: Open
+    location: Panevėžys
+    date_start: 03 06
+    date_end: 03 11
+    results_link: http://bsk.puslapiai.lt/lenteles/2008/LTU_MB_14_16_18/B_16.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Vaidas Šetkauskas
+        city: Plungė
+      - place: 2
+        name: Algirdas Tiuninas
+        city: Vilnius
+      - place: 3
+        name: Vincas Ralys
+        city: Šiauliai
+  - name: LTU B18 ch 2008
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 18
+      gender: Open
+    location: Panevėžys
+    date_start: 03 06
+    date_end: 03 11
+    results_link: http://bsk.puslapiai.lt/lenteles/2008/LTU_MB_14_16_18/B_18.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: FM Matas Narmontas
+        city: Šiauliai
+      - place: 2
+        name: Domantas Klimčiauskas
+        city: Kaunas
+      - place: 3
+        name: Povilas Tvarijonas
+        city: Kaunas
+  - name: LTU G14 ch 2008
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 14
+      gender: Women
+    location: Panevėžys
+    date_start: 03 06
+    date_end: 03 11
+    results_link: http://bsk.puslapiai.lt/lenteles/2008/LTU_MB_14_16_18/M_14.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Ivona Misiuk
+        city: Vilnius
+      - place: 2
+        name: Giedrė Vanagaitė
+        city: Panevėžys
+      - place: 3
+        name: Gabrielė Zybartaitė
+        city: Biržai
+  - name: LTU G16 ch 2008
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 16
+      gender: Women
+    location: Panevėžys
+    date_start: 03 06
+    date_end: 03 11
+    results_link: http://bsk.puslapiai.lt/lenteles/2008/LTU_MB_14_16_18/M_16.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Ieva Žalimaitė
+        city: Plungė
+      - place: 2
+        name: Dominyka Batkovskytė
+        city: Vilnius
+      - place: 3
+        name: Violeta Vilčinskaja
+        city: Vilnius
+  - name: LTU G18 ch 2008
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 18
+      gender: Women
+    location: Panevėžys
+    date_start: 03 06
+    date_end: 03 11
+    results_link: http://bsk.puslapiai.lt/lenteles/2008/LTU_MB_14_16_18/M_18.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Brigita Laurušaitė
+        city: Kaunas
+      - place: 2
+        name: Gintarė Paulauskaitė
+        city: Šiauliai
+      - place: 3
+        name: Agnė Balčaitė
+        city: Panevėžys

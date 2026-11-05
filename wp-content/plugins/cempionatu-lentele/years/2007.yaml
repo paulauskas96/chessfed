@@ -11,7 +11,7 @@ tournaments:
     location: Šiauliai
     date_start: 05 03
     date_end: 05 13
-    results_link: null
+    results_link: http://www.chessfed.lt/old/20110701/ARTICLE/ARTICLEV/272/1/291/INDEX.HTM
     games_link: null
     winners:
       - place: 1
@@ -34,7 +34,7 @@ tournaments:
     location: Vilnius
     date_start: 02 16
     date_end: 02 20
-    results_link: null
+    results_link: http://bsk.puslapiai.lt/lenteles/2007/LTU_2007/vyrailentele.htm
     games_link: null
     winners:
       - place: 1
@@ -53,8 +53,8 @@ tournaments:
       gender: Women
     location: Vilnius
     date_start: 02 16
-    date_end: 02 20
-    results_link: null
+    date_end: 02 22
+    results_link: http://bsk.puslapiai.lt/lenteles/2007/LTU_2007/moteryslentele.htm
     games_link: null
     winners:
       - place: 1
@@ -66,3 +66,474 @@ tournaments:
       - place: 3
         name: Reda Prišmontaitė
         rating: 1972
+  - name: LTU rapid ch 2007
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: Vilnius
+    date_start: 11 24
+    date_end: 11 24
+    results_link: https://www.chessfed.lt/old/20110701/ARTICLE/ARCHIVE/318/INDEX.HTM
+    games_link: null
+    winners:
+      - place: 1
+        name: Emilis Pileckis
+        rating: 2349
+      - place: 2
+        name: Kazys Godlauskas
+        rating: 2273
+      - place: 3
+        name: Vitalij Novikov
+        rating: 2327
+    women_winners:
+      - place: 1
+        name: Simona Limontaitė
+        rating: 2141
+      - place: 2
+        name: Deimantė Daulytė
+        rating: 2222
+      - place: 3
+        name: Gintarė Paulauskaitė
+        rating: 2002
+  - name: LTU blitz ch 2007
+    config:
+      time_control: Blitz
+      format: Individual
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: Vilnius
+    date_start: 11 25
+    date_end: 11 25
+    results_link: https://www.chessfed.lt/old/20110701/ARTICLE/ARCHIVE/320/INDEX.HTM
+    games_link: null
+    winners:
+      - place: 1
+        name: Emilis Pileckis
+        rating: 2349
+      - place: 2
+        name: Vaidas Sakalauskas
+        rating: 2402
+      - place: 3
+        name: Martynas Limontas
+        rating: 2289
+    women_winners:
+      - place: 1
+        name: Simona Limontaitė
+        rating: 2141
+      - place: 2
+        name: Živilė Šarakauskienė
+        rating: 2226
+      - place: 3
+        name: Jovita Žiogaitė
+        rating: 2045
+  - name: LTU team rapid ch 2007
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: Panevėžys
+    date_start: 10 19
+    date_end: 10 21
+    results_link: http://bsk.puslapiai.lt/lenteles/2007/Greitieji_komandines/standings.htm
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Žalgiris
+        city: Kaunas
+        members:
+          - Mindaugas Beinoras
+          - FM Airidas Savickas
+          - FM Mindaugas Genutis
+          - Viktorija Beinoraitė
+          - Mindaugas Subatavičius
+      - place: 2
+        name: Bokštas
+        city: Plungė
+        members:
+          - FM Henrikas Asauskas
+          - Kazys Godlauskas
+          - Sigitas Kalvaitis
+          - WFM Laima Domarkaitė
+          - Henrikas Jadenkus
+      - place: 3
+        name: Trys nuliai
+        city: Kaunas
+        members:
+          - Aleksandras Jegorovas
+          - Julius Garnelis
+          - Justinas Stojanas
+          - Gina Greblikaitė
+          - Robertas Šakinis
+  - name: LTU B18 ch 2007
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 18
+      gender: Open
+    location: Panevėžys
+    date_start: 03 23
+    date_end: 03 28
+    results_link: http://bsk.puslapiai.lt/lenteles/2007/LTU_MB_18_14/B_18.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Tauras Narmontas
+        rating: 2171
+        city: Šiauliai
+      - place: 2
+        name: Domantas Klimčiauskas
+        rating: 2094
+        city: Kaunas
+      - place: 3
+        name: Tautvydas Vedrickas
+        rating: 2265
+        city: Vilnius
+  - name: LTU B16 ch 2007
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 16
+      gender: Open
+    location: Druskininkai
+    date_start: 04 16
+    date_end: 04 21
+    results_link: http://bsk.puslapiai.lt/lenteles/2007/LTU_MB_10_12_16/B_16.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Povilas Tvarijonas
+        rating: 2221
+        city: Kaunas
+      - place: 2
+        name: FM Matas Narmontas
+        rating: 2293
+        city: Šiauliai
+      - place: 3
+        name: Domantas Klimčiauskas
+        rating: 2113
+        city: Kaunas
+  - name: LTU B14 ch 2007
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 14
+      gender: Open
+    location: Panevėžys
+    date_start: 03 23
+    date_end: 03 28
+    results_link: http://bsk.puslapiai.lt/lenteles/2007/LTU_MB_18_14/B_14.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Vaidas Šetkauskas
+        rating: 1858
+        city: Plungė
+      - place: 2
+        name: Tomas Laurušas
+        rating: 1888
+        city: Kaunas
+      - place: 3
+        name: Vytautas Simanaitis
+        rating: 1871
+        city: Kaunas
+  - name: LTU B12 ch 2007
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 12
+      gender: Open
+    location: Druskininkai
+    date_start: 04 16
+    date_end: 04 21
+    results_link: http://bsk.puslapiai.lt/lenteles/2007/LTU_MB_10_12_16/B_12.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Robertas Velioniškis
+        city: Marijampolė
+      - place: 2
+        name: Tomas Laurušas
+        rating: 1888
+        city: Kaunas
+      - place: 3
+        name: Tomas Tvarijonas
+        city: Kaunas
+  - name: LTU B10 ch 2007
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 10
+      gender: Open
+    location: Druskininkai
+    date_start: 04 16
+    date_end: 04 21
+    results_link: http://bsk.puslapiai.lt/lenteles/2007/LTU_MB_10_12_16/B_10.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Marijus Vičas
+        city: Šiauliai
+      - place: 2
+        name: Titas Stremavičius
+        city: Kaunas
+      - place: 3
+        name: Žygimantas Svitojus
+        city: Marijampolė
+  - name: LTU G18 ch 2007
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 18
+      gender: Women
+    location: Panevėžys
+    date_start: 03 23
+    date_end: 03 28
+    results_link: http://bsk.puslapiai.lt/lenteles/2007/LTU_MB_18_14/M_18.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Gintarė Paulauskaitė
+        rating: 1979
+        city: Šiauliai
+      - place: 2
+        name: Ieva Žalimaitė
+        rating: 1849
+        city: Plungė
+      - place: 3
+        name: Brigita Laurušaitė
+        rating: 1988
+        city: Kaunas
+  - name: LTU G16 ch 2007
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 16
+      gender: Women
+    location: Druskininkai
+    date_start: 04 16
+    date_end: 04 21
+    results_link: http://bsk.puslapiai.lt/lenteles/2007/LTU_MB_10_12_16/M_16.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Evelina Šaulytė
+        rating: 1973
+        city: Šiauliai
+      - place: 2
+        name: Dominyka Batkovskytė
+        rating: 1926
+        city: Vilnius
+      - place: 3
+        name: Gintarė Paulauskaitė
+        rating: 1988
+        city: Šiauliai
+  - name: LTU G14 ch 2007
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 14
+      gender: Women
+    location: Panevėžys
+    date_start: 03 23
+    date_end: 03 28
+    results_link: http://bsk.puslapiai.lt/lenteles/2007/LTU_MB_18_14/M_14.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Dominyka Batkovskytė
+        rating: 1909
+        city: Vilnius
+      - place: 2
+        name: Henrieta Juciūtė
+        rating: 1894
+        city: Šiauliai
+      - place: 3
+        name: Sandra Navickaitė
+        city: Radviliškis
+  - name: LTU G12 ch 2007
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 12
+      gender: Women
+    location: Druskininkai
+    date_start: 04 16
+    date_end: 04 21
+    results_link: http://bsk.puslapiai.lt/lenteles/2007/LTU_MB_10_12_16/M_12.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Miglė Lepeškaitė
+        city: Kaunas
+      - place: 2
+        name: Agnė Juknevičiūtė
+        city: Šiauliai
+      - place: 3
+        name: Ivona Misiuk
+        city: Vilnius
+  - name: LTU G10 ch 2007
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 10
+      gender: Women
+    location: Druskininkai
+    date_start: 04 16
+    date_end: 04 21
+    results_link: http://bsk.puslapiai.lt/lenteles/2007/LTU_MB_10_12_16/M_10.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Giedrė Vanagaitė
+        city: Panevėžys
+      - place: 2
+        name: Dovainė Juciūtė
+        city: Šiauliai
+      - place: 3
+        name: Aurelija Juknaitė
+        city: Biržai
+  - name: LTU B08 rapid ch 2007
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 8
+      gender: Open
+    location: Šiauliai
+    date_start: 04 28
+    date_end: 04 29
+    results_link: http://bsk.puslapiai.lt/lenteles/2007/LTU_MB_8/B_8.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Patrik Misiuk
+        city: Vilnius
+      - place: 2
+        name: Kipras Svidaravicius
+        city: Kaunas
+      - place: 3
+        name: Algirdas Piličiauskas
+        city: Vilnius
+  - name: LTU G08 rapid ch 2007
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 8
+      gender: Women
+    location: Šiauliai
+    date_start: 04 28
+    date_end: 04 29
+    results_link: http://bsk.puslapiai.lt/lenteles/2007/LTU_MB_8/M_8.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Neringa Levinskaitė
+        city: Kaunas
+      - place: 2
+        name: Rugilė Klabytė
+        city: Šiauliai
+      - place: 3
+        name: Agne Semanaviciute
+        city: Šiauliai
+  - name: LTU team youth ch rapid B14 2007
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: 14
+      gender: Open
+    location: Panevėžys
+    date_start: 10 26
+    date_end: 10 28
+    results_link: http://bsk.puslapiai.lt/lenteles/2007/jaunuciai/berniukai.htm
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Kaunas
+        members:
+          - Tomas Laurušas
+          - Vytautas Simanaitis
+          - Ignas Balčiūnas
+          - Tomas Tvarijonas
+          - Titas Stremavičius
+      - place: 2
+        name: Šiauliai 1
+        members:
+          - Tomas Jurevičius
+          - Justas Tilvikas
+          - Vincas Ralys
+          - Rokas Klabis
+          - Justas Rupšys
+      - place: 3
+        name: Vilnius
+        members:
+          - Ruslanas Prigodinas
+          - Jokūbas Kasperavičius
+          - Viktoras Želannikovas
+          - Arnas Gerčas
+          - Rytis Urbanavičius
+  - name: LTU team youth ch rapid G14 2007
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: 14
+      gender: Women
+    location: Panevėžys
+    date_start: 10 26
+    date_end: 10 28
+    results_link: http://bsk.puslapiai.lt/lenteles/2007/jaunuciai/mergaites.htm
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Vilnius
+        members:
+          - Dominyka Batkovskytė
+          - Violeta Vilčinskaja
+          - Ivona Misiuk
+      - place: 2
+        name: Šiauliai
+        members:
+          - Henrieta Juciūtė
+          - Agnė Juknevičiūtė
+          - Simona Narmontaitė
+      - place: 3
+        name: Panevėžys 1
+        members:
+          - Gerda Dugnaitė
+          - Živilė Urbonavičiūtė
+          - Miglė Rudytė

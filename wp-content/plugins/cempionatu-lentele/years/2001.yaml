@@ -1,2 +1,45 @@
 year: 2001
-tournaments: []
+tournaments:
+  - name: LTU ch 2001 Finalas
+    config:
+      time_control: Std
+      format: Individual
+      rank: Finalas
+      open: false
+      age_group: null
+      gender: Open
+    location: Kaunas
+    date_start: 05 08
+    date_end: 05 20
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: GM Šarūnas Šulskis
+        rating: 2530
+      - place: 2
+        name: GM Aloyzas Kveinys
+        rating: 2533
+      - place: 3
+        name: GM Darius Ruželė
+        rating: 2550
+  - name: LTU wch 2001 Finalas
+    config:
+      time_control: Std
+      format: Individual
+      rank: Finalas
+      open: false
+      age_group: null
+      gender: Women
+    location: Vilnius
+    date_start: 03 17
+    date_end: 03 25
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: Renata Turauskienė
+      - place: 2
+        name: Eglė Morkūnaitė
+      - place: 3
+        name: Daiva Batytė

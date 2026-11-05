@@ -172,7 +172,7 @@ tournaments:
       age_group: null
       gender: null
     location: Aukščiausioji lyga
-    results_link: http://bsk.puslapiai.lt/lenteles/2009/lsl.htm
+    results_link: http://chess-results.com/tnr25559.aspx?lan=1&art=1&turdet=YES
     games_link: null
     team_winners:
       - place: 1
@@ -223,7 +223,7 @@ tournaments:
       age_group: null
       gender: null
     location: Pirmoji lyga
-    results_link: http://bsk.puslapiai.lt/lenteles/2009/lsl.htm
+    results_link: http://chess-results.com/tnr29511.aspx?lan=1&art=1&turdet=YES
     games_link: null
     team_winners:
       - place: 1
@@ -270,10 +270,10 @@ tournaments:
       open: false
       age_group: null
       gender: null
-    location: Biržai
+    location: Panevėžys
     date_start: 09 10
     date_end: 09 12
-    results_link: http://chess-results.com/tnr37920.aspx?lan=1&art=0&rd=7&turdet=YES
+    results_link: http://chess-results.com/tnr37920.aspx?lan=1&art=1&rd=7&turdet=YES
     games_link: null
     team_winners:
       - place: 1
@@ -310,8 +310,8 @@ tournaments:
       age_group: 18
       gender: Open
     location: Panevėžys
-    date_start: 03 30
-    date_end: 04 03
+    date_start: 03 10
+    date_end: 03 13
     results_link: http://chess-results.com/tnr31187.aspx?lan=1&art=1&rd=7
     games_link: null
     winners:
@@ -426,9 +426,9 @@ tournaments:
       - place: 3
         name: Nerijus Vasiliauskas
         city: Vilnius
-  - name: LTU B08 ch 2010
+  - name: LTU B08 rapid ch 2010
     config:
-      time_control: Std
+      time_control: Rapid
       format: Individual
       rank: null
       open: false
@@ -458,9 +458,9 @@ tournaments:
       age_group: 18
       gender: Women
     location: Panevėžys
-    date_start: 03 30
-    date_end: 04 03
-    results_link: http://chess-results.com/tnr31185.aspx?lan=1&art=1
+    date_start: 03 10
+    date_end: 03 13
+    results_link: http://chess-results.com/tnr31185.aspx?lan=1&art=1&rd=9
     games_link: null
     winners:
       - place: 1
@@ -572,9 +572,9 @@ tournaments:
       - place: 3
         name: Meida Šimaitė
         city: Biržai
-  - name: LTU G08 ch 2010
+  - name: LTU G08 rapid ch 2010
     config:
-      time_control: Std
+      time_control: Rapid
       format: Individual
       rank: null
       open: false
@@ -583,7 +583,7 @@ tournaments:
     location: Palanga
     date_start: 05 15
     date_end: 05 16
-    results_link: http://chess-results.com/tnr33887.aspx?lan=1&art=1&rd=9&turdet=YES
+    results_link: http://chess-results.com/tnr33888.aspx?lan=1&art=1&rd=9&turdet=YES
     games_link: null
     winners:
       - place: 1
@@ -786,7 +786,7 @@ tournaments:
     location: Šiauliai
     date_start: 12 10
     date_end: 12 11
-    results_link: null
+    results_link: http://bsk.puslapiai.lt/lenteles/2010/jauniu_komandines.xls
     games_link: null
     team_winners:
       - place: 1
@@ -859,10 +859,10 @@ tournaments:
       open: false
       age_group: 18
       gender: Women
-    location: Biržai
+    location: Šiauliai
     date_start: 12 10
     date_end: 12 11
-    results_link: null
+    results_link: http://bsk.puslapiai.lt/lenteles/2010/jauniu_komandines.xls
     games_link: null
     team_winners:
       - place: 1

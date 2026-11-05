@@ -133,8 +133,8 @@ tournaments:
         rating: 2350
     women_winners:
       - place: 1
-        name: WGM Irina Sudakova, Rusija
-        country: Rusija (2263)
+        name: WGM Irina Sudakova
+        country: Rusija
         rating: 2263
       - place: 2
         name: Dominyka Batkovskytė

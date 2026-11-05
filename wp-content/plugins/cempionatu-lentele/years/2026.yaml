@@ -923,7 +923,7 @@ tournaments:
     location: Šiauliai
     date_start: 05 10
     date_end: 05 10
-    results_link: https://s3.chess-results.com/tnr1403773.aspx?lan=1&art=1&rd=11&SNode=S0
+    results_link: https://s3.chess-results.com/tnr1403778.aspx?lan=1&art=1&rd=11&SNode=S0
     games_link: https://lichess.org/study/e3Cdwvs2/LGuQK1kW
     winners:
       - place: 1
@@ -977,6 +977,19 @@ tournaments:
         name: GM Valery Kazakouski
         country: null
         rating: 2544
+    ltu_winners:
+      - place: 1
+        name: IM Gleb Pidlužnij
+        country: null
+        rating: 2379
+      - place: 2
+        name: GM Valery Kazakouski
+        country: null
+        rating: 2544
+      - place: 3
+        name: FM Gustas Morkūnas
+        country: null
+        rating: 2224
     women_winners:
       - place: 1
         name: Agota Kontrimaitė

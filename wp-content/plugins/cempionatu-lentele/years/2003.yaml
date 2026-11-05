@@ -1,2 +1,48 @@
 year: 2003
-tournaments: []
+tournaments:
+  - name: LTU ch 2003 Finalas
+    config:
+      time_control: Std
+      format: Individual
+      rank: Finalas
+      open: false
+      age_group: null
+      gender: Open
+    location: Alytus
+    date_start: 05 10
+    date_end: 05 17
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: GM Vidmantas Mališauskas
+        rating: 2519
+      - place: 2
+        name: GM Aloyzas Kveinys
+        rating: 2539
+      - place: 3
+        name: IM Vaidas Sakalauskas
+        rating: 2466
+  - name: LTU wch 2003 Finalas
+    config:
+      time_control: Std
+      format: Individual
+      rank: Finalas
+      open: false
+      age_group: null
+      gender: Women
+    location: Panevėžys
+    date_start: 03 03
+    date_end: 03 09
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: WGM Dagnė Čiukšytė
+        rating: 2317
+      - place: 2
+        name: Renata Turauskienė
+        rating: 2218
+      - place: 3
+        name: Simona Limontaitė
+        rating: 2082

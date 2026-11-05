@@ -11,7 +11,7 @@ tournaments:
     location: Šiauliai
     date_start: 05 07
     date_end: 05 14
-    results_link: null
+    results_link: https://www.chessfed.lt/old/20110701/ARTICLE/ARCHIVE/148/INDEX.HTM
     games_link: null
     winners:
       - place: 1
@@ -32,8 +32,8 @@ tournaments:
       age_group: null
       gender: Open
     location: Vilnius
-    date_start: vasario mėn.
-    date_end: vasario mėn.
+    date_start: 02 05
+    date_end: 02 12
     results_link: null
     games_link: null
     winners:
@@ -54,7 +54,7 @@ tournaments:
     location: Vilnius
     date_start: 03 16
     date_end: 03 26
-    results_link: null
+    results_link: https://www.chessfed.lt/old/20110701/ARTICLE/ARCHIVE/216/INDEX.HTM
     games_link: null
     winners:
       - place: 1
@@ -66,3 +66,479 @@ tournaments:
       - place: 3
         name: Daiva Batytė
         rating: 2138
+  - name: LTU rapid ch 2005
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: Panevėžys
+    date_start: 12 10
+    date_end: 12 10
+    results_link: http://bsk.puslapiai.lt/lenteles/LTU/2005m%20rapid.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: IM Vaidas Sakalauskas
+        city: Radviliškis
+        rating: 2481
+      - place: 2
+        name: IM Virginijus Dambrauskas
+        city: Vilnius
+        rating: 2350
+      - place: 3
+        name: GM Šarūnas Šulskis
+        city: Kaunas
+        rating: 2504
+    women_winners:
+      - place: 1
+        name: Deimantė Daulytė
+        city: Šiauliai
+        rating: 2241
+      - place: 2
+        name: Gintarė Paulauskaitė
+        city: Šiauliai
+        rating: 1887
+      - place: 3
+        name: Viktorija Beinoraitė
+        city: Klaipėda
+        rating: 1968
+  - name: LTU blitz ch 2005
+    config:
+      time_control: Blitz
+      format: Individual
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: Panevėžys
+    date_start: 12 11
+    date_end: 12 11
+    results_link: http://bsk.puslapiai.lt/lenteles/LTU/ZAIBAS/2005m%20blitz.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: IM Gediminas Šarakauskas
+        city: Vilnius
+        rating: 2437
+      - place: 2
+        name: IM Vaidas Sakalauskas
+        city: Radviliškis
+        rating: 2481
+      - place: 3
+        name: Airidas Savickas
+        city: Radviliškis
+        rating: 2284
+    women_winners:
+      - place: 1
+        name: WIM Živilė Šarakauskienė
+        city: Panevėžys
+        rating: 2161
+      - place: 2
+        name: Deimantė Daulytė
+        city: Šiauliai
+        rating: 2241
+      - place: 3
+        name: Viktorija Beinoraitė
+        city: Klaipėda
+        rating: 1968
+  - name: LTU team ch 2005
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: Panevėžys
+    date_start: 09 30
+    date_end: 10 02
+    results_link: https://chess-results.com/tnr2745.aspx?lan=1&art=1&turdet=YES
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Plungė 1
+        members:
+          - Henrikas Asauskas
+          - Kazys Godlauskas
+          - Sigitas Kalvaitis
+          - WFM Laima Domarkaitė
+          - Henrikas Jadenkus
+      - place: 2
+        name: Vilnius 1
+        members:
+          - Jūras Mickevičius
+          - Dmitrijus Chocenka
+          - Martynas Limontas
+          - Vesta Kalvytė
+      - place: 3
+        name: Vilnius 2
+        members:
+          - Simonas Žičkus
+          - Tautvydas Vedrickas
+          - Skirmantas Jurgaitis
+          - Justina Petkevičiūtė
+          - WFM Lina Stasiūnaitė
+  - name: LTU B20 ch 2005
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 20
+      gender: Open
+    location: Druskininkai
+    date_start: 02 21
+    date_end: 02 27
+    results_link: http://bsk.puslapiai.lt/lenteles/mokiniai/2005.02.21-b20.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Airidas Savickas
+        rating: 2241
+        city: Radviliškis
+      - place: 2
+        name: Emilis Pileckis
+        rating: 2237
+        city: Vilnius
+      - place: 3
+        name: Mindaugas Beinoras
+        rating: 2134
+        city: Klaipėda
+  - name: LTU G20 ch 2005
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 20
+      gender: Women
+    location: Druskininkai
+    date_start: 02 21
+    date_end: 02 27
+    results_link: http://bsk.puslapiai.lt/lenteles/mokiniai/2005.02.21-m20.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Jovita Žiogaitė
+        rating: 2049
+        city: Tauragė
+      - place: 2
+        name: Deimantė Daulytė
+        rating: 2047
+        city: Šiauliai
+      - place: 3
+        name: Diana Ivoškaitė
+        rating: 2093
+        city: Kaunas
+  - name: LTU G18 ch 2005
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 18
+      gender: Women
+    location: Palanga
+    date_start: 04 18
+    date_end: 04 23
+    results_link: http://bsk.puslapiai.lt/lenteles/mokiniai/2005.04.18-m18.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Simona Limontaitė
+        rating: 2076
+        city: Telšiai
+      - place: 2
+        name: Gintarė Paulauskaitė
+        rating: 1804
+        city: Šiauliai
+      - place: 3
+        name: Rūta Jakaitytė
+        rating: 1983
+        city: Panevėžys
+      - place: 3
+        name: Laura Gabrilavičiūtė
+        city: Panevėžys
+  - name: LTU G16 ch 2005
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 16
+      gender: Women
+    location: Palanga
+    date_start: 04 18
+    date_end: 04 23
+    results_link: http://bsk.puslapiai.lt/lenteles/mokiniai/2005.04.18-m16.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Deimantė Daulytė
+        rating: 2098
+        city: Šiauliai
+      - place: 2
+        name: Justina Petkevičiūtė
+        city: Vilnius
+      - place: 3
+        name: Einora Juciūtė
+        city: Šiauliai
+  - name: LTU G14 ch 2005
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 14
+      gender: Women
+    location: Druskininkai
+    date_start: 02 21
+    date_end: 02 27
+    results_link: http://bsk.puslapiai.lt/lenteles/mokiniai/2005.02.21-m14.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Gintarė Paulauskaitė
+        rating: 1804
+        city: Šiauliai
+      - place: 2
+        name: Brigita Laurušaitė
+        city: Kaunas
+      - place: 3
+        name: Henrieta Juciūtė
+        city: Šiauliai
+  - name: LTU G12 ch 2005
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 12
+      gender: Women
+    location: Palanga
+    date_start: 04 18
+    date_end: 04 23
+    results_link: http://bsk.puslapiai.lt/lenteles/mokiniai/2005.04.18-m12.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Dominyka Batkovskytė
+        city: Vilnius
+      - place: 2
+        name: Gabija Turauskaitė
+        city: Šiauliai
+      - place: 3
+        name: Henrieta Juciūtė
+        city: Šiauliai
+  - name: LTU B10 rapid ch 2005
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 10
+      gender: Open
+    location: Panevėžys
+    date_start: 04 08
+    date_end: 04 10
+    results_link: http://bsk.puslapiai.lt/lenteles/mokiniai/2005.04.08-b10.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Tomas Laurušas
+        city: Kaunas
+      - place: 2
+        name: Tomas Tvarijonas
+        city: Kaunas
+      - place: 3
+        name: Robertas Velioniškis
+        city: Marijampolė
+  - name: LTU G10 rapid ch 2005
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 10
+      gender: Women
+    location: Panevėžys
+    date_start: 04 08
+    date_end: 04 10
+    results_link: http://bsk.puslapiai.lt/lenteles/mokiniai/2005.04.08-m10.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Miglė Lepeškaitė
+        city: Kaunas
+      - place: 2
+        name: Agnė Juknevičiūtė
+        city: Šiauliai
+      - place: 3
+        name: Emilija Šabatina
+        city: Kaunas
+  - name: LTU B08 rapid ch 2005
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 8
+      gender: Open
+    location: Panevėžys
+    date_start: 04 08
+    date_end: 04 10
+    results_link: http://bsk.puslapiai.lt/lenteles/mokiniai/2005.04.08-b8.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Žygimantas Svitojus
+        city: Marijampolė
+      - place: 2
+        name: Augustas Bitinas
+        city: Tauragė
+      - place: 3
+        name: Simas Spundzevičius
+        city: Rokiškis
+  - name: LTU team youth ch rapid B18 2005
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: 18
+      gender: Open
+    location: Panevėžys
+    date_start: 11 04
+    date_end: 11 06
+    results_link: http://bsk.puslapiai.lt/lenteles/jauniu%20komand/berniukai.htm
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Šiauliai 1
+        members:
+          - Matas Narmontas
+          - Deimantė Daulytė
+          - Tauras Narmontas
+          - Tomas Dubovikas
+          - Justas Tilvikas
+      - place: 2
+        name: Klaipėda
+        members:
+          - Mindaugas Beinoras
+          - Dmitrij Beliajev
+          - Silvestras Armonaitis
+          - Guramas Džikia
+          - Aleksandras Džikia
+      - place: 3
+        name: Plungė 1
+        members:
+          - Sigitas Kalvaitis
+          - Saulius Petrauskas
+          - Audrius Macenis
+          - Kęstutis Vasylius
+          - Sergejus Semionovas
+  - name: LTU team youth ch rapid G18 2005
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: 18
+      gender: Women
+    location: Panevėžys
+    date_start: 11 04
+    date_end: 11 06
+    results_link: http://bsk.puslapiai.lt/lenteles/jauniu%20komand/mergaites.htm
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Šiauliai
+        members:
+          - Gintarė Paulauskaitė
+          - Milda Dapkevičiūtė
+          - Einora Juciūtė
+      - place: 2
+        name: Telšiai
+        members:
+          - Simona Limontaitė
+          - Monika Zeniauskaitė
+          - Kristina Puidokaitė
+      - place: 3
+        name: Panevėžys 1
+        members:
+          - Laura Gabrilavičiūtė
+          - Rūta Jakaitytė
+          - Agnė Balčaitė
+  - name: LTU team youth ch rapid B11 2005
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: 11
+      gender: Open
+    location: Panevėžys
+    date_start: 10 14
+    date_end: 10 16
+    results_link: http://bsk.puslapiai.lt/lenteles/berniukai/berniukai.htm
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Kaunas
+        members:
+          - Tomas Laurušas
+          - Paulius Germanavičius
+          - Tomas Tvarijonas
+          - Tomas Karalevičius
+          - Lukas Trifonovas
+      - place: 2
+        name: Šiauliai 1
+        members:
+          - Justas Rupšys
+          - Rokas Klabis
+          - Dominykas Pakarklis
+          - Sergej Zubarev
+          - Gytautas Pagojus
+      - place: 3
+        name: Vilnius
+        members:
+          - Marius Latinis
+          - Aringas Sprindys
+          - Jokūbas Kasperavičius
+          - Tomaš Korkut
+          - Rytis Urbanavičius
+  - name: LTU team youth ch rapid G11 2005
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: 11
+      gender: Women
+    location: Panevėžys
+    date_start: 10 14
+    date_end: 10 16
+    results_link: http://bsk.puslapiai.lt/lenteles/mergaites/mergaites.htm
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Kaunas
+        members:
+          - Miglė Lepeškaitė
+          - Silvija Leonavičiūtė
+          - Rugilė Pevcevičiūtė
+      - place: 2
+        name: Šiauliai
+        members:
+          - Agnė Juknevičiūtė
+          - Rūta Puodžiūnaitė
+          - Paulina Gasiulytė
+      - place: 3
+        name: Biržai
+        members:
+          - Gabrielė Zybartaitė
+          - Radvilė Klepeckaitė
+          - Aurelija Juknaitė

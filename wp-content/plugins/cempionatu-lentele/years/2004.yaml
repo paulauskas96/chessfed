@@ -1,2 +1,47 @@
 year: 2004
-tournaments: []
+tournaments:
+  - name: LTU ch 2004 Finalas
+    config:
+      time_control: Std
+      format: Individual
+      rank: Finalas
+      open: false
+      age_group: null
+      gender: Open
+    location: Vilnius
+    date_start: 04 23
+    date_end: 04 30
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: IM Darius Zagorskis
+        rating: 2470
+      - place: 2
+        name: GM Šarūnas Šulskis
+        rating: 2570
+      - place: 3
+        name: IM Vaidas Sakalauskas
+        rating: 2437
+  - name: LTU wch 2004 Finalas
+    config:
+      time_control: Std
+      format: Individual
+      rank: Finalas
+      open: false
+      age_group: null
+      gender: Women
+    location: Šiauliai
+    date_start: 02 16
+    date_end: 02 22
+    results_link: null
+    games_link: null
+    winners:
+      - place: 1
+        name: Daiva Batytė
+        rating: 2170
+      - place: 2
+        name: Diana Ivoškaitė
+        rating: 2034
+      - place: 3
+        name: Deimantė Daulytė

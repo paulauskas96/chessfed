@@ -185,3 +185,825 @@ tournaments:
           - Donata Januševičiūtė
           - Artūras Šlušnys
           - Loreta Drungilienė
+  - name: LTU rapid ch 2009
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: Ukmergė
+    date_start: 12 26
+    date_end: 12 26
+    results_link: https://www.chessfed.lt/old/20110701/ARTICLE/ARTICLEV/634/1/386/INDEX.HTM
+    games_link: null
+    winners:
+      - place: 1
+        name: GM Šarūnas Šulskis
+        rating: 2591
+        city: Kaunas
+      - place: 2
+        name: IM Aidas Labuckas
+        rating: 2333
+        city: Jonava
+      - place: 3
+        name: IM Emilis Pileckis
+        rating: 2438
+        city: Vilnius
+    women_winners:
+      - place: 1
+        name: Vesta Kalvytė
+        rating: 2052
+        city: Vilnius
+      - place: 2
+        name: Viktorija Beinoraitė
+        rating: 2052
+        city: Kauno r.
+  - name: LTU blitz ch 2009
+    config:
+      time_control: Blitz
+      format: Individual
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: Ukmergė
+    date_start: 12 27
+    date_end: 12 27
+    results_link: https://www.chessfed.lt/old/20110701/ARTICLE/ARTICLEV/634/1/386/INDEX.HTM
+    games_link: null
+    winners:
+      - place: 1
+        name: IM Emilis Pileckis
+        rating: 2438
+        city: Vilnius
+      - place: 2
+        name: Vidmantas Einikis
+        rating: 2194
+        city: Kaunas
+      - place: 3
+        name: FM Aleksandras Jegorovas
+        rating: 2309
+        city: Kaunas
+    women_winners:
+      - place: 1
+        name: Viktorija Beinoraitė
+        rating: 2052
+        city: Kauno r.
+      - place: 2
+        name: Vesta Kalvytė
+        rating: 2052
+        city: Vilnius
+      - place: 3
+        name: Virginija Savickienė
+        city: Ukmergė
+  - name: LTU team rapid ch 2009
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: null
+      gender: null
+    location: Panevėžys
+    date_start: 09 18
+    date_end: 09 20
+    results_link: http://chess-results.com/tnr25415.aspx?lan=1&art=1&rd=7&turdet=YES
+    games_link: null
+    team_winners:
+      - place: 1
+        name: SM Dubysa
+        city: Šiauliai
+        members:
+          - FM Matas Narmontas
+          - WGM Deimantė Daulytė
+          - Edgaras Petuchovskis
+          - Gintarė Paulauskaitė
+          - Tomas Dubovikas
+      - place: 2
+        name: VŠK Bokštas
+        city: Plungė
+        members:
+          - Sigitas Kalvaitis
+          - Vaidas Šetkauskas
+          - Andrius Rimeikis
+          - Monika Narmontaitė
+          - Gytis Vaičekauskas
+      - place: 3
+        name: ŠK Panevėžys
+        city: Panevėžys
+        members:
+          - Kęstutis Labeckas
+          - IM Virginijus Dambrauskas
+          - Arūnas Rudys
+          - IM Dagnė Čiukšytė
+  - name: LTU B18 ch 2009
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 18
+      gender: Open
+    location: Panevėžys
+    date_start: 03 17
+    date_end: 03 22
+    results_link: http://chess-results.com/tnr20118.aspx?lan=1&art=1&rd=7&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: FM Matas Narmontas
+        rating: 2363
+        city: Šiauliai
+      - place: 2
+        name: Julius Garnelis
+        rating: 2179
+        city: Kaunas
+      - place: 3
+        name: Domantas Klimčiauskas
+        rating: 2215
+        city: Kaunas
+  - name: LTU G18 ch 2009
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 18
+      gender: Women
+    location: Panevėžys
+    date_start: 03 17
+    date_end: 03 22
+    results_link: http://chess-results.com/tnr20121.aspx?lan=1&art=1&rd=7&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Brigita Laurušaitė
+        rating: 2047
+        city: Kaunas
+      - place: 2
+        name: Gintarė Paulauskaitė
+        rating: 2044
+        city: Šiauliai
+      - place: 3
+        name: Agnė Balčaitė
+        rating: 1878
+        city: Panevėžys
+  - name: LTU B16 ch 2009
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 16
+      gender: Open
+    location: Panevėžys
+    date_start: 03 17
+    date_end: 03 22
+    results_link: http://chess-results.com/tnr20117.aspx?lan=1&art=1&rd=9&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Vaidas Šetkauskas
+        rating: 2070
+        city: Plungė
+      - place: 2
+        name: Vincas Ralys
+        rating: 1876
+        city: Šiauliai
+      - place: 3
+        name: Justas Rupšys
+        city: Šiauliai
+  - name: LTU G16 ch 2009
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 16
+      gender: Women
+    location: Panevėžys
+    date_start: 03 17
+    date_end: 03 22
+    results_link: http://chess-results.com/tnr20120.aspx?lan=1&art=1&rd=7&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Dominyka Batkovskytė
+        rating: 1992
+        city: Vilnius
+      - place: 2
+        name: Henrieta Juciūtė
+        rating: 1910
+        city: Šiauliai
+      - place: 3
+        name: Gerda Dugnaitė
+        rating: 1643
+        city: Panevėžys
+  - name: LTU B14 ch 2009
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 14
+      gender: Open
+    location: Panevėžys
+    date_start: 03 17
+    date_end: 03 22
+    results_link: http://chess-results.com/tnr20116.aspx?lan=1&art=1&rd=9&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Tomas Laurušas
+        rating: 2078
+        city: Kaunas
+      - place: 2
+        name: Tadas Vanagas
+        rating: 1791
+        city: Panevėžys
+      - place: 3
+        name: Titas Stremavičius
+        rating: 1791
+        city: Kaunas
+  - name: LTU G14 ch 2009
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 14
+      gender: Women
+    location: Panevėžys
+    date_start: 03 17
+    date_end: 03 22
+    results_link: http://chess-results.com/tnr20119.aspx?lan=1&art=1&rd=7&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Miglė Lepeškaitė
+        rating: 1819
+        city: Kaunas
+      - place: 2
+        name: Giedrė Vanagaitė
+        rating: 1612
+        city: Panevėžys
+      - place: 3
+        name: Emilija Šabatina
+        rating: 1736
+        city: Kaunas
+  - name: LTU B12 ch 2009
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 12
+      gender: Open
+    location: Druskininkai
+    date_start: 04 01
+    date_end: 04 06
+    results_link: http://chess-results.com/tnr20533.aspx?lan=1&art=1&rd=9&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Titas Stremavičius
+        rating: 1791
+        city: Kaunas
+      - place: 2
+        name: Marijus Vičas
+        rating: 1829
+        city: Šiauliai
+      - place: 3
+        name: Žygimantas Svitojus
+        rating: 1649
+        city: Marijampolė
+  - name: LTU G12 ch 2009
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 12
+      gender: Women
+    location: Druskininkai
+    date_start: 04 01
+    date_end: 04 06
+    results_link: http://chess-results.com/tnr20531.aspx?lan=1&art=1&rd=7&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Giedrė Vanagaitė
+        rating: 1612
+        city: Panevėžys
+      - place: 2
+        name: Aiste Vaicekauskaite
+        city: Kaunas
+      - place: 3
+        name: Skaistė Šaumanaitė
+        city: Panevėžys
+  - name: LTU B10 ch 2009
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 10
+      gender: Open
+    location: Druskininkai
+    date_start: 04 01
+    date_end: 04 06
+    results_link: http://chess-results.com/tnr20532.aspx?lan=1&art=1&rd=9&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Dino Mukovoz
+        city: Vilnius
+      - place: 2
+        name: Patrik Misiuk
+        city: Vilnius
+      - place: 3
+        name: Nedas Jankevičius
+        city: Šiauliai
+  - name: LTU G10 ch 2009
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 10
+      gender: Women
+    location: Druskininkai
+    date_start: 04 01
+    date_end: 04 06
+    results_link: http://chess-results.com/tnr20530.aspx?lan=1&art=1&rd=7&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Agnė Semonavičiūtė
+        city: Šiauliai
+      - place: 2
+        name: Rugilė Meškėnaitė
+        city: Plungė
+      - place: 3
+        name: Berta Rėja Butvilaitė
+        city: Šiauliai
+  - name: LTU B08 ch 2009
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 8
+      gender: Open
+    location: Šiauliai
+    date_start: 04 17
+    date_end: 04 19
+    results_link: http://bsk.puslapiai.lt/lenteles/2009/berniukai.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Paulius Vaitkevičius
+        city: Vilnius
+      - place: 2
+        name: Juozapas Ivanauskas
+        city: Vilnius
+      - place: 3
+        name: Vincas Ivanauskas
+        city: Vilnius
+  - name: LTU G08 ch 2009
+    config:
+      time_control: Std
+      format: Individual
+      rank: null
+      open: false
+      age_group: 8
+      gender: Women
+    location: Šiauliai
+    date_start: 04 17
+    date_end: 04 19
+    results_link: http://bsk.puslapiai.lt/lenteles/2009/mergaites.htm
+    games_link: null
+    winners:
+      - place: 1
+        name: Karolina Misiuk
+        city: Vilnius
+      - place: 2
+        name: Miglė Semonavičiūtė
+        city: Šiauliai
+      - place: 3
+        name: Meida Šimaitė
+        city: Biržai
+  - name: LTU BG18 rapid ch 2009
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 18
+      gender: Excl
+    location: Nemenčinė
+    date_start: 04 24
+    date_end: 04 26
+    results_link: http://chess-results.com/tnr21291.aspx?lan=1&art=1&rd=9&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: FM Matas Narmontas
+        rating: 2367
+        city: Šiauliai
+      - place: 2
+        name: Andrius Rimeikis
+        rating: 1993
+        city: Plungė
+      - place: 3
+        name: Marius Baltranas
+        rating: 1824
+        city: Panevėžys
+    women_winners:
+      - place: 1
+        name: Ieva Žalimaitė
+        rating: 1896
+        city: Plungė
+      - place: 2
+        name: Agnė Balčaitė
+        rating: 1899
+        city: Panevėžys
+      - place: 3
+        name: Monika Narmontaitė
+        city: Plungė
+  - name: LTU BG16 rapid ch 2009
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 16
+      gender: Excl
+    location: Nemenčinė
+    date_start: 04 24
+    date_end: 04 26
+    results_link: http://chess-results.com/tnr21290.aspx?lan=1&art=1&rd=9&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Vaidas Šetkauskas
+        rating: 2155
+        city: Plungė
+      - place: 2
+        name: Jokūbas Kasperavičius
+        rating: 1955
+        city: Vilnius
+      - place: 3
+        name: Andrius Kontrimas
+        city: Plungė
+    women_winners:
+      - place: 1
+        name: Sandra Navickaitė
+        rating: 1705
+        city: Radviliškis
+      - place: 2
+        name: Henrieta Juciūtė
+        rating: 1924
+        city: Šiauliai
+      - place: 3
+        name: Živilė Urbonavičiūtė
+        rating: 1711
+        city: Panevėžys
+  - name: LTU BG14 rapid ch 2009
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 14
+      gender: Excl
+    location: Nemenčinė
+    date_start: 04 24
+    date_end: 04 26
+    results_link: http://chess-results.com/tnr21289.aspx?lan=1&art=1&rd=9&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Gytis Vaičekauskas
+        rating: 1851
+        city: Plungė
+      - place: 2
+        name: Rokas Klabis
+        rating: 1915
+        city: Šiauliai
+      - place: 3
+        name: Orestas Andriulevičius
+        rating: 1772
+        city: Panevėžys
+    women_winners:
+      - place: 1
+        name: Radvilė Klepeckaitė
+        city: Biržai
+      - place: 2
+        name: Ivona Misiuk
+        rating: 1636
+        city: Vilnius
+      - place: 3
+        name: Miglė Lepeškaitė
+        rating: 1793
+        city: Kaunas
+  - name: LTU BG12 rapid ch 2009
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 12
+      gender: Excl
+    location: Nemenčinė
+    date_start: 04 24
+    date_end: 04 26
+    results_link: http://chess-results.com/tnr21288.aspx?lan=1&art=1&rd=9&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Žygimantas Svitojus
+        rating: 1684
+        city: Marijampolė
+      - place: 2
+        name: Marijus Vičas
+        rating: 1832
+        city: Šiauliai
+      - place: 3
+        name: Andrius Brazdžionis
+        rating: 1694
+        city: Panevėžys
+    women_winners:
+      - place: 1
+        name: Giedrė Vanagaitė
+        rating: 1612
+        city: Panevėžys
+      - place: 2
+        name: Skaistė Šaumanaitė
+        city: Panevėžys
+      - place: 3
+        name: Dovainė Juciūtė
+        city: Šiauliai
+  - name: LTU BG10 rapid ch 2009
+    config:
+      time_control: Rapid
+      format: Individual
+      rank: null
+      open: false
+      age_group: 10
+      gender: Excl
+    location: Nemenčinė
+    date_start: 04 24
+    date_end: 04 26
+    results_link: http://chess-results.com/tnr21287.aspx?lan=1&art=1&rd=9&turdet=YES
+    games_link: null
+    winners:
+      - place: 1
+        name: Paulius Vaitkevičius
+        city: Vilnius
+      - place: 2
+        name: Kipras Eigminas
+        city: Vilnius
+      - place: 3
+        name: Dino Mukovoz
+        city: Vilnius
+    women_winners:
+      - place: 1
+        name: Agnė Semonavičiūtė
+        city: Šiauliai
+      - place: 2
+        name: Urtė Juškauskaitė
+        city: Panevėžys
+      - place: 3
+        name: Rugilė Klabytė
+        city: Šiauliai
+  - name: LTU team youth ch rapid B11 2009
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: U11
+      gender: Open
+    location: Panevėžys
+    date_start: 05 08
+    date_end: 05 09
+    results_link: http://chess-results.com/tnr21776.aspx?lan=1&art=1&rd=4&turdet=YES
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Plungė
+        city: Plungė
+        members:
+          - Zygimantas Stongvilas
+          - Gintas Macernis
+          - Lukas Karlinski
+          - Mantas Jurčius
+          - Modestas Jurčius
+      - place: 2
+        name: Kaunas
+        city: Kaunas
+        members:
+          - Titas Stremavičius
+          - Adomas Kačerauskas
+          - Neringa Levinskaitė
+          - Matas Baciauskas
+          - Karolis Vitulskas
+      - place: 3
+        name: Šiauliai
+        city: Šiauliai
+        members:
+          - Kipras Pilka
+          - Artūras Jocas
+          - Lukas Bučinskas
+          - Nedas Jankevičius
+          - Matas Samulionis
+  - name: LTU team youth ch rapid G11 2009
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: U11
+      gender: Women
+    location: Panevėžys
+    date_start: 05 08
+    date_end: 05 09
+    results_link: http://chess-results.com/tnr21775.aspx?lan=1&art=1&rd=4&turdet=YES
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Šiauliai
+        city: Šiauliai
+        members:
+          - Agnė Semonavičiūtė
+          - Rugilė Klabytė
+          - Berta Rėja Butvilaitė
+      - place: 2
+        name: Plungė
+        city: Plungė
+        members:
+          - Meda Mačiuitytė
+          - Rugilė Meškėnaitė
+          - Greta Mačiuitytė
+      - place: 3
+        name: Biržai
+        city: Biržai
+        members:
+          - Ausrine Glindaite
+          - Raminta Vaidinauskaitė
+          - Meida Šimaitė
+  - name: LTU team youth ch rapid B14 2009
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: 14
+      gender: Open
+    location: Panevėžys
+    date_start: 10 09
+    date_end: 10 10
+    results_link: http://chess-results.com/tnr26221.aspx?lan=1&art=1&rd=7&turdet=YES
+    games_link: null
+    team_winners:
+      - place: 1
+        name: SC Panevėžys 1
+        city: Panevėžys
+        members:
+          - Tadas Vanagas
+          - Orestas Andriulevičius
+          - Andrius Brazdžionis
+          - Justas Čekanauskas
+          - Lukas Naruševičius
+      - place: 2
+        name: SM Kaunas
+        city: Kaunas
+        members:
+          - Aidas Kilda
+          - Tadas Čeponis
+          - Sarunas Reklaitis
+          - Gvidonas Kybartas
+          - Adomas Kačerauskas
+      - place: 3
+        name: SM Dubysa 1
+        city: Šiauliai
+        members:
+          - Marijus Vičas
+          - Artūras Jocas
+          - Povilas Paškūnas
+          - Vilius Barkauskas
+          - Lukas Bučinskas
+  - name: LTU team youth ch rapid G14 2009
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: 14
+      gender: Women
+    location: Panevėžys
+    date_start: 10 09
+    date_end: 10 10
+    results_link: http://chess-results.com/tnr26222.aspx?lan=1&art=1&rd=4&turdet=YES
+    games_link: null
+    team_winners:
+      - place: 1
+        name: SC Panevėžys 1
+        city: Panevėžys
+        members:
+          - Miglė Rudytė
+          - Giedrė Vanagaitė
+          - Skaistė Šaumanaitė
+      - place: 2
+        name: SM Dubysa
+        city: Šiauliai
+        members:
+          - Agnė Semonavičiūtė
+          - Dovainė Juciūtė
+          - Berta Rėja Butvilaitė
+      - place: 3
+        name: SM Biržai
+        city: Biržai
+        members:
+          - Radvilė Klepeckaitė
+          - Aurelija Juknaitė
+          - Meida Šimaitė
+  - name: LTU team youth ch rapid B18 2009
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: 18
+      gender: Open
+    location: Šiauliai
+    date_start: 10 16
+    date_end: 10 17
+    results_link: http://bsk.puslapiai.lt/lenteles/2009/komandjauniaib.htm
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Plungė
+        city: Plungė
+        members:
+          - Vaidas Šetkauskas
+          - Andrius Rimeikis
+          - Gytis Vaičekauskas
+          - K. Poška
+          - Marius Rutkus
+      - place: 2
+        name: Šiauliai 1
+        city: Šiauliai
+        members:
+          - Matas Narmontas
+          - T. Narmontas
+          - Laurynas Šlikas
+          - Marijus Vičas
+          - Tomas Jurevičius
+      - place: 3
+        name: Kaunas
+        city: Kaunas
+        members:
+          - Tomas Laurušas
+          - Ignas Balčiūnas
+          - V. Simonaitis
+          - J. Balčiūnas
+          - Tadas Čeponis
+  - name: LTU team youth ch rapid G18 2009
+    config:
+      time_control: Rapid
+      format: Team
+      rank: null
+      open: false
+      age_group: 18
+      gender: Women
+    location: Šiauliai
+    date_start: 10 16
+    date_end: 10 17
+    results_link: http://bsk.puslapiai.lt/lenteles/2009/komandjauniaim.htm
+    games_link: null
+    team_winners:
+      - place: 1
+        name: Kaunas
+        city: Kaunas
+        members:
+          - Brigita Laurušaitė
+          - Miglė Lepeškaitė
+          - A. Giedraitytė
+      - place: 2
+        name: Šiauliai 1
+        city: Šiauliai
+        members:
+          - Gintarė Paulauskaitė
+          - Henrieta Juciūtė
+          - B. Griciūtė
+      - place: 3
+        name: Plungė
+        city: Plungė
+        members:
+          - Ieva Žalimaitė
+          - Monika Narmontaitė
+          - Laura Grigaitytė
