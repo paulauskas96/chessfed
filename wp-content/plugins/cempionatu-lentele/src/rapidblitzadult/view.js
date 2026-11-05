@@ -1,173 +1,207 @@
 import apiFetch from "@wordpress/api-fetch";
+import "./style.scss";
 
-(function ($) {
-	document.addEventListener("DOMContentLoaded", function () {
-		$("#loading").show();
-		apiFetch({ path: "/sample/v1/data" })
-			.then((data) => {
-				let response = data
-					.map((yearData) => {
-						let filteredTournaments = yearData.tournaments.filter(
-							(tournament) => {
-								return (
-									tournament.config.format === "Individual" &&
-									tournament.config.age_group === null &&
-									tournament.config.time_control != "Std"
-								);
-							},
-						);
-						if (filteredTournaments.length > 0) {
-							return filteredTournaments.map((tournament) => {
-								return {
-									...tournament,
-									year: yearData.year,
-								};
-							});
-						}
-					})
-					.filter(Boolean)
-					.flat();
+// Adult rapid and blitz individual championships (open events).
+// Each row holds two or three standings: overall, women, and — where the event
+// had foreign players — the top Lithuanian women listed separately.
+// No age groups. All years on one page; filtering by time control and search in the browser.
+// The block's saved markup (old DataTables table) is hidden by CSS and replaced by .lsf-archive.
 
-				// Function to initialize the DataTable
-				function initializeDataTable(time_control) {
-					$("#loading").show();
-					$("#myTable").DataTable().clear().destroy();
-					$("#myTable").DataTable({
-						language: {
-							zeroRecords: "Įrašų nėra",
-							info: "Puslapis _PAGE_ / _PAGES_",
-							infoEmpty: "Įrašų nėra",
-							infoFiltered: "(iš _MAX_)",
-							search: "Paieška:",
-							paginate: {
-								first: "First",
-								last: "Last",
-								next: ">",
-								previous: "<",
-							},
-						},
-						ordering: false,
-						lengthChange: false,
-						responsive: true,
-						data: response.filter(
-							(tournament) => tournament.config.time_control === time_control,
-						),
-						columns: [
-							{ data: "year" },
-							{
-								data: null,
-								render: function (data, type, row) {
-									return (
-										`<div>${row.config.rank ?? ""}</div>` +
-										`<div>${row.location ?? ""}</div>` +
-										"<div>" +
-										row.date_start +
-										(row.date_start !== row.date_end
-											? " - " + row.date_end
-											: "") +
-										"</div>"
-									);
-								},
-							},
-							{
-								data: null,
-								render: function (data, type, row) {
-									let winnersList = "<ul class='winners-list'>";
-									if (row.winners) {
-										row.winners.forEach((winner, index) => {
-											let className = "";
-											if (index === 0) {
-												className = "first-item";
-											}
-											winnersList += `<li class="${className}">${winner.place}. ${winner.name} (${winner.rating})</li>`;
-										});
-									}
-									if (row.winners) {
-										if (row.ltu_winners) {
-											winnersList +=
-												'<li class="extra-text">Tarp lietuvių:</li>';
+const TIME_CONTROLS = [
+	{ key: "Rapid", label: "Greitieji" },
+	{ key: "Blitz", label: "Žaibo" },
+];
+// Only the standings that exist on an event are shown
+const STANDINGS = [
+	{ key: "winners", label: "Vyrai" },
+	{ key: "ltu_winners", label: "Lietuvos vyrai" },
+	{ key: "women_winners", label: "Moterys" },
+	{ key: "ltu_women_winners", label: "Lietuvos moterys" },
+];
+const MONTHS = [
+	"sausio", "vasario", "kovo", "balandžio", "gegužės", "birželio",
+	"liepos", "rugpjūčio", "rugsėjo", "spalio", "lapkričio", "gruodžio",
+];
+const TITLE_RE = /^(GM|IM|FM|CM|WGM|WIM|WFM|WCM)\s+(.+)$/;
 
-											row.ltu_winners.forEach((winner, index) => {
-												let className = "";
-												if (index === 0) {
-													className = "first-item";
-												}
-												winnersList += `<li class=${className}>${winner.place}. ${winner.name} (${winner.rating})</li>`;
-											});
-										}
-									}
-									winnersList += "</ul>";
-									return winnersList;
-								},
-							},
-							{
-								data: null,
-								render: function (data, type, row) {
-									let winnersList = "<ul class='winners-list'>";
-									if (row.women_winners) {
-										row.women_winners.forEach((winner, index) => {
-											let className = index === 0 ? "first-item" : "";
-											winnersList += `<li class=${className}>${winner.place}. ${winner.name} (${winner.rating})</li>`;
-										});
-									}
-									if (row.women_winners) {
-										if (row.ltu_women_winners) {
-											winnersList +=
-												'<li class="extra-text">Tarp lietuvių</li>';
+const esc = (s) =>
+	String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 
-											row.ltu_women_winners.forEach((winner, index) => {
-												let className = index === 0 ? "first-item" : "";
-												winnersList += `<li class=${className}>${winner.place}. ${winner.name} (${winner.rating})</li>`;
-											});
-										}
-									}
-									winnersList += "</ul>";
-									return winnersList;
-								},
-							},
-							{
-								data: null,
-								render: function (data, type, row) {
-									let links = "";
-									if (row.results_link) {
-										links += `<a classname="underline" href="${row.results_link}" target="_blank">Rezultatai</a><br>`;
-									}
-									if (row.games_link) {
-										links += `<a classname="underline" href="${row.games_link}" target="_blank">Partijos</a><br>`;
-									}
-									if (row.download_link) {
-										links += `<a classname="underline" href="${row.download_link}" target="_blank">Atsisiųsti</a><br>`;
-									}
-									return links;
-								},
-							},
-						],
-					});
-					$("#loading").hide();
-				}
-				// Initialize the DataTable with the 'winners' array and 'Rapid' time_control
-				initializeDataTable("Rapid");
+// Lowercase and strip diacritics so "daulyte" finds "Daulytė"
+const fold = (s) => String(s ?? "").normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
 
-				// Add event listeners to the buttons
-				document
-					.getElementById("rapidButton")
-					.addEventListener("click", function () {
-						initializeDataTable("Rapid");
-						this.classList.add("active");
-						document.getElementById("blitzButton").classList.remove("active");
-					});
-
-				document
-					.getElementById("blitzButton")
-					.addEventListener("click", function () {
-						initializeDataTable("Blitz");
-						this.classList.add("active");
-						document.getElementById("rapidButton").classList.remove("active");
-					});
-			})
-			.catch((error) => {
-				console.error("Error:", error);
-				// Hide the loading animation in case of error
-			});
+function collectRows(data) {
+	const rows = [];
+	(data || []).forEach((yearData) => {
+		(yearData.tournaments || []).forEach((t) => {
+			const c = t.config || {};
+			if (c.format !== "Individual") return;
+			if (c.time_control !== "Rapid" && c.time_control !== "Blitz") return;
+			if (c.age_group != null) return; // adults only
+			rows.push({ year: yearData.year, tc: c.time_control, t });
+		});
 	});
-})(jQuery);
+	return rows.sort((a, b) => b.year - a.year);
+}
+
+// "03 29", "04 02" -> "Kovo 29 d. – balandžio 2 d."; "03 04-06" is also accepted; unknown formats are shown as they are
+function formatDates(ds, de) {
+	const parse = (s) => {
+		const m = /^(\d{1,2})\s+(\d{1,2})$/.exec(String(s ?? "").trim());
+		return m && MONTHS[+m[1] - 1] ? [+m[1], +m[2]] : null;
+	};
+	let a = parse(ds);
+	let b = parse(de ?? ds);
+	const range = /^(\d{1,2})\s+(\d{1,2})-(\d{1,2})$/.exec(String(ds ?? "").trim());
+	if (!a && range && MONTHS[+range[1] - 1]) {
+		a = [+range[1], +range[2]];
+		b = [+range[1], +range[3]];
+	}
+	if (!a || !b) {
+		return [ds, de].map((v) => String(v ?? "").trim()).filter((v, i, arr) => v && arr.indexOf(v) === i).join(" – ");
+	}
+	const m1 = MONTHS[a[0] - 1];
+	const m2 = MONTHS[b[0] - 1];
+	const d = " d."; // non-breaking space keeps "d." next to the number
+	let s;
+	if (a[0] === b[0] && a[1] === b[1]) s = `${m1} ${a[1]}${d}`;
+	else if (a[0] === b[0]) s = `${m1} ${a[1]}–${b[1]}${d}`;
+	else s = `${m1} ${a[1]}${d} – ${m2} ${b[1]}${d}`;
+	return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+function mount(block) {
+	const state = { tc: "Rapid", query: "", rows: null };
+
+	const root = document.createElement("div");
+	root.className = "lsf-archive";
+	root.innerHTML = `
+		<div class="lsf-filters" role="search">
+			<div class="lsf-seg" role="group" aria-label="Laiko kontrolė">
+				${TIME_CONTROLS.map((t) => `<button type="button" data-tc="${t.key}">${t.label}</button>`).join("")}
+			</div>
+			<label class="lsf-search">
+				<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+				<input type="search" placeholder="Žaidėjas ar metai" autocomplete="off" aria-label="Paieška">
+			</label>
+		</div>
+		<p class="lsf-summary" aria-live="polite">Įkeliama…</p>
+		<ol class="lsf-list"></ol>`;
+	block.appendChild(root);
+
+	const summaryEl = root.querySelector(".lsf-summary");
+	const listEl = root.querySelector(".lsf-list");
+
+	const highlight = (text) => {
+		const t = String(text ?? "");
+		const q = state.query;
+		const ft = fold(t);
+		if (!q || ft.length !== t.length) return esc(t);
+		const i = ft.indexOf(fold(q));
+		if (i < 0) return esc(t);
+		const n = q.length;
+		return esc(t.slice(0, i)) + "<mark>" + esc(t.slice(i, i + n)) + "</mark>" + esc(t.slice(i + n));
+	};
+
+	const winnerHtml = (w) => {
+		const m = TITLE_RE.exec(w.name || "");
+		const title = m ? `<span class="lsf-title">${m[1]}</span> ` : "";
+		const name = m ? m[2] : w.name;
+		const place = Number(w.place);
+		const medal = place >= 1 && place <= 3 ? `lsf-p${place}` : "lsf-p0";
+		// Rating in parentheses right after the name
+		const rating = w.rating ? ` <span class="lsf-rating">(${esc(w.rating)})</span>` : "";
+		return `<li class="lsf-winner">
+			<span class="lsf-place ${medal}" aria-label="${esc(w.place)} vieta">${esc(w.place)}</span>
+			<span class="lsf-who">${title}<span class="lsf-name">${highlight(name)}</span>${rating}${(w.city || w.country) ? `<span class="lsf-city">, ${highlight(w.city || w.country)}</span>` : ""}</span>
+		</li>`;
+	};
+
+	const standingHtml = (t, { key, label }) => {
+		const list = t[key] || [];
+		return `<div class="lsf-standing">
+			<div class="lsf-standing-label">${label}</div>
+			<ol class="lsf-winners">${list.map(winnerHtml).join("")}</ol>
+		</div>`;
+	};
+
+	const rowHtml = ({ year, t }) => {
+		const links = [
+			t.results_link ? `<a href="${esc(t.results_link)}" target="_blank" rel="noopener">Rezultatai ↗</a>` : "",
+			t.games_link ? `<a href="${esc(t.games_link)}" target="_blank" rel="noopener">Partijos ↗</a>` : "",
+			t.download_link ? `<a href="${esc(t.download_link)}">Atsisiųsti</a>` : "",
+		].join("");
+		const dates = formatDates(t.date_start, t.date_end);
+		const note = t.config && t.config.rank;
+		const present = STANDINGS.filter((s) => (t[s.key] || []).length);
+		return `<li class="lsf-row lsf-row--dual">
+			<div class="lsf-head">
+				<div class="lsf-year">${highlight(year)}</div>
+				<div class="lsf-meta">
+					${t.location ? `<span>${highlight(t.location)}</span>` : ""}
+					${dates ? `<span>${esc(dates)}</span>` : ""}
+				</div>
+				${note ? `<span class="lsf-note">${esc(note)}</span>` : ""}
+			</div>
+			<div class="lsf-standings" data-count="${present.length}">${present.map((s) => standingHtml(t, s)).join("")}</div>
+			<div class="lsf-links">${links}</div>
+		</li>`;
+	};
+
+	const matches = ({ year, t }) => {
+		if (!state.query) return true;
+		const parts = [year, t.location];
+		STANDINGS.forEach((s) => (t[s.key] || []).forEach((w) => parts.push(w.name, w.city, w.country)));
+		return parts.map(fold).join(" | ").includes(fold(state.query));
+	};
+
+	const render = () => {
+		root.querySelectorAll("[data-tc]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.tc === state.tc)));
+		if (!state.rows) return;
+
+		const all = state.rows.filter((r) => r.tc === state.tc);
+		const shown = all.filter(matches);
+		const label = (TIME_CONTROLS.find((t) => t.key === state.tc) || {}).label;
+		const years = all.map((r) => r.year);
+		const span = years.length ? `${Math.min(...years)}–${Math.max(...years)}` : "";
+
+		summaryEl.innerHTML = state.query
+			? `<strong>${label}</strong> · rasta ${shown.length} iš ${all.length}`
+			: `<strong>${label}</strong>${span ? ` · ${span}` : ""}`;
+		listEl.innerHTML = shown.length
+			? shown.map(rowHtml).join("")
+			: `<li class="lsf-empty">${state.query ? `Pagal „${esc(state.query)}“ nieko nerasta.` : "Įrašų nėra."}</li>`;
+	};
+
+	root.querySelectorAll("[data-tc]").forEach((b) =>
+		b.addEventListener("click", () => {
+			state.tc = b.dataset.tc;
+			render();
+		}),
+	);
+	root.querySelector("input").addEventListener("input", (e) => {
+		state.query = e.target.value.trim();
+		render();
+	});
+
+	render();
+	apiFetch({ path: "/sample/v1/data" })
+		.then((data) => {
+			state.rows = collectRows(data);
+			render();
+		})
+		.catch((error) => {
+			console.error("Championship archive:", error);
+			summaryEl.textContent = "Nepavyko įkelti duomenų. Perkraukite puslapį.";
+		});
+}
+
+function init() {
+	document.querySelectorAll(".wp-block-create-block-rapidblitzadult").forEach(mount);
+}
+
+if (document.readyState === "loading") {
+	document.addEventListener("DOMContentLoaded", init);
+} else {
+	init();
+}

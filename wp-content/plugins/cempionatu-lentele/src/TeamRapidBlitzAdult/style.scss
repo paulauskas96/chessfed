@@ -209,3 +209,441 @@ thead {
 			);
 	}
 }
+
+/* ------------------------------------------------------------------
+ * New championship archive (.lsf-archive), rendered by view.js.
+ * Light theme only, colours and fonts follow the lsfnewfont theme.
+ * ------------------------------------------------------------------ */
+
+// The old saved markup stays in the post for the editor; on the frontend it is replaced by .lsf-archive
+.wp-block-create-block-teamrapidblitzadult:not(.block-editor-block-list__block) > :not(.lsf-archive) {
+	display: none !important;
+}
+
+.lsf-archive {
+	--lsf-accent: var(--wp--preset--color--custom-primary, #15803d);
+	--lsf-fg: var(--wp--preset--color--custom-tekstas-1, #333f51);
+	--lsf-muted: var(--wp--preset--color--custom-tekstas-2, #556987);
+	--lsf-line: var(--wp--preset--color--custom-border, #e8ede8);
+	--lsf-soft: var(--wp--preset--color--custom-retingo-lyderiai-filteris-ir-headerio-bgr, #e7f2eb);
+	--lsf-bg: var(--wp--preset--color--custom-balta-bgr, #fefefe);
+	--lsf-gold: #b8860b;
+	--lsf-silver: #7d8796;
+	--lsf-bronze: #a8653a;
+	--lsf-mark: #fbe9a6;
+	// The theme registers each Poppins weight as a separate family
+	--lsf-font: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	--lsf-font-medium: "Poppins Medium", var(--lsf-font);
+	--lsf-font-semibold: "Poppins SemiBold", var(--lsf-font);
+
+	color: var(--lsf-fg);
+	font-family: var(--lsf-font);
+	font-size: 1rem;
+	line-height: 1.45;
+
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+
+	button,
+	input {
+		font: inherit;
+		color: inherit;
+		margin: 0;
+	}
+
+	button {
+		cursor: pointer;
+		background: transparent;
+		border: 0;
+	}
+
+	// The search field shows focus on its pill border instead
+	button:focus-visible,
+	a:focus-visible {
+		outline: 2px solid var(--lsf-accent);
+		outline-offset: 2px;
+	}
+}
+
+/* Filters */
+.lsf-filters {
+	position: sticky;
+	top: var(--wp-admin--admin-bar--height, 0px);
+	z-index: 5;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px 16px;
+	padding-block: 14px;
+	background: var(--lsf-bg);
+	border-bottom: 1px solid var(--lsf-line);
+}
+
+.lsf-seg {
+	display: inline-flex;
+	gap: 3px;
+	padding: 3px;
+	background: var(--lsf-soft);
+	border-radius: 999px;
+
+	button {
+		padding: 7px 20px;
+		border-radius: 999px;
+		color: var(--lsf-accent);
+		font-family: var(--lsf-font-medium);
+		font-weight: 500;
+		font-size: 0.95rem;
+	}
+
+	button[aria-pressed="true"] {
+		background: var(--lsf-accent);
+		color: #fff;
+	}
+}
+
+.lsf-ages {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+
+	button {
+		min-width: 54px;
+		padding: 6px 12px;
+		border: 1px solid var(--lsf-line);
+		border-radius: 999px;
+		color: var(--lsf-accent);
+		font-family: var(--lsf-font-medium);
+		font-weight: 500;
+		font-size: 0.9rem;
+		font-variant-numeric: tabular-nums;
+	}
+
+	button[aria-pressed="true"] {
+		border-color: var(--lsf-accent);
+		background: var(--lsf-accent);
+		color: #fff;
+	}
+}
+
+.lsf-seg button:hover:not([aria-pressed="true"]),
+.lsf-ages button:hover:not([aria-pressed="true"]) {
+	background: var(--lsf-soft);
+}
+
+.lsf-seg button:hover:not([aria-pressed="true"]) {
+	background: var(--lsf-bg);
+}
+
+.lsf-search {
+	flex: 1 1 220px;
+	min-width: 0;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin: 0;
+	padding: 7px 12px;
+	border: 1px solid var(--lsf-line);
+	border-radius: 999px;
+	background: var(--lsf-bg);
+	color: var(--lsf-muted);
+
+	&:focus-within {
+		border-color: var(--lsf-accent);
+	}
+
+	svg {
+		flex: none;
+	}
+
+	input {
+		flex: 1;
+		min-width: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		background: transparent;
+		color: var(--lsf-fg);
+		font-size: 0.9rem;
+		-webkit-appearance: none;
+		appearance: none;
+	}
+}
+
+.lsf-summary {
+	margin: 0;
+	padding-block: 14px 4px;
+	color: var(--lsf-muted);
+	font-size: 0.85rem;
+
+	strong {
+		color: var(--lsf-fg);
+		font-family: var(--lsf-font-semibold);
+		font-weight: 600;
+	}
+}
+
+/* Rows */
+.lsf-archive .lsf-list,
+.lsf-archive .lsf-winners {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.lsf-row {
+	display: grid;
+	grid-template-columns: 170px minmax(0, 1fr) auto;
+	align-items: start;
+	gap: 8px 24px;
+	margin: 0;
+	padding-block: 18px;
+	border-bottom: 1px solid var(--lsf-line);
+}
+
+.lsf-year {
+	font-weight: 700;
+	font-size: 1.6rem;
+	line-height: 1.1;
+	font-variant-numeric: tabular-nums;
+}
+
+.lsf-meta {
+	display: grid;
+	gap: 2px;
+	margin-top: 6px;
+	color: var(--lsf-muted);
+	font-size: 0.85rem;
+}
+
+.lsf-note {
+	display: inline-block;
+	margin-top: 6px;
+	padding: 1px 9px;
+	border-radius: 999px;
+	background: var(--lsf-soft);
+	color: var(--lsf-accent);
+	font-family: var(--lsf-font-medium);
+	font-weight: 500;
+	font-size: 0.75rem;
+}
+
+.lsf-winners {
+	display: grid;
+	gap: 5px;
+	min-width: 0;
+}
+
+.lsf-winner {
+	display: grid;
+	grid-template-columns: 24px minmax(0, 1fr) auto;
+	align-items: baseline;
+	gap: 10px;
+	margin: 0;
+}
+
+.lsf-place {
+	display: inline-grid;
+	place-items: center;
+	align-self: center;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background: var(--lsf-line);
+	color: #fff;
+	font-weight: 700;
+	font-size: 0.75rem;
+}
+
+.lsf-p1 { background: var(--lsf-gold); }
+.lsf-p2 { background: var(--lsf-silver); }
+.lsf-p3 { background: var(--lsf-bronze); }
+.lsf-p0 { color: var(--lsf-fg); }
+
+.lsf-who {
+	min-width: 0;
+	overflow-wrap: anywhere;
+}
+
+.lsf-winner:first-child .lsf-name {
+	font-family: var(--lsf-font-semibold);
+	font-weight: 600;
+}
+
+.lsf-title {
+	display: inline-block;
+	// Spacing after the badge comes from the non-breaking space in the markup
+	padding: 0 5px;
+	border: 1px solid var(--lsf-line);
+	border-radius: 4px;
+	color: var(--lsf-muted);
+	font-family: var(--lsf-font-semibold);
+	font-weight: 600;
+	font-size: 0.7rem;
+	letter-spacing: 0.03em;
+	vertical-align: 2px;
+}
+
+.lsf-city {
+	color: var(--lsf-muted);
+	font-size: 0.9rem;
+}
+
+.lsf-rating {
+	color: var(--lsf-muted);
+	font-size: 0.85rem;
+	font-variant-numeric: tabular-nums;
+	text-align: right;
+}
+
+.lsf-links {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+
+	a {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 5px 14px;
+		border: 1px solid var(--lsf-line);
+		border-radius: 999px;
+		color: var(--lsf-accent);
+		text-decoration: none;
+		font-family: var(--lsf-font-medium);
+		font-weight: 500;
+		font-size: 0.85rem;
+		white-space: nowrap;
+
+		&:hover {
+			border-color: var(--lsf-accent);
+			background: var(--lsf-soft);
+		}
+	}
+}
+
+.lsf-archive mark {
+	padding: 0 1px;
+	border-radius: 3px;
+	background: var(--lsf-mark);
+	color: inherit;
+}
+
+.lsf-empty {
+	padding-block: 40px;
+	color: var(--lsf-muted);
+	text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+	.lsf-row {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 10px;
+	}
+
+	.lsf-head {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		gap: 4px 12px;
+	}
+
+	.lsf-meta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0 10px;
+		margin-top: 0;
+	}
+
+	.lsf-note {
+		margin-top: 0;
+	}
+
+	.lsf-links {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.lsf-seg {
+		width: 100%;
+
+		button {
+			flex: 1;
+		}
+	}
+
+	// All six age groups in one row on phones
+	.lsf-ages {
+		display: grid;
+		grid-template-columns: repeat(6, minmax(0, 1fr));
+		width: 100%;
+
+		button {
+			min-width: 0;
+			padding-inline: 0;
+		}
+	}
+}
+
+
+/* Team standings: team name over its member list */
+.lsf-archive .lsf-teams {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 14px;
+	min-width: 0;
+}
+
+.lsf-team {
+	display: grid;
+	grid-template-columns: 24px minmax(0, 1fr);
+	gap: 10px;
+	align-items: start;
+	margin: 0;
+}
+
+.lsf-team .lsf-place {
+	align-self: start;
+}
+
+.lsf-team-body {
+	min-width: 0;
+}
+
+.lsf-team-name {
+	font-family: var(--lsf-font-semibold);
+	font-weight: 600;
+	overflow-wrap: anywhere;
+}
+
+.lsf-archive .lsf-members {
+	margin: 7px 0 0;
+	padding: 0;
+	list-style: none;
+	color: var(--lsf-fg);
+	font-size: 0.95rem;
+	line-height: 1.5;
+}
+
+.lsf-members li {
+	overflow-wrap: anywhere;
+}
+
+.lsf-members[data-cols="2"] {
+	column-count: 2;
+	column-gap: 32px;
+}
+
+.lsf-members[data-cols="2"] li {
+	break-inside: avoid;
+}
+
+@media screen and (max-width: 720px) {
+	.lsf-members[data-cols="2"] {
+		column-count: 1;
+	}
+}
